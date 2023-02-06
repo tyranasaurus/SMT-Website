@@ -1,10 +1,10 @@
 <script>
-    import Heading from '$lib/components/Heading.svelte';
-    import FlexBox from '$lib/components/FlexBox.svelte';
+    import Heading from "$lib/components/Heading.svelte";
+    import FlexBox from "$lib/components/FlexBox.svelte";
     import Table from "$lib/components/Table.svelte";
-    import PanelBox from '$lib/components/PanelBox.svelte';
-    import Competition from '$lib/components/Competition.svelte';
-    import PageHeader from '$lib/components/PageHeader.svelte';
+    import PanelBox from "$lib/components/PanelBox.svelte";
+    import Competition from "$lib/components/Competition.svelte";
+    import PageHeader from "$lib/components/PageHeader.svelte";
     import { onMount } from "svelte";
 
     let visible = false;
@@ -14,7 +14,7 @@
 
     onMount(() => {
         visible = true;
-    })
+    });
 
     function toggleBackground() {
         if (background == "right-arrow.png") {
@@ -35,48 +35,117 @@
     let y;
 
     let scheduleData = [
-        { "Class": "Intermediate", "Day of Week": "Sunday", "Time (PT)": "5:00-6:30 PM"},
-        { "Class": "Beginner 1", "Day of Week": "Monday", "Time (PT)": "5:00-6:30 PM"},
-        { "Class": "Beginner 2", "Day of Week": "Wednesday", "Time (PT)": "7:00-8:30 PM"},
-        { "Class": "Office Hours 1", "Day of Week": "Sunday", "Time (PT)": "6:30-7:30 PM"},
-        { "Class": "Office Hours 2", "Day of Week": "Tuesday", "Time (PT)": "7:00-8:00 PM"},
-    ]
-    
+        {
+            Class: "Intermediate",
+            "Day of Week": "Sunday",
+            "Time (PT)": "5:00-6:30 PM",
+        },
+        {
+            Class: "Beginner 1",
+            "Day of Week": "Monday",
+            "Time (PT)": "5:00-6:30 PM",
+        },
+        {
+            Class: "Beginner 2",
+            "Day of Week": "Wednesday",
+            "Time (PT)": "7:00-8:30 PM",
+        },
+        {
+            Class: "Office Hours 1",
+            "Day of Week": "Sunday",
+            "Time (PT)": "6:30-7:30 PM",
+        },
+        {
+            Class: "Office Hours 2",
+            "Day of Week": "Tuesday",
+            "Time (PT)": "7:00-8:00 PM",
+        },
+    ];
+
     let topicsData = [
-        { "Week": "1", "Dates": "January 8-January 14, 2023", "Topics Covered": "Angle Chasing, Similar Triangles" },
-        { "Week": "2", "Dates": "January 15-January 21, 2023", "Topics Covered": "Triangle Centers" },
-        { "Week": "3", "Dates": "January 22-January 28, 2023", "Topics Covered": "Circles" },
-        { "Week": "4", "Dates": "January 29-February 4, 2023", "Topics Covered": "Quadrilaterals" },
-	{ "Week": "Break", "Dates": "February 5-February 11, 2023", "Topics Covered": "None!" },
-        { "Week": "5", "Dates": "February 12-February 18, 2023", "Topics Covered": "Coordinate Geometry" },
-        { "Week": "6", "Dates": "February 19-February 25, 2023", "Topics Covered": "Other Polygons" },
-        { "Week": "7", "Dates": "February 26-March 4, 2023", "Topics Covered": "3D Geometry" },
-        { "Week": "8", "Dates": "March 5-March 11, 2022", "Topics Covered": "Trigonometry, Miscellaneous" },
-    ]
+        {
+            Week: "1",
+            Dates: "January 8-January 14, 2023",
+            "Topics Covered": "Angle Chasing, Similar Triangles",
+        },
+        {
+            Week: "2",
+            Dates: "January 15-January 21, 2023",
+            "Topics Covered": "Triangle Centers",
+        },
+        {
+            Week: "3",
+            Dates: "January 22-January 28, 2023",
+            "Topics Covered": "Circles",
+        },
+        {
+            Week: "4",
+            Dates: "January 29-February 4, 2023",
+            "Topics Covered": "Quadrilaterals",
+        },
+        {
+            Week: "Break",
+            Dates: "February 5-February 11, 2023",
+            "Topics Covered": "None!",
+        },
+        {
+            Week: "5",
+            Dates: "February 12-February 18, 2023",
+            "Topics Covered": "Coordinate Geometry",
+        },
+        {
+            Week: "6",
+            Dates: "February 19-February 25, 2023",
+            "Topics Covered": "Other Polygons",
+        },
+        {
+            Week: "7",
+            Dates: "February 26-March 4, 2023",
+            "Topics Covered": "3D Geometry",
+        },
+        {
+            Week: "8",
+            Dates: "March 5-March 11, 2022",
+            "Topics Covered": "Trigonometry, Miscellaneous",
+        },
+    ];
 
     onMount(() => {
         if (windowWidth && windowWidth < 700) {
             for (var i = 0; i < topicsData.length; i++) {
                 var string = topicsData[i]["Dates"];
-                var stringBetter = string.replaceAll("January", "Jan.").replaceAll("February", "Feb.").replaceAll("March", "Mar.");
+                var stringBetter = string
+                    .replaceAll("January", "Jan.")
+                    .replaceAll("February", "Feb.")
+                    .replaceAll("March", "Mar.");
                 topicsData[i]["Dates"] = stringBetter;
             }
             for (var i = 0; i < scheduleData.length; i++) {
                 let string = scheduleData[i]["Day of Week"];
-                let stringBetter = string.replaceAll("Sunday", "Sun.").replaceAll("Monday", "Mon.").replaceAll("Tuesday", "Tue.").replaceAll("Wednesday", "Wed.").replaceAll("Thursday", "Thu.").replaceAll("Friday", "Fri.").replaceAll("Saturday", "Sat.");
+                let stringBetter = string
+                    .replaceAll("Sunday", "Sun.")
+                    .replaceAll("Monday", "Mon.")
+                    .replaceAll("Tuesday", "Tue.")
+                    .replaceAll("Wednesday", "Wed.")
+                    .replaceAll("Thursday", "Thu.")
+                    .replaceAll("Friday", "Fri.")
+                    .replaceAll("Saturday", "Sat.");
                 scheduleData[i]["Day of Week"] = stringBetter;
                 string = scheduleData[i]["Class"];
-                stringBetter = string.replaceAll("Intermediate", "Int").replaceAll("Beginner", "Beg").replaceAll("Office Hours", "OH");
+                stringBetter = string
+                    .replaceAll("Intermediate", "Int")
+                    .replaceAll("Beginner", "Beg")
+                    .replaceAll("Office Hours", "OH");
                 scheduleData[i]["Class"] = stringBetter;
             }
         }
-
-    })
+    });
 </script>
-<svelte:window bind:scrollY={y} bind:innerWidth={windowWidth}/>
+
+<svelte:window bind:scrollY={y} bind:innerWidth={windowWidth} />
 
 <svelte:head>
-	<title>Classes</title>
+    <title>Classes</title>
 </svelte:head>
 
 <!--
@@ -108,83 +177,196 @@
 </div>
 -->
 
-<PageHeader title="Classes" description="High Quality Online Math Contest Prep Classes" button_url="https://tinyurl.com/BeginnerGeometryRegistration" button_text="Beginner Class Registration!" id="registerBeginner" button2_url="https://tinyurl.com/IntermediateGeoRegistration" button2_text="Intermediate Class Registration!"/>
+<PageHeader
+    title="Classes"
+    description="High Quality Online Math Contest Prep Classes"
+    button_url="https://tinyurl.com/BeginnerGeometryRegistration"
+    button_text="Beginner Class Registration!"
+    id="registerBeginner"
+    button2_url="https://tinyurl.com/IntermediateGeoRegistration"
+    button2_text="Intermediate Class Registration!"
+/>
 
-<br><br>
+<br /><br />
 
-<Heading text="Summary" size={2.5} textColor="#1B9AAA" />
+<Heading text="Summary" size={2.5} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;"><strong>Mustang Math classes</strong> bring together students from around the world with one thing in common: an outstanding passion for math. Our highly qualified instructors prepare students for competitions in a fun and engaging way. Beyond instruction, we want to build a <strong>community</strong> of students and teachers sharing their love of math.</p>
+        <p style="font-size: 1.5em; text-align: center;">
+            <strong>Mustang Math classes</strong> bring together students from
+            around the world with one thing in common: an outstanding passion
+            for math. Our highly qualified instructors prepare students for
+            competitions in a fun and engaging way. Beyond instruction, we want
+            to build a
+            <strong>community</strong> of students and teachers sharing their love
+            of math.
+        </p>
         <br />
-        <p style="font-size: 1.5em; text-align: center;">These classes will be run year-round and will be split into 4 main topics: Algebra, Combinatorics, Number Theory, and Geometry, each run for <strong>8 weeks</strong>. Instructive sessions will run for <strong>90 minutes</strong> every week over Zoom. Additionally, teachers will hold <strong>office hours</strong> each week, during which students can seek assistance with the content or ask any lingering questions. Each class will have <strong>10-15 students</strong> and, depending on the interest we receive, there may be multiple classes run for each level. The total cost for 8 weeks of classes will be <strong>$80</strong> with financial aid available.</p>
+        <p style="font-size: 1.5em; text-align: center;">
+            These classes will be run year-round and will be split into 4 main
+            topics: Algebra, Combinatorics, Number Theory, and Geometry, each
+            run for <strong>8 weeks</strong>. Instructive sessions will run for
+            <strong>90 minutes</strong>
+            every week over Zoom. Additionally, teachers will hold
+            <strong>office hours</strong>
+            each week, during which students can seek assistance with the content
+            or ask any lingering questions. Each class will have
+            <strong>10-15 students</strong>
+            and, depending on the interest we receive, there may be multiple classes
+            run for each level. The total cost for 8 weeks of classes will be
+            <strong>$80</strong> with financial aid available.
+        </p>
     </PanelBox>
-</div> 
+</div>
 <br />
 <br />
 
-<Heading text="Topic-Based Courses" size={2.5} textColor="#1B9AAA" />
+<Heading text="Topic-Based Courses" size={2.5} />
 <div class="competition-wrapper">
     <FlexBox align="start">
-        <Competition imgSource="classes/fx.png" competition="Algebra" description="Invariably fun. Key topics include Polynomials, Sequences, and Inequalities." />
-        <Competition imgSource="classes/dice.png" competition="Combinatorics" description="You can always count on it. Key topics include Counting Techniques, Distinguishability, and Probability " />
-        <Competition imgSource="classes/compass.png" competition="Geometry" description="Just plane interesting. Key topics include Similar Triangles, Circles, and 3D Geometry" />
-        <Competition imgSource="classes/numbers.png" competition="Number Theory" description="Prime learning material. Key topics include Primes, Bases, Modular Arithmetic" />
+        <Competition
+            imgSource="classes/fx.png"
+            competition="Algebra"
+            description="Invariably fun. Key topics include Polynomials, Sequences, and Inequalities."
+        />
+        <Competition
+            imgSource="classes/dice.png"
+            competition="Combinatorics"
+            description="You can always count on it. Key topics include Counting Techniques, Distinguishability, and Probability "
+        />
+        <Competition
+            imgSource="classes/compass.png"
+            competition="Geometry"
+            description="Just plane interesting. Key topics include Similar Triangles, Circles, and 3D Geometry"
+        />
+        <Competition
+            imgSource="classes/numbers.png"
+            competition="Number Theory"
+            description="Prime learning material. Key topics include Primes, Bases, Modular Arithmetic"
+        />
     </FlexBox>
-</div> <br />
+</div>
+<br />
 
 <h1 id="geometry"><strong style="color: #1b9aaa;">GEOMETRY</strong></h1>
 
-<Heading text="Geometry: Class Details" size={2} textColor="#1B9AAA" />
+<Heading text="Geometry: Class Details" size={2} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Our class will be on Geometry and will start on the week of <strong>January 8th, 2023</strong> and run through till <strong>March 5th, 2023</strong>. There are currently 2 levels of classes planned, <strong>Beginner Geometry (AMC 8 level)</strong> and <strong>Intermediate Geometry (AMC 10/12 level)</strong>. See below for the weekly schedule and breakdown of topics! If you're interested in participating in these classes, make sure to fill out the <a href="https://tinyurl.com/BeginnerGeometryRegistration"><strong>beginner class registration form</strong></a> or the <a href="https://tinyurl.com/IntermediateGeoRegistration"><strong>intermediate class registration form</strong></a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">
+            Our class will be on Geometry and will start on the week of <strong
+                >January 8th, 2023</strong
+            >
+            and run through till <strong>March 5th, 2023</strong>. There are
+            currently 2 levels of classes planned,
+            <strong>Beginner Geometry (AMC 8 level)</strong>
+            and <strong>Intermediate Geometry (AMC 10/12 level)</strong>. See
+            below for the weekly schedule and breakdown of topics! If you're
+            interested in participating in these classes, make sure to fill out
+            the
+            <a href="https://tinyurl.com/BeginnerGeometryRegistration"
+                ><strong>beginner class registration form</strong></a
+            >
+            or the
+            <a href="https://tinyurl.com/IntermediateGeoRegistration"
+                ><strong>intermediate class registration form</strong></a
+            >.
+        </p>
     </PanelBox>
-</div> <br />
+</div>
+<br />
 <br />
 
-
-<Heading text="Geometry: Pricing" size={2} textColor="#1B9AAA" />
+<Heading text="Geometry: Pricing" size={2} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">The total cost for the 8 sessions of Geometry will be <strong>$80</strong>.</p>
-        <p style="font-size: 1.5em; text-align: center;">We charge for our classes for a multitude of reasons. First, while we are a fully volunteer-run nonprofit organization, we need money to continue <strong>improving upon and providing better classes, competitions, events, and materials</strong>! All money earned from MM Classes will go back into these projects for you, the students. Second, we work very hard to provide high quality classes, and we want students to take them seriously - ascribing a price value to the class naturally leads to more <strong>committed students</strong>.</p>
-        <p style="font-size: 1.5em; text-align: center;">If the cost of these classes poses a significant burden to you, please reach out to us! <strong>Financial aid is available upon request</strong>.</p>
-        
+        <p style="font-size: 1.5em; text-align: center;">
+            The total cost for the 8 sessions of Geometry will be <strong
+                >$80</strong
+            >.
+        </p>
+        <p style="font-size: 1.5em; text-align: center;">
+            We charge for our classes for a multitude of reasons. First, while
+            we are a fully volunteer-run nonprofit organization, we need money
+            to continue <strong
+                >improving upon and providing better classes, competitions,
+                events, and materials</strong
+            >! All money earned from MM Classes will go back into these projects
+            for you, the students. Second, we work very hard to provide high
+            quality classes, and we want students to take them seriously -
+            ascribing a price value to the class naturally leads to more
+            <strong>committed students</strong>.
+        </p>
+        <p style="font-size: 1.5em; text-align: center;">
+            If the cost of these classes poses a significant burden to you,
+            please reach out to us! <strong
+                >Financial aid is available upon request</strong
+            >.
+        </p>
     </PanelBox>
-</div> 
+</div>
 <br />
 <br />
 
-<Heading text="Geometry: Weekly Schedule" size={2} textColor="#1B9AAA" />
+<Heading text="Geometry: Weekly Schedule" size={2} />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
-            <Table data={scheduleData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
+            <Table
+                data={scheduleData}
+                width="auto"
+                headerColor="#1B9AAA"
+                rowColors={["var(--table-color-1)", "#ADCDD6"]}
+                cellPadding={5}
+                cellPaddingRight={20}
+            />
             {#if windowWidth < 700}
                 <p>OH = Office Hours</p>
             {/if}
         </PanelBox>
     </FlexBox>
-</div> <br />
+</div>
+<br />
 <br />
 
-<Heading text="Geometry: Classes Schedule" size={2} textColor="#1B9AAA" />
+<Heading text="Geometry: Classes Schedule" size={2} />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
-            <Table data={topicsData} width="auto" headerColor="#1B9AAA" rowColors={["#A4D6AF", "#ADCDD6"]} cellPadding={5} cellPaddingRight={20}/>
+            <Table
+                data={topicsData}
+                width="auto"
+                headerColor="#1B9AAA"
+                rowColors={["var(--table-color-1)", "#ADCDD6"]}
+                cellPadding={5}
+                cellPaddingRight={20}
+            />
         </PanelBox>
     </FlexBox>
-</div> <br />
+</div>
+<br />
 <br />
 
-<Heading text="One-on-One Tutoring" size={2.5} textColor="#1B9AAA" />
+<Heading text="One-on-One Tutoring" size={2.5} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">Do you prefer a smaller learning environment with more personalized instruction? Mustang Math will also be offering one-on-one tutoring! One-on-one sessions will be more flexible with instruction tailored specifically towards the student's needs. Pricing is flexible depending on level of instruction required, and will be generally more than our group classes. Do note that instructor availability may be limited. If you are interested in one-on-one tutoring, email us at <a target="_blank" href="mailto:contact@mustangmath.com" style="word-break: break-all;">contact@mustangmath.com</a>.</p>
+        <p style="font-size: 1.5em; text-align: center;">
+            Do you prefer a smaller learning environment with more personalized
+            instruction? Mustang Math will also be offering one-on-one tutoring!
+            One-on-one sessions will be more flexible with instruction tailored
+            specifically towards the student's needs. Pricing is flexible
+            depending on level of instruction required, and will be generally
+            more than our group classes. Do note that instructor availability
+            may be limited. If you are interested in one-on-one tutoring, email
+            us at <a
+                target="_blank"
+                href="mailto:contact@mustangmath.com"
+                style="word-break: break-all;">contact@mustangmath.com</a
+            >.
+        </p>
     </PanelBox>
-</div> <br />
+</div>
+<br />
 <br />
 
 <style>
@@ -192,7 +374,8 @@
         color: #1b9aaa;
     }
 
-    a, a strong {
+    a,
+    a strong {
         color: #ff3e00;
     }
 </style>
