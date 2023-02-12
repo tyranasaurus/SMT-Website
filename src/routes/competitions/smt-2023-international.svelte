@@ -89,7 +89,7 @@
 <svelte:window bind:innerWidth={windowWidth} />
 
 <PageHeader
-    title="Stanford Math Tournament Online"
+    title="Stanford Math Tournament International"
     description="This page is still under construction, please check back later!"
     button_url="https://contestdojo.com"
     button_text="Register for Competition!"
