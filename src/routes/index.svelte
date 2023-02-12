@@ -52,24 +52,15 @@
 <div class="outside" style="height: 100vh;">
     <div class="header flex">
         <div class="minidiv">
-            {#if windowWidth > 700}
-                <Heading
-                    className="glow"
-                    text="Stanford Math Tournament"
-                    align="left"
-                    textColor="black"
-                    size="6"
-                    marginLeft="0"
-                    padding="0"
-                />
-            {:else}
-                <Heading
-                    className="glow"
-                    text="SMT"
-                    textColor="black"
-                    size="5"
-                />
-            {/if}
+            <Heading
+                className="glow"
+                text="Stanford Math Tournament"
+                align="left"
+                textColor="black"
+                size={windowWidth > 700 ? 7 : 3}
+                marginLeft="0"
+                padding="0"
+            />
             <p class="descript">
                 The Stanford Math Tournament (SMT) is a high school math
                 tournament run by students at Stanford University. We are
@@ -99,11 +90,10 @@
 </div>
 <div
     bind:this={infoElem}
-    class="outside"
-    style="height: 90vh; padding-left: 10vh"
+    style="padding-bottom: 150px; padding-top:150px; padding-left: 40px"
 >
-    <div class="header flex">
-        <div class="minidiv" style="width: 400vh">
+    <div class="mobile-flex">
+        <div style="margin-right: 50px;" class="infodiv">
             <Heading
                 className="glow"
                 text="Math Tournament?"
@@ -112,12 +102,14 @@
                 size="3"
                 marginLeft="0"
                 padding="0"
+                style="display: inline;"
             />
-            <p class="descript">
-                The Stanford Math Tournament (SMT) is a high school math
-                tournament run by students at Stanford University. We are
-                passionate about providing a high quality and challenging event
-                to students interested in mathematics globally.
+            <p class="other-text">
+                Stanford Math Tournament is run entirely by Stanford students.
+                We are one of the largest math competitions in the country with
+                1200 participants in 2022. We are proudly supported by the
+                Stanford Undergraduate Mathematics Organization (SUMO) and the
+                Stanford Department of Mathematics.
             </p>
             <Heading
                 className="glow"
@@ -127,13 +119,9 @@
                 size="3"
                 marginLeft="0"
                 padding="0"
+                style="display: inline;"
             />
-            <p class="descript">
-                The Stanford Math Tournament (SMT) is a high school math
-                tournament run by students at Stanford University. We are
-                passionate about providing a high quality and challenging event
-                to students interested in mathematics globally.
-            </p>
+            <p class="other-text">SMT 2023 will be held April 8th, 2023.</p>
             <a
                 sveltekit:prefetch
                 href="/competitions/smt-2023"
@@ -153,21 +141,31 @@
             <br />
             <!--<button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Sign Up for our Newsletter</button>-->
         </div>
-        <div class="minidiv" style="margin-left: -30vh">
-            <img src="/sampleproblem.png" alt="sample problem" />
-            <a sveltekit:prefetch href="/resources" class="headerButton">
-                <div
+        <div style="margin-right: 30px; flex-direction: column">
+            <img
+                src="/sample-problem.png"
+                alt="sample problem"
+                width="100%"
+                style="border: 1px solid var(--black-border); border-radius: 4px"
+            />
+            <div style="margin-top: 10px;">
+                <a
+                    sveltekit:prefetch
+                    href="/archive/problems"
                     class="headerButton"
-                    on:mouseenter={toggleBackground}
-                    on:mouseleave={toggleBackground}
                 >
-                    <p class="headerButton" id="signupforssmt">
-                        See More Past Problems
-                    </p>
-                    <i class="fa fa-caret-right" aria-hidden="true" />
-                </div>
-            </a>
-            <br />
+                    <div
+                        class="headerButton"
+                        on:mouseenter={toggleBackground}
+                        on:mouseleave={toggleBackground}
+                    >
+                        <p class="headerButton" id="signupforssmt">
+                            See More Past Problems
+                        </p>
+                        <i class="fa fa-caret-right" aria-hidden="true" />
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -198,6 +196,12 @@
         color: black;
     }
 
+    .other-text {
+        font-weight: 300;
+        font-size: 22px;
+        color: black;
+    }
+
     div.headerButton,
     .scroll-notification {
         display: flex;
@@ -209,6 +213,15 @@
         align-items: center;
         width: 300px;
         flex-grow: 0;
+    }
+
+    .mobile-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .infodiv {
+        max-width: 50%;
     }
 
     @media (max-width: 700px) {
@@ -228,6 +241,15 @@
         div.headerButton {
             margin: auto;
             width: 80%;
+        }
+
+        .mobile-flex {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .infodiv {
+            max-width: unset;
         }
     }
 

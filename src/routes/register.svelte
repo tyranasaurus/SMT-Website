@@ -3,8 +3,8 @@
 </script>
 
 <PageHeader
-    title="Past Problems"
-    description="This page is still under construction, please check back later!"
+    title="Register for SMT 2023"
+    description=""
     button_url="https://contestdojo.com/"
     button_text="Register on ContestDojo!"
     id="registerOnContestDojo"

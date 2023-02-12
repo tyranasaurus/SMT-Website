@@ -31,7 +31,7 @@
         right: -52px;
         background-color: var(--button-color);
         border: 5px solid white;
-        top: 24px;
+        top: 4px;
         border-radius: 50%;
         z-index: 1;
     }
@@ -43,7 +43,7 @@
         height: 6px;
         background-color: white;
         right: -12px;
-        top: 35px;
+        top: 15px;
         position: absolute;
     }
 

@@ -35,6 +35,8 @@
 	--button-color: #981C1D;
 	--selection-color: #c0abdd;
 
+	--black-border: #111111;
+
 }
 
 ::-moz-selection {

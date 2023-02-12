@@ -23,13 +23,13 @@
     const TITLE_BREAKPOINT = MOBILE + 350;
 
     const navPages = [
-        {
+        /*{
             path: "/register",
             text: "Register",
             hasSubPages: false,
-        },
+        },*/
         {
-            path: "/competitions",
+            path: "/competitions/smt-2023",
             text: "SMT 2023",
             hasSubPages: true,
             subPages: [
@@ -39,8 +39,9 @@
                     text: "SMT 2023 Online",
                 },
             ],
+            alignLeft: true,
         },
-        { path: "/our-team", text: "Our Team", hasSubPages: false },
+        /*{ path: "/our-team", text: "Our Team", hasSubPages: false },
         {
             path: "/archive",
             text: "Archive",
@@ -51,7 +52,7 @@
                 { path: "/archive/results", text: "Past Results" },
             ],
             alignLeft: true,
-        },
+        },*/
     ];
     const show = [0, 0];
 </script>
@@ -78,7 +79,7 @@
         style="text-align: left; position: absolute; top: 0; left: 0;padding: 0;font-weight: bold; text-decoration: none;"
     >
         <a style="text-decoration: none;" sveltekit:prefetch href="/">
-            <img src="/favicon.png" alt="mustang math logo" />
+            <img src="/favicon.png" alt="stanford math tournament logo" />
             <h1 style="font-size: 24px;">
                 {#if windowWidth > TITLE_BREAKPOINT}
                     Stanford Math Tournament

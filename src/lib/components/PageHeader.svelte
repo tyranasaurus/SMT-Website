@@ -1,6 +1,7 @@
 <script>
     export let title;
     export let description;
+    export let noButton = false;
     export let button_url;
     export let button_text;
     export let button_id = "";
@@ -26,9 +27,11 @@
     });
 
     let y;
+    let windowWidth = 0;
 </script>
 
-<svelte:window bind:scrollY={y} />
+<svelte:window bind:scrollY={y} bind:innerWidth={windowWidth} />
+
 <div class="header flex" style="height: {height}vh;">
     {#if visible}
         <div class="minidiv">
@@ -37,27 +40,29 @@
                 text={title}
                 align="left"
                 textColor="black"
-                size={titleSize}
+                size={windowWidth > 700 ? titleSize : titleSize - 2}
                 marginLeft="0"
                 padding="0"
             />
             <p class="descript">
                 {description}
             </p>
-            <div class="flex">
-                <div class="topbuttons">
-                    <Link
-                        url={button_url}
-                        {target}
-                        className="registrationButton"
-                        text={button_text}
-                        textColor="white"
-                        visitedColor="white"
-                        id={button_id}
-                        button_id={button_text}
-                    />
+            {#if !noButton}
+                <div class="flex">
+                    <div class="topbuttons">
+                        <Link
+                            url={button_url}
+                            {target}
+                            className="registrationButton"
+                            text={button_text}
+                            textColor="white"
+                            visitedColor="white"
+                            id={button_id}
+                            button_id={button_text}
+                        />
+                    </div>
                 </div>
-            </div>
+            {/if}
             {#if button2_url}
                 <div class="flex">
                     <div class="topbuttons">

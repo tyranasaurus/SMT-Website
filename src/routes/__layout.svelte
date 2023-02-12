@@ -16,6 +16,7 @@
         <Newsletter {show} />
     </main>
 
+    <!-- hide footer because we don't have socials? TODO: add socials -->
     {#if $page.url.pathname !== "/"}
         <footer>
             <div class="socials">

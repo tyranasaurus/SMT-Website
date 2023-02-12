@@ -12,8 +12,11 @@
     export let tableStyle = "";
     export let headerStyle = "";
     export let tableRowStyle = "";
+    export let overallHeader = "";
 
     let windowWidth;
+
+    let columnCount = Object.values(Object.values(data)[0])[0]?.length;
 
     if (windowWidth < 800) {
         textSize = 1.6;
@@ -23,6 +26,15 @@
 <svelte:window bind:innerWidth={windowWidth} />
 
 <table style="width: {width}; {tableStyle}">
+    {#if overallHeader}
+        <tr>
+            <th
+                colspan={columnCount}
+                style="background-color: {headerColor}; font-size: {headerSize}em; {tableRowStyle}"
+                >{overallHeader}</th
+            >
+        </tr>
+    {/if}
     {#if includeHeader}
         <tr
             style="background-color: {headerColor}; font-size: {headerSize}em; {tableRowStyle}"
