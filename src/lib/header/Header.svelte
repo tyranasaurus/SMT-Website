@@ -38,21 +38,20 @@
                     path: "/competitions/smt-2023-online",
                     text: "SMT 2023 Online",
                 },
+                {
+                    path: "/competitions/smt-2023-international",
+                    text: "SMT 2023 International",
+                },
             ],
+        },
+        /*{ path: "/our-team", text: "Our Team", hasSubPages: false },*/
+        { path: "/rules", text: "Rules", hasSubPages: false },
+        {
+            path: "/archive/problems",
+            text: "Archive",
+            hasSubPages: false,
             alignLeft: true,
         },
-        /*{ path: "/our-team", text: "Our Team", hasSubPages: false },
-        {
-            path: "/archive",
-            text: "Archive",
-            hasSubPages: true,
-            index: 0,
-            subPages: [
-                { path: "/archive/problems", text: "Past Problems" },
-                { path: "/archive/results", text: "Past Results" },
-            ],
-            alignLeft: true,
-        },*/
     ];
     const show = [0, 0];
 </script>
@@ -79,7 +78,10 @@
         style="text-align: left; position: absolute; top: 0; left: 0;padding: 0;font-weight: bold; text-decoration: none;"
     >
         <a style="text-decoration: none;" sveltekit:prefetch href="/">
-            <img src="/favicon.png" alt="stanford math tournament logo" />
+            <img
+                src="/smt-logo-white.png"
+                alt="stanford math tournament logo"
+            />
             <h1 style="font-size: 24px;">
                 {#if windowWidth > TITLE_BREAKPOINT}
                     Stanford Math Tournament
@@ -238,9 +240,9 @@
     }
 
     img {
-        width: 2.5em;
-        height: 2.5em;
+        height: 2em;
         top: 0;
+        margin-right: 10px;
     }
 
     .navbar a {

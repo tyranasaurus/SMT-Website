@@ -4,6 +4,8 @@
     import { fly } from "svelte/transition";
     import { onMount } from "svelte";
     import Header from "$lib/header/Header.svelte";
+    import HeaderButton from "$lib/components/HeaderButton.svelte";
+    import PageHeader from "$lib/components/PageHeader.svelte";
 
     // need to do this to make the animation play on page load
     let visible = false;
@@ -33,8 +35,10 @@
     $: learnMoreIsVisible = scrollOpacity > 0;
 
     let infoElem;
-    function scrollToInfo() {
-        infoElem.scrollIntoView({
+    let tournElem;
+
+    function scrollToElem(e) {
+        e.scrollIntoView({
             behavior: "smooth",
         });
     }
@@ -50,7 +54,7 @@
     <title>Stanford Math Tournament</title>
 </svelte:head>
 
-<div class="outside" style="height: 100vh;">
+<div class="outside" style="height: calc(max(600px, 100vh));">
     <div class="header flex">
         <div class="minidiv">
             <Heading
@@ -68,22 +72,12 @@
                 passionate about providing a high quality and challenging event
                 to students interested in mathematics globally.
             </p>
-            <a
-                sveltekit:prefetch
-                href="/competitions/smt-2023"
-                class="headerButton"
-            >
-                <div
-                    class="headerButton"
-                    on:mouseenter={toggleBackground}
-                    on:mouseleave={toggleBackground}
-                >
-                    <p class="headerButton" id="signupforsmt">
-                        Register for SMT 2023!
-                    </p>
-                    <i class="fa fa-caret-right" aria-hidden="true" />
-                </div>
-            </a>
+            <HeaderButton
+                text="Register for SMT 2023!"
+                arrowDirection="down"
+                onClick={() => scrollToElem(tournElem)}
+                isLink={false}
+            />
             <br />
             <!--<button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Sign Up for our Newsletter</button>-->
         </div>
@@ -123,22 +117,12 @@
                 style="display: inline;"
             />
             <p class="other-text">SMT 2023 will be held April 8th, 2023.</p>
-            <a
-                sveltekit:prefetch
-                href="/competitions/smt-2023"
-                class="headerButton"
-            >
-                <div
-                    class="headerButton"
-                    on:mouseenter={toggleBackground}
-                    on:mouseleave={toggleBackground}
-                >
-                    <p class="headerButton" id="signupforsmt">
-                        Register for SMT 2023!
-                    </p>
-                    <i class="fa fa-caret-right" aria-hidden="true" />
-                </div>
-            </a>
+            <HeaderButton
+                text="Register for SMT 2023!"
+                arrowDirection="down"
+                onClick={() => scrollToElem(tournElem)}
+                isLink={false}
+            />
             <br />
             <!--<button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Sign Up for our Newsletter</button>-->
         </div>
@@ -149,28 +133,19 @@
                 width="100%"
                 style="border: 1px solid var(--black-border); border-radius: 4px"
             />
-            <div style="margin-top: 10px;">
-                <a
-                    sveltekit:prefetch
+            <div style="margin-top: 10px; margin-left: 10px;">
+                <HeaderButton
                     href="/archive/problems"
-                    class="headerButton"
-                >
-                    <div
-                        class="headerButton"
-                        on:mouseenter={toggleBackground}
-                        on:mouseleave={toggleBackground}
-                    >
-                        <p class="headerButton" id="signupforssmt">
-                            See More Past Problems
-                        </p>
-                        <i class="fa fa-caret-right" aria-hidden="true" />
-                    </div>
-                </a>
+                    text="See More Past Problems"
+                />
             </div>
         </div>
     </div>
 </div>
-<div style="padding-bottom: 150px; margin-left: 40px">
+<div
+    bind:this={tournElem}
+    style="padding-bottom: 150px; margin-left: 40px; padding-top: 20px;"
+>
     <Heading
         className="glow"
         text="Tournaments"
@@ -184,66 +159,36 @@
     <div class="mobile-flex" style="width: 100%">
         <div class="flex-item border-right tournament">
             <h2>SMT</h2>
-            <p>Stuff about SMT goes here</p>
+            <p>The in-person competition</p>
             <div style="margin-top: 10px;">
-                <a
-                    sveltekit:prefetch
+                <HeaderButton
                     href="/competitions/smt-2023"
-                    class="smallerButton"
-                >
-                    <div
-                        class="smallerButton"
-                        on:mouseenter={toggleBackground}
-                        on:mouseleave={toggleBackground}
-                    >
-                        <p class="smallerButton" id="signupforssmt">
-                            Go to SMT 2023
-                        </p>
-                        <i class="fa fa-caret-right" aria-hidden="true" />
-                    </div>
-                </a>
+                    text="Go to SMT 2023"
+                    isSmall={true}
+                />
             </div>
         </div>
         <div class="flex-item border-right tournament">
             <h2>SMT International</h2>
+            <p>The international competition</p>
             <div style="margin-top: 10px;">
-                <a
-                    sveltekit:prefetch
+                <HeaderButton
                     href="/competitions/smt-2023-international"
-                    class="smallerButton"
-                >
-                    <div
-                        class="smallerButton"
-                        on:mouseenter={toggleBackground}
-                        on:mouseleave={toggleBackground}
-                    >
-                        <p class="smallerButton" id="signupforssmt">
-                            Go to SMT 2023 International
-                        </p>
-                        <i class="fa fa-caret-right" aria-hidden="true" />
-                    </div>
-                </a>
+                    text="Go to SMT 2023 International"
+                    isSmall={true}
+                />
             </div>
         </div>
         <div class="flex-item tournament">
             <h2>SMT Online</h2>
+            <p>The online tournament</p>
+            <p>This has more text to test</p>
             <div style="margin-top: 10px;">
-                <a
-                    sveltekit:prefetch
+                <HeaderButton
                     href="/competitions/smt-2023-online"
-                    class="smallerButton"
-                >
-                    <div
-                        class="smallerButton"
-                        on:mouseenter={toggleBackground}
-                        on:mouseleave={toggleBackground}
-                    >
-                        <p class="smallerButton" id="signupforssmt">
-                            Go to SMT 2023 Online
-                        </p>
-                        <i class="fa fa-caret-right" aria-hidden="true" />
-                    </div>
-                </a>
+                    text="Go to SMT 2023 Online"
+                    isSmall={true}
+                />
             </div>
         </div>
     </div>
@@ -253,7 +198,7 @@
     style="opacity: {scrollOpacity}; display: {learnMoreIsVisible
         ? ''
         : 'none'} "
-    on:click={scrollToInfo}
+    on:click={() => scrollToElem(infoElem)}
 >
     Learn more &nbsp;
     <i class="fa fa-caret-down" style="margin-left: 2px;" />
@@ -281,24 +226,11 @@
         color: black;
     }
 
-    div.headerButton,
     .scroll-notification {
         display: flex;
         background-color: #981c1d;
         border-radius: 10px;
         padding: 10px;
-        color: white;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-        flex-grow: 0;
-    }
-
-    div.smallerButton {
-        display: flex;
-        background-color: #981c1d;
-        border-radius: 5px;
-        padding: 5px;
         color: white;
         justify-content: center;
         align-items: center;
@@ -324,9 +256,10 @@
     }
 
     .tournament {
-        padding-left: 10px;
-        padding-right: 10px;
-        height: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+        min-height: 100%;
     }
 
     @media (max-width: 700px) {
@@ -341,11 +274,6 @@
             width: auto;
             font-size: 16px;
             text-align: center;
-        }
-
-        div.headerButton {
-            margin: auto;
-            width: 80%;
         }
 
         .mobile-flex {
@@ -378,24 +306,6 @@
         margin: 20px;
         max-width: 90%;
         text-align: left;
-    }
-
-    p.headerButton,
-    p.smallerButton {
-        color: white;
-        align-self: center;
-        font-size: 1em;
-        margin: 5px;
-        margin-right: 20px;
-    }
-
-    a.headerButton,
-    a.smallerButton {
-        align-items: flex-start;
-    }
-
-    a.headerButton:hover {
-        text-decoration: none;
     }
 
     .scroll-notification {

@@ -32,7 +32,7 @@
 
 <svelte:window bind:scrollY={y} bind:innerWidth={windowWidth} />
 
-<div class="header flex" style="height: {height}vh;">
+<div class="header flex" style="height: {height * 10}px;">
     {#if visible}
         <div class="minidiv">
             <Heading

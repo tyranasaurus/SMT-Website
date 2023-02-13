@@ -1,88 +1,33 @@
 <script>
     import Heading from "$lib/components/Heading.svelte";
-    import Dropdown from "$lib/components/Dropdown.svelte";
     import Link from "$lib/components/Link.svelte";
-    import Button from "$lib/components/Button.svelte";
     import PageHeader from "$lib/components/PageHeader.svelte";
-    import Testimonial from "$lib/components/Testimonial.svelte";
-    import Competition from "$lib/components/Competition.svelte";
     import FlexBox from "$lib/components/FlexBox.svelte";
     import Table from "$lib/components/Table.svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
-    import Image from "$lib/components/Image.svelte";
     import Timeline from "$lib/components/timeline/Timeline.svelte";
     import TimelineElement from "$lib/components/timeline/TimelineElement.svelte";
+    import HeaderButton from "$lib/components/HeaderButton.svelte";
+
     let windowWidth;
     const scheduleData = [
         {
             Time: "8:00 AM-8:30 AM",
             Event: "Opening Ceremony",
-            Location: "LOCATION TBA",
         },
-        ["9 AM-10:20 AM", "Power Round (80 min)", "LOCATION TBA"],
-        ["10:30AM-11:30AM", "Team Round (50 min)", "LOCATION TBA"],
-        ["11:30AM-1PM", "Lunch Break (1.5 hr)", "LOCATION TBA"],
+        ["9 AM-10:20 AM", "Power Round (80 min)"],
+        ["10:30AM-11:30AM", "Team Round (50 min)"],
+        ["11:30AM-1PM", "Lunch Break (1.5 hr)"],
         [
             "1:15PM-3:15PM",
             "Individual Round(s)<br>- 2 x 50 min (subject)<br>- 110 min (general)",
-            "LOCATION TBA",
         ],
-        ["3:30 PM-5:00 PM", "Guts Round (80 min)", "LOCATION TBA"],
-        ["5:30 PM-6:30 PM", "Award Ceremony", "LOCATION TBA"],
+        ["3:30 PM-5:00 PM", "Guts Round (80 min)"],
+        ["5:30 PM-6:30 PM", "Award Ceremony"],
     ];
 
-    const topicsCovered = [
-        {
-            Algebra:
-                "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
-            Combinatorics:
-                "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>",
-            Geometry:
-                "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>",
-            "Number Theory":
-                "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>",
-        },
-    ];
-    const topicsSmall1 = [
-        {
-            Algebra:
-                "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
-            Combinatorics:
-                "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>",
-        },
-    ];
-    const topicsSmall2 = [
-        {
-            Geometry:
-                "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>",
-            "Number Theory":
-                "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>",
-        },
-    ];
-    const topicsAlgebra = [
-        {
-            Algebra:
-                "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
-        },
-    ];
-    const topicsCombo = [
-        {
-            Combinatorics:
-                "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>",
-        },
-    ];
-    const topicsGeo = [
-        {
-            Geometry:
-                "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>",
-        },
-    ];
-    const topicsNT = [
-        {
-            "Number Theory":
-                "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>",
-        },
-    ];
+    const formLink =
+        "https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link";
 </script>
 
 <svelte:head>
@@ -91,31 +36,26 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader
-    title="Stanford Math Tournament"
-    description="April 8, 2023: 8:00 AM - 6:30 PM PT"
-    button_url="https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link"
-    button_text="Register for Competition!"
-    button_id="registerGoogleForm"
-    target="_blank"
-/>
-
 <br />
 
 <br id="registrationInfo" />
+<Heading text="Stanford Math Tournament" size={6} textColor="black" />
 <Heading text="Overview" size={2.5} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="padding: 10px;">
             <p>
                 <strong>TEAM SIZE:</strong> 5-6 <br />
-                <strong>LOCATION:</strong> Stanford University, exact location
-                TBA <br />
+                <strong>LOCATION:</strong> Stanford University
+                <br />
                 <strong>COST:</strong> $10 per student <br /> <br />
                 <i
-                    ><strong>Note for International Students:</strong> we are unfortunately
-                    unable to invite international students for the 2023 competition.
-                    This may change in future years.
+                    ><strong>Note for International Students:</strong> This page
+                    is for the in-person SMT. If you would like to participate,
+                    please visit <Link
+                        url="/competitions/smt-2023-international"
+                        text="this page."
+                    />
                 </i>
             </p>
         </div>
@@ -123,19 +63,26 @@
 </div>
 <br />
 
-<Heading text="Registration Timeline" size={2.5} />
+<Heading text="Registration Information" size={2.5} />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <div style="padding: 10px;">
+            <p>
+                This registration form is specifically for the in-person
+                competition. If you are looking for SMT Online or International
+                registration, those will be posted on their respective pages.
+            </p>
+            <HeaderButton
+                text="Register for SMT 2023"
+                hasArrow={false}
+                href={formLink}
+                isSmall
+            />
+        </div>
+    </PanelBox>
+</div>
 
-<!--
-Monday February 13, 2023 - Regular registration opens on Google Forms
-https://docs.google.com/forms/d/1Ly8MopxSsMgsT1ZYyZ9s5c-iCiOyEUq5H1DmSB90iUc/edit
-Tuesday March 7, 2023 - Regular Registration deadline on Google Forms
-Friday March 10, 2023 - Announcement of teams selected for in-person competition
-Friday March 17th, 2023 - Deadline for selected teams to register on Eventbrite
-Tuesday, March 21st, 2023 - Deadline for payments on Eventbrite and proof of transportation
-Tuesday, March 28th, 2023 - Deadline for late payments on Eventbrite
-Tuesday, March 28th, 2023 - Deadline for student registration and waivers 
-Saturday April 8, 2023 - SMT tournament day
--->
+<Heading text="Registration Timeline" size={2.5} />
 
 <Timeline width="60%">
     <TimelineElement>
@@ -290,14 +237,3 @@ Saturday April 8, 2023 - SMT tournament day
         A: Yes! Feel free to use these problems provided you cite us.<br />
     </PanelBox>
 </div>
-
-<br />
-
-<br /><br />
-
-<style>
-    li {
-        list-style-type: disc;
-        margin-left: 20px;
-    }
-</style>
