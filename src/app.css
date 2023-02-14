@@ -1,29 +1,52 @@
 @import '@fontsource/fira-mono';
 
 :root {
-	font-family: "Ubuntu", "Roboto", Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+	font-family: "Quattrocento", "Roboto", Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Quattrocento,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
-	--primary-color: #b9c6d2;
-	--secondary-color: #d0dde9;
-	--tertiary-color: #edf0f8;
-	--bold-color: #1b9aaa;
+	--primary-color: #e5d1d1;
+	--secondary-color: #ebdbdb;
+	--tertiary-color: #f8eded;
+	--heading-color: #651010;
+	--bold-color: #aa1b1b;
 	--accent-color: #ff3e00;
 	--paragraph-color: rgba(3, 2, 2, 0.7);
 	--text-color: #444444;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
+
+	--hover-color: #fff6f5;
+	--text-hover-color: #ff9896;
+
+	--background-white: #fffbf0;
+	--background-extra-light: #f0c5c5;
+	--background-light: #e46b6b;
+	--background-medium: #b73a3a;
+	--background-less-dark: #a72222;
+	--background-dark: #981C1D;
+	--background-extra-dark: #7f0304;
+
+	/* table colors */
+	--table-header-color: #f36c6c;
+	--table-color-1: #ffbcbc;
+	--table-color-2: #facbcb;
+
+	--button-color: #981C1D;
+	--selection-color: #c0abdd;
+
+	--black-border: #111111;
+
 }
 
 ::-moz-selection {
-	background-color: #abddbc;
+	background-color: var(--selection-color);
 	color: black;
 }
 
 ::selection {
-	background-color: #abddbc;
+	background-color: var(--selection-color);
 	color: black;
 }
 
@@ -59,7 +82,6 @@ body::before {
 }
 
 h1,
-h2,
 p {
 	font-weight: 400;
 	color: var(--paragraph-color);
@@ -86,10 +108,6 @@ a:hover {
 h1 {
 	font-size: 2rem;
 	text-align: center;
-}
-
-h2 {
-	font-size: 1rem;
 }
 
 pre {
@@ -136,7 +154,7 @@ button:focus:not(:focus-visible) {
 }
 
 .topbuttons {
-	background-color: #65c083;
+	background-color: var(--button-color);
 	border-radius: 50px;
 	padding: 10px 20px;
 	margin: 5px;
@@ -146,7 +164,7 @@ button:focus:not(:focus-visible) {
 }
 
 .compbuttons {
-	background-color: #10744c;
+	background-color: var(--button-color);
 	border-radius: 50px;
 	padding: 10px 20px;
 	margin: 5px;
@@ -173,16 +191,16 @@ button:focus:not(:focus-visible) {
 
 .sign-up {
 	margin-bottom: 5px;
-	border: 2px solid lightgreen;
+	border: 2px solid rgb(255, 255, 255, 0.7);
 	border-radius: 10px;
 	background-color: transparent;
 	outline: none;
 	padding: 10px 20px;
 	font-size: 15px;
 	cursor: pointer;
-	color: rgb(255, 255, 255, 0.6);
+	color: rgb(255, 255, 255, 0.7);
 }
 
 .sign-up:hover {
-	background-color: rgb(68, 162, 77);
+	background-color: var(--background-extra-dark);
 }
