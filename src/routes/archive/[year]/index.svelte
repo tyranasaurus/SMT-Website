@@ -34,6 +34,28 @@
                 "Power",
             ],
             tb2022: ["Algebra-Tiebreaker", "Calculus-Tiebreaker", "Discrete-Tiebreaker", "Geometry-Tiebreaker", "General-Tiebreaker"],
+            tests2021: [
+                "Team",
+                "Algebra",
+                "Combo",
+                "NT",
+                "Geometry",
+                "General",
+                "Guts",
+                "Power",
+            ],
+            tb2021: ["Algebra-Tiebreaker", "Combo-Tiebreaker", "NT-Tiebreaker", "Geometry-Tiebreaker", "General-Tiebreaker"],
+            tests2020: [
+                "Team",
+                "Algebra",
+                "Calculus",
+                "Discrete",
+                "Geometry",
+                "General",
+                "Guts",
+                "Power",
+            ],
+            tb2020: ["Algebra-Tiebreaker", "Calculus-Tiebreaker", "Discrete-Tiebreaker", "Geometry-Tiebreaker", "General-Tiebreaker"],
             // arpit: continue filling it out in this format
         };
 
