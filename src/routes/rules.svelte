@@ -4,6 +4,7 @@
     import Link from "$lib/components/Link.svelte";
     import Button from "$lib/components/Button.svelte";
     import PageHeader from "$lib/components/PageHeader.svelte";
+    import HeaderButton from "$lib/components/HeaderButton.svelte";
     import Testimonial from "$lib/components/Testimonial.svelte";
     import Competition from "$lib/components/Competition.svelte";
     import FlexBox from "$lib/components/FlexBox.svelte";
@@ -87,425 +88,146 @@
 </svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
-
-<PageHeader
-    title="Rules"
-    description="This page is still under construction, please check back later!"
-    button_url="https://contestdojo.com"
-    button_text="Register for Competition!"
-    button_id="registerOnContestDojo"
-    target="_blank"
-    noButton
-/>
-
-<br />
-
-<!--
-
-<br id="registrationInfo" />
-<Heading text="Overview" />
-<div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
-        <div style="padding: 10px;">
-            <p>
-                <strong>TEAM SIZE:</strong> 3-4* <br />
-                <strong>LOCATION:</strong> Online<br />
-                <strong>EARLY HORSE COST:</strong> $10 per participant (Register
-                before
-                <strong>March 14th, 2023</strong>
-                to receive the early horse price!)<br />
-                <strong>NORMAL COST:</strong> $15 per participant (Register
-                before
-                <strong>April 22nd, 2023</strong>
-                to participate)<br /> <br />
-                <a
-                    href="https://docs.google.com/document/d/1FRL4DLS2RVbbMRKe2r0t7K2Rhjabwr45TdgM0ISDKnQ/edit?usp=sharing"
-                    target="_blank"
-                    ><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong
-                    ></a
-                >
-                <br /><br />
-                <i
-                    ><strong>*:</strong> Incomplete teams of 1-2 may be merged with
-                    other teams to make a full team of 3-4</i
-                ><br /><br />
-                <i
-                    ><strong>Note for International Students:</strong> Students
-                    not in Canada or the United States should participate in the
-                    international version of our tournament being run by SIMCC.
-                    Email us at
-                    <a href="mailto:tournament@mustangmath.com"
-                        >tournament@mustangmath.com</a
-                    > if you're interested.</i
-                ><br /><br />
-                <i
-                    ><strong
-                        >Note for Students in Washington or California:</strong
-                    >
-                    Students living within 50 miles of our in-person sites
-                    <strong>must</strong>
-                    participate in person. If you have an extenuating circumstance
-                    that would prevent this please send an email to
-                    <a href="mailto:tournament@mustangmath.com"
-                        >tournament@mustangmath.com</a
-                    >, and we'll grant you permission to participate online.</i
-                >
-            </p>
-        </div>
-    </PanelBox>
-</div>
-<br />
-
-<Heading text="Schedule" size={2.5} />
-<div class="schedule-wrapper">
-    <FlexBox>
-        <PanelBox>
-            <Table
-                data={scheduleData}
-                width="auto"
-                cellPadding={5}
-                cellPaddingRight={20}
-                tableStyle="margin-left: auto; margin-right: auto"
+<div class="outside" style="height: calc(max(600px, 100vh));">
+    <div class="header flex">
+        <div class="minidiv">
+            <Heading
+                className="glow"
+                text="Rules"
+                align="left"
+                textColor="black"
+                size={windowWidth > 700 ? 7 : 3}
+                marginLeft="0"
+                padding="0"
             />
-            <p style="margin-top: 2px; margin-bottom: 0px;">
-                *Schedule subject to change. Note that there is built-in buffer
-                time to explain instructions and assist with technical
-                difficulties.*
+            <p class="descript">
+                This page is still under construction, please come back later, or check out past rules below!
             </p>
-        </PanelBox>
-    </FlexBox>
-</div>
-<br />
-
-<Heading text="Awards" size={2.5} />
-<div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">
-            Medals will be given to (at minimum) the members of the top 3 teams
-            of each division, along with certificates of participation to all
-            students and certificates of achievement to high-scoring teams. A
-            wide variety of other prizes are available for top scoring teams,
-            winners of activities, and a raffle including prizes from Wolfram,
-            AoPS, and more!
-        </p>
-    </PanelBox>
-</div>
-<br />
-
-<Heading text="Rules" size={2.5} />
-<Dropdown mainText="General Rules" id="showDropdown">
-    <ol>
-        <li>
-            No cheating - This contest has a zero-tolerance cheating policy. Any
-            evidence of cheating may lead to immediate disqualification, or any
-            other punishment deemed appropriate by competition staff.
-        </li>
-        <li>
-            No calculators, rulers, compasses, protractors, or other aids are
-            permitted.
-        </li>
-        <li>
-            You may not use the Internet as a resource at any point during a
-            test.
-        </li>
-        <ol type="a">
-            <li>
-                In order to help enforce this, we may require individuals to
-                provide a solution for a problem during the competition - so
-                keep track of your work!
-            </li>
-        </ol>
-        <li>
-            All communication will take place through the Discord platform.
-            <ol type="a">
-                Scores, important information, documents, etc. will only be
-                communicated through this platform on the day of the contest.
-            </ol>
-            <ol type="a">
-                All teams should be communicating with each other on this
-                platform ONLY.
-            </ol>
-            <ol type="a">
-                <strong
-                    >Students under 13 years of age should use a parent-created
-                    and monitored Discord account.</strong
-                >
-            </ol>
-        </li>
-        <li>
-            The team divisions are determined by the highest grade level amongst
-            the team members. Teams with 1 or more 8th graders will be in the <strong
-                >Stallion</strong
-            >
-            division, teams with 7th graders and below will be in the
-            <strong>Colt</strong>
-            division, and teams with 6th graders and below will be in the
-            <strong>Foal</strong>
-            division. Teams may <em>choose</em> to compete in a higher division,
-            if they&rsquo;d like.
-        </li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="Answer Formatting Rules" id="showDropdown">
-    <ol>
-        <li>
-            Carry out any reasonable calculations. For instance, you should
-            evaluate any expressions which will take negligible time to evaluate
-            (such as 1/2+1/3). You don't have to carry out unreasonable
-            calculations, including large powers (e.g. 7<sup>8</sup>), large
-            factorials, large products, and trigonometric functions which cannot
-            be expressed in terms of radicals.
-        </li>
-        <li>
-            Write rational numbers in lowest terms. Decimals are also
-            acceptable, provided they are exact.
-        </li>
-        <li>
-            Move all square factors outside radicals. For example, write 3√7
-            instead of √63.
-        </li>
-        <li>
-            Denominators need to be rationalized. For example, write 1/√2 as
-            √2/2 instead.
-        </li>
-        <li>Do not express an answer using a repeated sum or product.</li>
-        <li>
-            Here are some examples of simplified answers, and examples of
-            unsimplified answers with simplified equivalents:
-            <div style="margin-top: 5px">
-                <Image
-                    url="../mmt-2022/acceptable-answers.png"
-                    alt="Acceptable answer examples"
-                />
-            </div>
-            <div style="margin-top: 5px">
-                <Image
-                    url="../mmt-2022/unacceptable-answers.png"
-                    alt="Unacceptable answer examples"
-                />
-            </div>
-        </li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="Potential Topics Covered" id="showDropdown">
-    <p id="disclaimer">
-        Disclaimer: While most problems should fall within the scope of these
-        topics, there may be a few that are not.
-    </p>
-    {#if windowWidth > 1000}
-        <Table
-            data={topicsCovered}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 1200}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 1500}em;"
-        />
-    {:else if windowWidth > 800}
-        <Table
-            data={topicsSmall1}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 800}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 800}em;"
-        />
-        <Table
-            data={topicsSmall2}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 800}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 800}em;"
-        />
-    {:else}
-        <Table
-            data={topicsAlgebra}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 500}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 500}em;"
-        />
-        <Table
-            data={topicsCombo}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 500}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 500}em;"
-        />
-        <Table
-            data={topicsGeo}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 500}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 500}em;"
-        />
-        <Table
-            data={topicsNT}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 500}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 500}em;"
-        />
-    {/if}
-</Dropdown>
-<Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)" id="showDropdown">
-    <ol>
-        <li>
-            The Mounting Mayhem Round will consist of a series of progressively
-            harder logic puzzles. Students will have 15 minutes to learn the
-            rules and basic strategy of the puzzles, then 60 minutes to solve as
-            many of them as possible.
-        </li>
-        <li>
-            Puzzles often require out-of-the-box thinking although all topics
-            can readily be understood and grasped by middle schoolers.
-        </li>
-        <li>
-            Harder puzzles will be worth more points, but these puzzles will be
-            longer and/or require more creativity — you must decide what
-            problems to focus your time on to optimize your team score.
-        </li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="ROUND 2: Herding Hexes" id="showDropdown">
-    <ol>
-        <li>
-            The “Herding Hexes” Round will consist of 25-30 questions to be
-            solved in 60 minutes.
-        </li>
-        <li>
-            The questions will be laid out on a grid of connected hexagons, with
-            more difficult problems being located furthest from the center.
-        </li>
-        <li>
-            Your score in the round will be determined by the problems you get
-            correct, with bonus points available for having more correct answers
-            connected within the grid!
-        </li>
-        <li>
-            You are not necessarily expected to solve all the questions in this
-            round within the allotted time. Instead, we encourage you to
-            strategize how you might use your time to maximize your points!
-        </li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="ROUND 3: Mystery Mare" id="showDropdown">
-    <ol>
-        <li>
-            The Mystery Mare round is exactly that — a mystery! The rules of the
-            round will be revealed on competition day.
-        </li>
-        <li>
-            Hints about the nature of the round may be revealed as the
-            competition date nears.
-        </li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="ROUND 4: Gallop" id="showDropdown">
-    <ol>
-        <li>
-            The Gallop Round will consist of 24 questions to be solved in 60
-            minutes.
-        </li>
-        <li>
-            The questions will be divided into 8 sets of 3 questions each, and
-            you <strong>must submit the answers to one set</strong> before accessing
-            the problems for the next. This means you must strategize when to submit
-            each set (incomplete or not) to ensure you get access to as many questions
-            as possible.
-        </li>
-        <li>
-            The problems will get progressively more difficult, and later
-            problems will be worth more points.
-        </li>
-        <li>
-            Submissions will be scored immediately and a live score of all
-            participating teams will be available during the competition.
-            Prepare for the adrenaline rush!
-        </li>
-    </ol>
-</Dropdown>
-<br />
-<Heading text="Testimonials" size={2.5} />
-<div class="grid-three" style="margin-left: 10vw; margin-right: 10vw;">
-    <div>
-        <Testimonial
-            testimonial="MMT has a unique take on standard math competitions"
-            title="2022 Participant"
-        />
-        <Testimonial
-            testimonial="MMT focused less on calculations than other math competitions"
-            title="2022 Participant"
-        />
-        <Testimonial
-            testimonial="I think this was a very nice way to spend my day."
-            title="2021 Participant"
-        />
-    </div>
-
-    <div>
-        <Testimonial
-            testimonial="MMT's style of problems are much better than other tournaments. Unlike other tournaments that has the same style over the years, MMT has new and exciting styles of problems that makes it more fun to try and solve it on the spot"
-            title="2022 Participant"
-        />
-        <Testimonial
-            testimonial="MMT had people captivated even before the tournament started with their Discord server and problems of the day"
-            title="2022 Participant"
-        />
-    </div>
-
-    <div>
-        <Testimonial
-            testimonial="I really appreciate all that MMT has done and I look forward to the competition that is held next year! I must say that the MMT was an impressive execution of math competitions unlike anything I've seen before!"
-            title="2022 Participant"
-        />
-        <Testimonial
-            testimonial="My favorite memory from MMT was the teamwork - both chaotically and organizedly working with each other to solve the problems"
-            title="2022 Participant"
-        />
+            <HeaderButton
+                text="Past Rules Information"
+                arrowDirection="right"
+                onClick={() => open("https://sumo.stanford.edu/smt")}
+                isLink={true}
+            />
+        </div>
     </div>
 </div>
+
 <br />
 
-<br /><br />
-
--->
 <style>
-    li {
-        list-style-type: disc;
-        margin-left: 20px;
+    .outside {
+        background-color: var(--background-white);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .descript {
+        width: 70%;
+        font-weight: 300;
+        font-size: 22px;
+        color: black;
+    }
+
+    .other-text {
+        font-weight: 300;
+        font-size: 22px;
+        color: black;
+    }
+
+    .scroll-notification {
+        display: flex;
+        background-color: #981c1d;
+        border-radius: 10px;
+        padding: 10px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        flex-grow: 0;
+    }
+
+    .mobile-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .infodiv {
+        max-width: 50%;
+    }
+
+    .flex-item {
+        width: 100%;
+    }
+
+    .border-right {
+        border-right: 1px solid var(--black-border);
+    }
+
+    .tournament {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+        min-height: 100%;
+    }
+
+    @media (max-width: 700px) {
+        .outside {
+            background-color: var(--background-white);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .descript {
+            width: auto;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .mobile-flex {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .infodiv {
+            max-width: unset;
+        }
+    }
+
+    .header {
+        text-align: center;
+        position: relative;
+        height: calc(100% - 70px);
+    }
+
+    .svg {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .minidiv {
+        z-index: 9;
+        margin: 20px;
+        max-width: 90%;
+        text-align: left;
+    }
+
+    .scroll-notification {
+        position: fixed;
+        bottom: 5px;
+        z-index: 10;
+        align-self: center;
+        width: 150px;
+        height: 25px;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-bottom: 30px;
     }
 </style>

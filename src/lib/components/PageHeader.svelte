@@ -96,6 +96,11 @@
         width: 100%;
     }
 
+    .topbuttons {
+        align-items: left;
+        justify-content: left;
+    }
+
     .descript {
         width: 70%;
         font-weight: 300;

@@ -33,7 +33,7 @@
                 "Guts",
                 "Power",
             ],
-            tb2022: ["Algebra", "Calculus", "Discrete", "Geometry", "General"],
+            tb2022: ["Algebra-Tiebreaker", "Calculus-Tiebreaker", "Discrete-Tiebreaker", "Geometry-Tiebreaker", "General-Tiebreaker"],
             // arpit: continue filling it out in this format
         };
 

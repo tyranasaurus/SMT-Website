@@ -1,85 +1,28 @@
 <script>
     import Heading from "$lib/components/Heading.svelte";
-    import Dropdown from "$lib/components/Dropdown.svelte";
     import Link from "$lib/components/Link.svelte";
-    import Button from "$lib/components/Button.svelte";
     import PageHeader from "$lib/components/PageHeader.svelte";
-    import Testimonial from "$lib/components/Testimonial.svelte";
-    import Competition from "$lib/components/Competition.svelte";
     import FlexBox from "$lib/components/FlexBox.svelte";
     import Table from "$lib/components/Table.svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
-    import Image from "$lib/components/Image.svelte";
+    import Timeline from "$lib/components/timeline/Timeline.svelte";
+    import TimelineElement from "$lib/components/timeline/TimelineElement.svelte";
+    import HeaderButton from "$lib/components/HeaderButton.svelte";
+
     let windowWidth;
     const scheduleData = [
         {
-            Day: "4/22-4/29",
-            "Start Time (PT)": "All Day",
-            Event: "Problem of the Day",
+            Time: "5:00 AM-5:30 AM",
+            Event: "Opening Ceremony",
         },
-        ["4/29", "8:30 AM-9:00 AM", "Check-in"],
-        ["4/29", "9:00 AM-9:30 AM", "Opening Ceremony & Contest Instructions"],
-        ["4/29", "9:30 AM-10:55 AM", "Mounting Mayhem (75 minutes)"],
-        ["4/29", "10:55 AM-12:05 PM", "Herding Hexes (60 minutes) "],
-        ["4/29", "12:05 PM-1:00 PM", "Lunch Break (55 minutes)"],
-        ["4/29", "1:00 PM-2:10 PM", "Mystery Mare (60 minutes)"],
-        ["4/29", "2:10 PM-3:20 PM", "Gallop (60 minutes)"],
-        ["4/29", "3:20 PM-4:30 PM", "Optional Activities"],
-        ["4/29", "4:30 PM", "Awards Ceremony"],
+        ["5:30 AM-7:30 AM", "Individual Round(s)"],
+        ["7:30 AM-8:30 AM", "Lunch Break (60 min)"],
+        ["8:30 AM-9:30 AM", "Team Round (50 min)"],
+        ["9:30 AM-11:00 AM", "Guts Round (80 min)"],
     ];
 
-    const topicsCovered = [
-        {
-            Algebra:
-                "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
-            Combinatorics:
-                "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>",
-            Geometry:
-                "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>",
-            "Number Theory":
-                "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>",
-        },
-    ];
-    const topicsSmall1 = [
-        {
-            Algebra:
-                "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
-            Combinatorics:
-                "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>",
-        },
-    ];
-    const topicsSmall2 = [
-        {
-            Geometry:
-                "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>",
-            "Number Theory":
-                "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>",
-        },
-    ];
-    const topicsAlgebra = [
-        {
-            Algebra:
-                "<ul><li>Systems of equations</li> <li>Quadratics</li> <li>Vieta’s</li> <li>Binomial Theorem</li> <li>Radicals/Exponents</li> <li>Simon’s Favorite Factoring Trick</li> <li>Ratios</li> <li>(Infinite) Geometric Series</li> <li>Arithmetic Series</li> <li>Sum/Difference of Powers</li> <li>Rate/Time</li> <li>Floor/Ceiling</li> <li>Absolute Value</li> <li>Substitution (Nested Roots/Repeated Fractions)</li> <li>Mean, Median, Mode, Range</li> <li>Telescoping</li></ul>",
-        },
-    ];
-    const topicsCombo = [
-        {
-            Combinatorics:
-                "<ul><li>Sticks and Stones</li> <li>Permutation/Combination</li> <li>Properties of Inclusion Exclusion for three or less sets</li> <li>Basic Geometric Probability</li> <li>Conditional Probability</li> <li>Expected Values</li> <li>Complementary Counting</li> <li>Recursion</li> <li>Bijections</li> <li>Casework</li> <li>Pigeonhole Principle</li> <li>Double-counting</li> <li>Basic Invariants</li></ul>",
-        },
-    ];
-    const topicsGeo = [
-        {
-            Geometry:
-                "<ul><li>Area Formulas</li> <li>Volume Formulas</li> <li>Shoelace Formula</li> <li>Pythagorean Theorem</li> <li>Distance Formula</li> <li>Similar Triangles</li> <li>Angle Chasing</li> <li>Power of a Point</li> <li>Basic Mass Points</li> <li>Heron’s Formula</li> <li>Pick’s Theorem</li> <li>Surface Area for Pyramids, Prisms, and Cones</li> <li>Arcs and Sectors</li> <li>Angle Bisector Theorem</li> <li>Internal/External Angles</li></ul>",
-        },
-    ];
-    const topicsNT = [
-        {
-            "Number Theory":
-                "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>",
-        },
-    ];
+    const formLink =
+        "https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link";
 </script>
 
 <svelte:head>
@@ -88,75 +31,70 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<PageHeader
-    title="Stanford Math Tournament International"
-    description="This page is still under construction, please check back later!"
-    button_url="https://contestdojo.com"
-    button_text="Register for Competition!"
-    button_id="registerOnContestDojo"
-    target="_blank"
-    noButton
-/>
-
 <br />
 
-<!--
-
 <br id="registrationInfo" />
-<Heading text="Overview" />
+<Heading text="Stanford Math Tournament 2023 International" size={4} textColor="var(--heading-color)"/>
+<Heading text="Overview" size={2.5} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="padding: 10px;">
             <p>
-                <strong>TEAM SIZE:</strong> 3-4* <br />
-                <strong>LOCATION:</strong> Online<br />
-                <strong>EARLY HORSE COST:</strong> $10 per participant (Register
-                before
-                <strong>March 14th, 2023</strong>
-                to receive the early horse price!)<br />
-                <strong>NORMAL COST:</strong> $15 per participant (Register
-                before
-                <strong>April 22nd, 2023</strong>
-                to participate)<br /> <br />
-                <a
-                    href="https://docs.google.com/document/d/1FRL4DLS2RVbbMRKe2r0t7K2Rhjabwr45TdgM0ISDKnQ/edit?usp=sharing"
-                    target="_blank"
-                    ><strong>CLICK HERE FOR REGISTRATION INSTRUCTIONS</strong
-                    ></a
-                >
-                <br /><br />
-                <i
-                    ><strong>*:</strong> Incomplete teams of 1-2 may be merged with
-                    other teams to make a full team of 3-4</i
-                ><br /><br />
-                <i
-                    ><strong>Note for International Students:</strong> Students
-                    not in Canada or the United States should participate in the
-                    international version of our tournament being run by SIMCC.
-                    Email us at
-                    <a href="mailto:tournament@mustangmath.com"
-                        >tournament@mustangmath.com</a
-                    > if you're interested.</i
-                ><br /><br />
-                <i
-                    ><strong
-                        >Note for Students in Washington or California:</strong
-                    >
-                    Students living within 50 miles of our in-person sites
-                    <strong>must</strong>
-                    participate in person. If you have an extenuating circumstance
-                    that would prevent this please send an email to
-                    <a href="mailto:tournament@mustangmath.com"
-                        >tournament@mustangmath.com</a
-                    >, and we'll grant you permission to participate online.</i
-                >
+                <strong>DATE:</strong> 4/16/2023 (UTC) <br />
+                <strong>LOCATION:</strong> Online <br />
+                <strong>WHO:</strong> High School and Middle School students residing outside the United States or Canada <br />
+                <strong>TEAM SIZE:</strong> 5-6 (smaller teams may be combined with others to make full teams) <br />
+                <strong>COST:</strong> $10 early bird registration per student, $15 regular registration, $25 last-minute registration (Financial Aid available on request!) <br /> <br />
             </p>
         </div>
     </PanelBox>
 </div>
 <br />
 
-<Heading text="Schedule" size={2.5} />
+<Heading text="Registration Information" size={2.5} />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <div style="padding: 10px;">
+            <p>Registration for SMT International is not open yet! Please check below for the latest information about when registration will open!</p>
+            <!--
+            <HeaderButton
+                text="Apply for SMT 2023"
+                hasArrow={false}
+                href={formLink}
+                isSmall
+            />
+            -->
+        </div>
+    </PanelBox>
+</div>
+
+<Heading text="Registration Timeline" size={2.5} />
+
+<Timeline width="60%">
+    <TimelineElement>
+        <strong>Monday, February 20, 2023:</strong> SMT International Registration opens
+    </TimelineElement>
+    <TimelineElement>
+        <strong>Wednesday, March 15, 2023 at 11:59 PM PT:</strong> Early Bird ($10/student) registration deadline
+    </TimelineElement>
+    <TimelineElement>
+        <strong>Wednesday, April 5, 2023:</strong> Regular ($15/student) registration deadline
+    </TimelineElement>
+    <TimelineElement>
+        <strong>Saturday, April 8, 2023:</strong> Deadline for student waiver submission.
+    </TimelineElement>
+    <TimelineElement>
+        <strong>Thursday, April 13, 2023:</strong> Late ($25/student) registration deadline
+    </TimelineElement>
+    <TimelineElement>
+        <strong>Sunday, April 16, 2023:</strong> SMT International
+    </TimelineElement>
+    <TimelineElement>
+        <strong>Date TBD:</strong> SMT International Award Ceremony
+    </TimelineElement>
+</Timeline>
+
+<Heading text="Contest Schedule" size={2.5} />
 <div class="schedule-wrapper">
     <FlexBox>
         <PanelBox>
@@ -166,6 +104,7 @@
                 cellPadding={5}
                 cellPaddingRight={20}
                 tableStyle="margin-left: auto; margin-right: auto"
+                overallHeader="Tournament Schedule (5:00 AM-11:00 AM UTC)"
             />
             <p style="margin-top: 2px; margin-bottom: 0px;">
                 *Schedule subject to change. Note that there is built-in buffer
@@ -177,335 +116,92 @@
 </div>
 <br />
 
-<Heading text="Awards" size={2.5} />
+<Heading text="Test Information" size={2.5} />
+
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
-        <p style="font-size: 1.5em; text-align: center;">
-            Medals will be given to (at minimum) the members of the top 3 teams
-            of each division, along with certificates of participation to all
-            students and certificates of achievement to high-scoring teams. A
-            wide variety of other prizes are available for top scoring teams,
-            winners of activities, and a raffle including prizes from Wolfram,
-            AoPS, and more!
+        <p>
+            The <strong>Team Round</strong> is a 50-minute exam consisting of 15
+            short answer questions.
+        </p>
+        <p>
+            The <strong>Guts Round</strong> is an 80 minute team exam consisting
+            of 9 series of 3 questions each, whereby teams must submit answers to
+            a previous round in order to gain access to the next. Subsequent rounds
+            are both harder and worth more points than previous rounds.
+        </p>
+        <p>
+            For the individual portion, students may choose to take two subject
+            tests in a specific topic or take a single, longer General Test.
+        </p>
+        <!--
+        <p>
+            The <strong>Subject Tests</strong> are 50-minute exams consisting of
+            10 short answer questions. The subjects offered are
+            <strong>
+                Algebra, Combinatorics, Number Theory, and Geometry.
+            </strong>
+        </p>
+        
+        <p>
+            The <strong>General Test</strong> is a 110-minute exam consisting of
+            25 short answer questions that is designed for students that have less
+            specialized mathematical background.
+        </p>
+        -->
+        <p>
+            The <strong>Individual Round(s)</strong> are the rounds taken independent of your teams.
         </p>
     </PanelBox>
 </div>
-<br />
 
-<Heading text="Rules" size={2.5} />
-<Dropdown mainText="General Rules" id="showDropdown">
-    <ol>
-        <li>
-            No cheating - This contest has a zero-tolerance cheating policy. Any
-            evidence of cheating may lead to immediate disqualification, or any
-            other punishment deemed appropriate by competition staff.
-        </li>
-        <li>
-            No calculators, rulers, compasses, protractors, or other aids are
-            permitted.
-        </li>
-        <li>
-            You may not use the Internet as a resource at any point during a
-            test.
-        </li>
-        <ol type="a">
-            <li>
-                In order to help enforce this, we may require individuals to
-                provide a solution for a problem during the competition - so
-                keep track of your work!
-            </li>
-        </ol>
-        <li>
-            All communication will take place through the Discord platform.
-            <ol type="a">
-                Scores, important information, documents, etc. will only be
-                communicated through this platform on the day of the contest.
-            </ol>
-            <ol type="a">
-                All teams should be communicating with each other on this
-                platform ONLY.
-            </ol>
-            <ol type="a">
-                <strong
-                    >Students under 13 years of age should use a parent-created
-                    and monitored Discord account.</strong
-                >
-            </ol>
-        </li>
-        <li>
-            The team divisions are determined by the highest grade level amongst
-            the team members. Teams with 1 or more 8th graders will be in the <strong
-                >Stallion</strong
-            >
-            division, teams with 7th graders and below will be in the
-            <strong>Colt</strong>
-            division, and teams with 6th graders and below will be in the
-            <strong>Foal</strong>
-            division. Teams may <em>choose</em> to compete in a higher division,
-            if they&rsquo;d like.
-        </li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="Answer Formatting Rules" id="showDropdown">
-    <ol>
-        <li>
-            Carry out any reasonable calculations. For instance, you should
-            evaluate any expressions which will take negligible time to evaluate
-            (such as 1/2+1/3). You don't have to carry out unreasonable
-            calculations, including large powers (e.g. 7<sup>8</sup>), large
-            factorials, large products, and trigonometric functions which cannot
-            be expressed in terms of radicals.
-        </li>
-        <li>
-            Write rational numbers in lowest terms. Decimals are also
-            acceptable, provided they are exact.
-        </li>
-        <li>
-            Move all square factors outside radicals. For example, write 3√7
-            instead of √63.
-        </li>
-        <li>
-            Denominators need to be rationalized. For example, write 1/√2 as
-            √2/2 instead.
-        </li>
-        <li>Do not express an answer using a repeated sum or product.</li>
-        <li>
-            Here are some examples of simplified answers, and examples of
-            unsimplified answers with simplified equivalents:
-            <div style="margin-top: 5px">
-                <Image
-                    url="../mmt-2022/acceptable-answers.png"
-                    alt="Acceptable answer examples"
-                />
-            </div>
-            <div style="margin-top: 5px">
-                <Image
-                    url="../mmt-2022/unacceptable-answers.png"
-                    alt="Unacceptable answer examples"
-                />
-            </div>
-        </li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="Potential Topics Covered" id="showDropdown">
-    <p id="disclaimer">
-        Disclaimer: While most problems should fall within the scope of these
-        topics, there may be a few that are not.
-    </p>
-    {#if windowWidth > 1000}
-        <Table
-            data={topicsCovered}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 1200}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 1500}em;"
+<Heading text="FAQ" size={2.5} />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        Make sure to check the rules page for detailed information regarding
+        SMT. If your question is not answered below, feel free to contact the
+        SMT coordinators at <a href="mailto:stanford.math.tournament@gmail.com"
+            >stanford.math.tournament@gmail.com</a
+        >. <br />
+        <br />
+        <strong>Registration</strong><br />
+        Q: How many students may be on a team?<br />
+        A: Teams consist of 5-6 members. Individuals and incomplete teams may be combined by organizers to form complete teams.<br />
+        <br />
+        Q: Do students on the same team have to be from the same school or established mathematical organization?<br />
+        A: Yes, students must be from the same school or mathematical organization<br />
+        <br />
+        Q: What schools or organizations can participate in SMT International?<br />
+        A: SMT 2023 International will be open to all international schools or organizations not from the US or Canada.<br />
+        <br />
+        Q: I live in a timezone that makes SMT International in the middle of the night. What can I do?<br
         />
-    {:else if windowWidth > 800}
-        <Table
-            data={topicsSmall1}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 800}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 800}em;"
+        A: Email us at <a href="mailto:stanford.math.tournament@gmail.com"
+        >stanford.math.tournament@gmail.com</a>, we will let you participate in SMT Online a week earlier, but your scores will still count for International.<br
         />
-        <Table
-            data={topicsSmall2}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 800}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 800}em;"
+        <br />
+        
+        <strong>Testing</strong><br />
+        Q: Are calculators allowed?<br />
+        A: No. Calculators are not allowed on any portion of the tests. Check the
+        SMT rules for information on permitted items.<br />
+        <br />
+        Q: What topics may appear on the tests? How hard are the tests?<br />
+        A: See the mathematical expectations document for guidelines on what topics
+        may appear on each test. It is also advisable to look at the test from previous
+        years in order to get a sense of the typical style and difficulty of SMT
+        tests.<br />
+        <br />
+        <!--
+        Q: Which individual test should I take?<br />
+        A: If you have little or no experience with contest math, we strongly recommend
+        you take the General Test. Looking at past tests will help you get a sense
+        of the difficulty of each test.<br />
+        <br />
+        -->
+        <strong>Logistics</strong><br />
+        Q: Can I use the problems from previous SMT tests listed below in my classroom/book/etc?<br
         />
-    {:else}
-        <Table
-            data={topicsAlgebra}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 500}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 500}em;"
-        />
-        <Table
-            data={topicsCombo}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 500}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 500}em;"
-        />
-        <Table
-            data={topicsGeo}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 500}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 500}em;"
-        />
-        <Table
-            data={topicsNT}
-            width="100%"
-            headerColor="#1B9AAA"
-            rowColors={["var(--table-color-1)"]}
-            cellPadding={5}
-            cellPaddingRight={20}
-            textSize={1}
-            cellStyle="vertical-align: top; font-size: {windowWidth / 500}em;"
-            tableStyle="table-layout: fixed; padding: 10px;"
-            headerStyle="font-size: {windowWidth / 500}em;"
-        />
-    {/if}
-</Dropdown>
-<Dropdown mainText="ROUND 1: Mounting Mayhem (Puzzle)" id="showDropdown">
-    <ol>
-        <li>
-            The Mounting Mayhem Round will consist of a series of progressively
-            harder logic puzzles. Students will have 15 minutes to learn the
-            rules and basic strategy of the puzzles, then 60 minutes to solve as
-            many of them as possible.
-        </li>
-        <li>
-            Puzzles often require out-of-the-box thinking although all topics
-            can readily be understood and grasped by middle schoolers.
-        </li>
-        <li>
-            Harder puzzles will be worth more points, but these puzzles will be
-            longer and/or require more creativity — you must decide what
-            problems to focus your time on to optimize your team score.
-        </li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="ROUND 2: Herding Hexes" id="showDropdown">
-    <ol>
-        <li>
-            The “Herding Hexes” Round will consist of 25-30 questions to be
-            solved in 60 minutes.
-        </li>
-        <li>
-            The questions will be laid out on a grid of connected hexagons, with
-            more difficult problems being located furthest from the center.
-        </li>
-        <li>
-            Your score in the round will be determined by the problems you get
-            correct, with bonus points available for having more correct answers
-            connected within the grid!
-        </li>
-        <li>
-            You are not necessarily expected to solve all the questions in this
-            round within the allotted time. Instead, we encourage you to
-            strategize how you might use your time to maximize your points!
-        </li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="ROUND 3: Mystery Mare" id="showDropdown">
-    <ol>
-        <li>
-            The Mystery Mare round is exactly that — a mystery! The rules of the
-            round will be revealed on competition day.
-        </li>
-        <li>
-            Hints about the nature of the round may be revealed as the
-            competition date nears.
-        </li>
-    </ol>
-</Dropdown>
-<Dropdown mainText="ROUND 4: Gallop" id="showDropdown">
-    <ol>
-        <li>
-            The Gallop Round will consist of 24 questions to be solved in 60
-            minutes.
-        </li>
-        <li>
-            The questions will be divided into 8 sets of 3 questions each, and
-            you <strong>must submit the answers to one set</strong> before accessing
-            the problems for the next. This means you must strategize when to submit
-            each set (incomplete or not) to ensure you get access to as many questions
-            as possible.
-        </li>
-        <li>
-            The problems will get progressively more difficult, and later
-            problems will be worth more points.
-        </li>
-        <li>
-            Submissions will be scored immediately and a live score of all
-            participating teams will be available during the competition.
-            Prepare for the adrenaline rush!
-        </li>
-    </ol>
-</Dropdown>
-<br />
-<Heading text="Testimonials" size={2.5} />
-<div class="grid-three" style="margin-left: 10vw; margin-right: 10vw;">
-    <div>
-        <Testimonial
-            testimonial="MMT has a unique take on standard math competitions"
-            title="2022 Participant"
-        />
-        <Testimonial
-            testimonial="MMT focused less on calculations than other math competitions"
-            title="2022 Participant"
-        />
-        <Testimonial
-            testimonial="I think this was a very nice way to spend my day."
-            title="2021 Participant"
-        />
-    </div>
-
-    <div>
-        <Testimonial
-            testimonial="MMT's style of problems are much better than other tournaments. Unlike other tournaments that has the same style over the years, MMT has new and exciting styles of problems that makes it more fun to try and solve it on the spot"
-            title="2022 Participant"
-        />
-        <Testimonial
-            testimonial="MMT had people captivated even before the tournament started with their Discord server and problems of the day"
-            title="2022 Participant"
-        />
-    </div>
-
-    <div>
-        <Testimonial
-            testimonial="I really appreciate all that MMT has done and I look forward to the competition that is held next year! I must say that the MMT was an impressive execution of math competitions unlike anything I've seen before!"
-            title="2022 Participant"
-        />
-        <Testimonial
-            testimonial="My favorite memory from MMT was the teamwork - both chaotically and organizedly working with each other to solve the problems"
-            title="2022 Participant"
-        />
-    </div>
+        A: Yes! Feel free to use these problems provided you cite us in the format (Stanford Math Tournament [Year] [Round] [Problem #])<br />
+    </PanelBox>
 </div>
-<br />
-
-<br /><br />
-
--->
-<style>
-    li {
-        list-style-type: disc;
-        margin-left: 20px;
-    }
-</style>

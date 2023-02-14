@@ -40,7 +40,7 @@
 <br />
 
 <br id="registrationInfo" />
-<Heading text="Stanford Math Tournament 2023" size={6} textColor="var(--heading-color)"/>
+<Heading text="Stanford Math Tournament 2023" size={4} textColor="var(--heading-color)"/>
 <Heading text="Overview" size={2.5} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
@@ -50,10 +50,10 @@
                 <strong>LOCATION:</strong> Stanford University <br />
                 <strong>WHO:</strong> High School students residing within the United States <br />
                 <strong>TEAM SIZE:</strong> 5-6 <br />
-                <strong>COST:</strong> $10 per student <br /> <br />
+                <strong>COST:</strong> $10 per student (Financial aid available upon request!) <br /> <br />
                 <i
                     ><strong>Note for International Students:</strong> This page
-                    is for the in-person SMT. If you would like to participate,
+                    is for the in-person SMT, which you are not eligible for. If you would like to participate,
                     please visit <Link
                         url="/competitions/smt-2023-international"
                         text="this page."
@@ -191,7 +191,7 @@
         <br />
         <strong>Registration</strong><br />
         Q: How many students may be on a team?<br />
-        A: Teams must consist of 5-6 teams. Teams with less or more students will not be accepetd.<br />
+        A: Teams must consist of 5-6 members. Teams with less or more students will not be accepted.<br />
         <br />
         Q: Can I participate in SMT remotely?<br />
         A: Yes, see the SMT Online and SMT International Pages<br />
