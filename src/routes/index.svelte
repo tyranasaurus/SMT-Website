@@ -151,7 +151,7 @@
     <div class="mobile-flex" style="width: 100%">
         <div class="flex-item border-right tournament">
             <h2>SMT</h2>
-            <p>The in-person competition</p>
+            <p>The Stanford Math Tournament (SMT) is a contest organized by Stanford students, held on Stanford’s campus. In 2023, SMT will be held on <b>April 8, 2023</b>, and will be open via application to 250 high school contestants from within the United States. </p>
             <div style="margin-top: 10px;">
                 <HeaderButton
                     href="/competitions/smt-2023"
@@ -161,19 +161,8 @@
             </div>
         </div>
         <div class="flex-item border-right tournament">
-            <h2>SMT International</h2>
-            <p>The international competition</p>
-            <div style="margin-top: 10px;">
-                <HeaderButton
-                    href="/competitions/smt-2023-international"
-                    text="Go to SMT 2023 International"
-                    isSmall={true}
-                />
-            </div>
-        </div>
-        <div class="flex-item tournament">
             <h2>SMT Online</h2>
-            <p>The online tournament</p>
+            <p>In support of our mission to spread mathematics education and improve the accessibility of math tournaments, we are hosting a concurrent online tournament, identical to SMT. It will occur on <b>April 9, 2023</b> and is open to all middle and high school students from the United States and Canada</p>
             <p>This has more text to test</p>
             <div style="margin-top: 10px;">
                 <HeaderButton
@@ -183,6 +172,18 @@
                 />
             </div>
         </div>
+        <div class="flex-item tournament">
+            <h2>SMT International</h2>
+            <p>For students outside of the United States or Canada, we are running another online tournament that is open to students from around the world. It is held on <b>April 16, 2023</b> and is open to middle and high school students from around the world.</p>
+            <div style="margin-top: 10px;">
+                <HeaderButton
+                    href="/competitions/smt-2023-international"
+                    text="Go to SMT 2023 International"
+                    isSmall={true}
+                />
+            </div>
+        </div>
+        
     </div>
 </div>
 <div
