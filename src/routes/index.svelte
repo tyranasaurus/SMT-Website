@@ -106,16 +106,6 @@
                 Stanford Undergraduate Mathematics Organization (SUMO) and the
                 Stanford Department of Mathematics.
             </p>
-            <Heading
-                className="glow"
-                text="SMT?"
-                align="left"
-                textColor="black"
-                size="3"
-                marginLeft="0"
-                padding="0"
-                style="display: inline;"
-            />
             <!--
             <p class="other-text">SMT 2023 will be held April 8th, 2023.</p>
             <HeaderButton
