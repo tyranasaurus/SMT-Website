@@ -22,6 +22,14 @@
             ];
         }
 
+        function getTBRow(round) {
+            return [
+                round,
+                `/pdfs/smt${year}/${round.toLowerCase()}-tiebreaker-problems.pdf`,
+                `/pdfs/smt${year}/${round.toLowerCase()}-tiebreaker-solutions.pdf`,
+            ];
+        }
+
         let rounds = {
             tests2022: [
                 "Team",
@@ -33,7 +41,7 @@
                 "Guts",
                 "Power",
             ],
-            tb2022: ["Algebra-Tiebreaker", "Calculus-Tiebreaker", "Discrete-Tiebreaker", "Geometry-Tiebreaker", "General-Tiebreaker"],
+            tb2022: ["Algebra", "Calculus", "Discrete", "Geometry", "General"],
             tests2021: [
                 "Team",
                 "Algebra",
@@ -44,7 +52,7 @@
                 "Guts",
                 "Power",
             ],
-            tb2021: ["Algebra-Tiebreaker", "Combo-Tiebreaker", "NT-Tiebreaker", "Geometry-Tiebreaker", "General-Tiebreaker"],
+            tb2021: ["Algebra", "Combo", "NT", "Geometry", "General"],
             tests2020: [
                 "Team",
                 "Algebra",
@@ -55,12 +63,71 @@
                 "Guts",
                 "Power",
             ],
-            tb2020: ["Algebra-Tiebreaker", "Calculus-Tiebreaker", "Discrete-Tiebreaker", "Geometry-Tiebreaker", "General-Tiebreaker"],
+            tb2020: ["Algebra", "Calculus", "Discrete", "Geometry", "General"],
+            tests2019: [
+                "Team",
+                "Algebra",
+                "Calculus",
+                "Discrete",
+                "Geometry",
+                "General",
+                "Power",
+            ],
+            tb2019: ["Algebra", "Calculus", "Discrete", "Geometry", "General"],
+            tests2018: [
+                "Team",
+                "Algebra",
+                "Calculus",
+                "Discrete",
+                "Geometry",
+                "General",
+                "Power",
+            ],
+            tb2018: ["Algebra", "Calculus", "Discrete", "Geometry", "General"],
+            tests2014: [
+                "Team",
+                "Algebra",
+                "Calculus",
+                "Advanced",
+                "Geometry",
+                "General",
+                "Power",
+            ],
+            tb2014: ["Algebra", "Calculus", "Advanced", "Geometry", "General"],
+            tests2013: [
+                "Team",
+                "Algebra",
+                "Calculus",
+                "Advanced",
+                "Geometry",
+                "General",
+                "Power",
+            ],
+            tb2013: ["Algebra", "Calculus", "Advanced", "Geometry", "General"],
+            tests2012: [
+                "Team",
+                "Algebra",
+                "Calculus",
+                "Advanced",
+                "Geometry",
+                "General",
+                "Power",
+            ],
+            tb2012: ["Algebra", "Calculus", "Advanced", "Geometry", "General"],
+            tests2011: [
+                "Team",
+                "Algebra",
+                "Calculus",
+                "Advanced",
+                "Geometry",
+                "General",
+                "Power",
+            ],
             // arpit: continue filling it out in this format
         };
 
         if (tb) {
-            return rounds["tb" + year]?.map((x) => getRow(x)) ?? [];
+            return rounds["tb" + year]?.map((x) => getTBRow(x)) ?? [];
         } else {
             return rounds["tests" + year]?.map((x) => getRow(x)) ?? [];
         }
