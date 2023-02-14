@@ -13,17 +13,18 @@
     const scheduleData = [
         {
             Time: "8:00 AM-8:30 AM",
-            Event: "Opening Ceremony",
+            Event: "Event Checkin",
         },
-        ["9 AM-10:20 AM", "Power Round (80 min)"],
-        ["10:30AM-11:30AM", "Team Round (50 min)"],
-        ["11:30AM-1PM", "Lunch Break (1.5 hr)"],
+        ["8:30 AM-9:00 AM", "Opening Ceremony"],
+        ["9:10 AM-10:40 AM", "Power Round (80 min)"],
+        ["10:40 AM-11:40 AM", "Team Round (50 min)"],
+        ["11:40 AM-12:30 PM", "Lunch Break (50 min)"],
         [
-            "1:15PM-3:15PM",
-            "Individual Round(s)<br>- 2 x 50 min (subject)<br>- 110 min (general)",
+            "12:30 PM-2:30 PM",
+            "Individual Round(s)",
         ],
-        ["3:30 PM-5:00 PM", "Guts Round (80 min)"],
-        ["5:30 PM-6:30 PM", "Award Ceremony"],
+        ["2:30 PM-4:00 PM", "Guts Round (80 min)"],
+        ["5:30 PM-6:00 PM", "Award Ceremony"],
     ];
 
     const formLink =
@@ -39,15 +40,16 @@
 <br />
 
 <br id="registrationInfo" />
-<Heading text="Stanford Math Tournament" size={6} textColor="black" />
+<Heading text="Stanford Math Tournament 2023" size={6} textColor="var(--heading-color)"/>
 <Heading text="Overview" size={2.5} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="padding: 10px;">
             <p>
+                <strong>DATE:</strong> 4/8/2023 <br />
+                <strong>LOCATION:</strong> Stanford University <br />
+                <strong>WHO:</strong> High School students residing within the United States <br />
                 <strong>TEAM SIZE:</strong> 5-6 <br />
-                <strong>LOCATION:</strong> Stanford University
-                <br />
                 <strong>COST:</strong> $10 per student <br /> <br />
                 <i
                     ><strong>Note for International Students:</strong> This page
@@ -63,17 +65,14 @@
 </div>
 <br />
 
-<Heading text="Registration Information" size={2.5} />
+<Heading text="Application Information" size={2.5} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="padding: 10px;">
-            <p>
-                This registration form is specifically for the in-person
-                competition. If you are looking for SMT Online or International
-                registration, those will be posted on their respective pages.
-            </p>
+            <p>For SMT 2023, Stanford University policy limits us to 42 teams of 5-6 students from the United States in-person at Stanford’s campus. As such, we are now accepting applications for in-person participation from United States based schools and established mathematical organizations. We will not be accepting individual applications or applications for teams of size less than 5. All teams who don’t want to travel or are international should participate in our online tournaments. </p>
+            <p>We will be accepting 25 teams from within the Bay Area (defined as within 150 mi of Stanford University), and 17 are from other domestic locations. Of these, 10 Bay Area teams and 7 Domestic teams will be merit-based - selected on performance in previous year’s tournaments, and the rest will be selected based on a lottery system. The remaining teams will not be allowed to come in person and should participate in the online tournament happening on April 9, 2023.</p>
             <HeaderButton
-                text="Register for SMT 2023"
+                text="Apply for SMT 2023"
                 hasArrow={false}
                 href={formLink}
                 isSmall
@@ -86,8 +85,7 @@
 
 <Timeline width="60%">
     <TimelineElement>
-        <strong>Monday, February 13, 2023:</strong> Regular registration opens
-        on Google Forms
+        <strong>Monday, February 13, 2023:</strong> In-person Application Form opens
         <br />
         <Link
             url="https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link"
@@ -95,8 +93,7 @@
         />
     </TimelineElement>
     <TimelineElement>
-        <strong>Tuesday, March 7, 2023:</strong> Regular registration deadline on
-        Google Forms
+        <strong>Wednesday, March 8, 2023 at 11:59 PM PT:</strong> Application Deadline
     </TimelineElement>
     <TimelineElement>
         <strong>Friday, March 10, 2023:</strong> Announcement of teams selected for
@@ -107,14 +104,10 @@
         on Eventbrite
     </TimelineElement>
     <TimelineElement>
-        <strong>Tuesday, March 21, 2023:</strong> Deadline for payments on Eventbrite
-        and proof of transportation
+        <strong>Friday, March 24, 2023:</strong> Deadline for proof of travel and housing.
     </TimelineElement>
     <TimelineElement>
-        <strong>Tuesday, March 28, 2023:</strong> Deadline for late payments on
-        Eventbrite
-        <br />
-        <strong>Also:</strong> Deadline for student registration and waivers
+        <strong>April 1, 2023:</strong> Deadline for student waiver submission.
     </TimelineElement>
     <TimelineElement>
         <strong>Saturday, April 8, 2023:</strong> SMT tournament day
@@ -131,7 +124,7 @@
                 cellPadding={5}
                 cellPaddingRight={20}
                 tableStyle="margin-left: auto; margin-right: auto"
-                overallHeader="Tournament Schedule (8AM-6:30PM PT)"
+                overallHeader="Tournament Schedule (8:00 AM-6:00 PM PT)"
             />
             <p style="margin-top: 2px; margin-bottom: 0px;">
                 *Schedule subject to change. Note that there is built-in buffer
@@ -166,6 +159,7 @@
             For the individual portion, students may choose to take two subject
             tests in a specific topic or take a single, longer General Test.
         </p>
+        <!--
         <p>
             The <strong>Subject Tests</strong> are 50-minute exams consisting of
             10 short answer questions. The subjects offered are
@@ -173,10 +167,15 @@
                 Algebra, Combinatorics, Number Theory, and Geometry.
             </strong>
         </p>
+        
         <p>
             The <strong>General Test</strong> is a 110-minute exam consisting of
             25 short answer questions that is designed for students that have less
             specialized mathematical background.
+        </p>
+        -->
+        <p>
+            The <strong>Individual Round(s)</strong> are the rounds taken independent of your teams.
         </p>
     </PanelBox>
 </div>
@@ -192,23 +191,20 @@
         <br />
         <strong>Registration</strong><br />
         Q: How many students may be on a team?<br />
-        A: Teams consist of 6 students.<br />
+        A: Teams must consist of 5-6 teams. Teams with less or more students will not be accepetd.<br />
         <br />
         Q: Can I participate in SMT remotely?<br />
-        A: We will host two events: one in-person at Stanford and a separate online
-        competition. Both competitions are open to all US students.<br />
+        A: Yes, see the SMT Online and SMT International Pages<br />
         <br />
-        Q: Do students on the same team have to be from the same school?<br />
-        A: Yes, with one exception. Established math institutions such as A-Star
-        and Euler Circle are invited to send teams with students that do not attend
-        the same high schools.<br />
+        Q: Do students on the same team have to be from the same school or established mathematical organization?<br />
+        A: Yes, students must be from the same school or mathematical organization<br />
         <br />
-        Q: What schools can participate in SMT?<br />
-        A: SMT 2023 will be open to all US schools.<br />
+        Q: What schools or organizations can participate in SMT?<br />
+        A: SMT 2023 will be open to all domestic students from US-based schools or organizations.<br />
         <br />
         Q: Can international teams participate in SMT? If so, how do they register?<br
         />
-        A: No, unfortunately we will be limiting registration to US based students<br
+        A: Yes, but they must participate in SMT International - see that page for more details.<br
         />
         <br />
         <strong>Testing</strong><br />
@@ -222,18 +218,19 @@
         years in order to get a sense of the typical style and difficulty of SMT
         tests.<br />
         <br />
+        <!--
         Q: Which individual test should I take?<br />
         A: If you have little or no experience with contest math, we strongly recommend
         you take the General Test. Looking at past tests will help you get a sense
         of the difficulty of each test.<br />
         <br />
+        -->
         <strong>Logistics</strong><br />
         Q: Do we need to have a teacher or coach attend SMT in person?<br />
-        A: No, you are not required to have a teacher or coach at the tournament.<br
-        />
+        A: Yes, you must have at least one authorized adult chaperone present per team.<br/>
         <br />
         Q: Can I use the problems from previous SMT tests listed below in my classroom/book/etc?<br
         />
-        A: Yes! Feel free to use these problems provided you cite us.<br />
+        A: Yes! Feel free to use these problems provided you cite us in the format (Stanford Math Tournament [Year] [Round] [Problem #])<br />
     </PanelBox>
 </div>

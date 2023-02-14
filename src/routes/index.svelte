@@ -91,7 +91,7 @@
         <div style="margin-right: 50px;" class="infodiv">
             <Heading
                 className="glow"
-                text="Math Tournament?"
+                text="What is SMT?"
                 align="left"
                 textColor="black"
                 size="3"
@@ -101,8 +101,8 @@
             />
             <p class="other-text">
                 Stanford Math Tournament is run entirely by Stanford students.
-                We are one of the largest math competitions in the country with
-                1200 participants in 2022. We are proudly supported by the
+                We are one of the largest math competitions in the country with over
+                1200 participants globally in 2022. We are proudly supported by the
                 Stanford Undergraduate Mathematics Organization (SUMO) and the
                 Stanford Department of Mathematics.
             </p>
@@ -116,6 +116,7 @@
                 padding="0"
                 style="display: inline;"
             />
+            <!--
             <p class="other-text">SMT 2023 will be held April 8th, 2023.</p>
             <HeaderButton
                 text="Register for SMT 2023!"
@@ -124,6 +125,7 @@
                 isLink={false}
             />
             <br />
+            -->
             <!--<button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Sign Up for our Newsletter</button>-->
         </div>
         <div style="margin-right: 30px; flex-direction: column">
