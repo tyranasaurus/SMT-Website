@@ -142,7 +142,7 @@
                 },
                 {
                     text: "International Results",
-                    url: `/pdfs/smt2022/results-intl.pdf`,
+                    url: `/pdfs/smt2022/international-results.pdf`,
                 },
             ],
         };
