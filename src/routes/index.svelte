@@ -163,7 +163,6 @@
         <div class="flex-item border-right tournament">
             <h2>SMT Online</h2>
             <p>In support of our mission to spread mathematics education and improve the accessibility of math tournaments, we are hosting a concurrent online tournament, identical to SMT. It will occur on <b>April 9, 2023</b> and is open to all middle and high school students from the United States and Canada</p>
-            <p>This has more text to test</p>
             <div style="margin-top: 10px;">
                 <HeaderButton
                     href="/competitions/smt-2023-online"
