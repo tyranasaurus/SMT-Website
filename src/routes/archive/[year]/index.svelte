@@ -5,13 +5,12 @@
     import PanelBox from "$lib/components/PanelBox.svelte";
     import Table from "$lib/components/Table.svelte";
 
-    const supportedYears = [2011, 2022];
+    const supportedYears = [2011, 2012, 2013, 2014, 2018, 2019, 2020, 2021, 2022];
 
     let year = $page.params.year;
 
     // check valid year
-    let isYearSupported =
-        year >= supportedYears[0] && year <= supportedYears[1];
+    let isYearSupported = supportedYears.includes(parseInt(year));
 
     function getTableForYear(year, tb) {
         function getRow(round) {
@@ -214,6 +213,7 @@
                     {/if}
                 </div>
 
+                {#if getResults(year).length > 0}
                 <div class="flex" style="margin-top: 5px;">
                     <div style="margin-right: 30px">
                         <strong>Results:</strong>
@@ -224,6 +224,7 @@
                         </div>
                     {/each}
                 </div>
+                {/if}
             </PanelBox>
         </div>
     </div>
