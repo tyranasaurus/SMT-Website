@@ -79,7 +79,7 @@
     >
         <a style="text-decoration: none;" sveltekit:prefetch href="/">
             <img
-                src="/smt-logo-white.png"
+                src="/smt-logo.png"
                 alt="stanford math tournament logo"
             />
             <h1 style="font-size: 24px;">
