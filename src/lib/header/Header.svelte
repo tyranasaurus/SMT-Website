@@ -238,7 +238,7 @@
     }
 
     img {
-        height: 3em;
+        height: 2.5em;
         top: 0;
         margin-right: 10px;
     }
@@ -283,7 +283,7 @@
         outline: none;
         padding: 14px 16px;
         color: white;
-        height: 100% !important;
+        height: 125% !important;
         background-color: inherit;
         font-family: inherit;
     }
