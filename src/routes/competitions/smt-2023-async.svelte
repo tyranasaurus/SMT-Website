@@ -34,17 +34,17 @@
 <br />
 
 <br id="registrationInfo" />
-<Heading text="Stanford Math Tournament 2023 International" size={4} textColor="var(--heading-color)"/>
+<Heading text="Stanford Math Tournament 2023 Asyncronous" size={4} textColor="var(--heading-color)"/>
 <Heading text="Overview" size={2.5} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="padding: 10px;">
             <p>
-                <strong>DATE:</strong> 4/16/2023 (UTC) <br />
+                <strong>DATE:</strong> April 10 util April 16 AoE <br />
                 <strong>LOCATION:</strong> Online <br />
-                <strong>WHO:</strong> High School and Middle School students residing outside the United States or Canada <br />
+                <strong>WHO:</strong> High School and Middle School students anywhere on Earth<br />
                 <strong>TEAM SIZE:</strong> 5-6 (smaller teams may be combined with others to make full teams) <br />
-                <strong>COST:</strong> $10 early bird registration per student, $15 regular registration, $25 last-minute registration (Financial Aid available on request!) <br /> <br />
+                <strong>COST:</strong> $5 per participant<br /> <br />
             </p>
         </div>
     </PanelBox>
@@ -55,7 +55,7 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="padding: 10px;">
-            <p>Registration for SMT International is not open yet! Please check below for the latest information about when registration will open!</p>
+            <p>Registration for SMT Asyncronous is not open yet! Please check below for the latest information about when registration will open!</p>
             <!--
             <HeaderButton
                 text="Apply for SMT 2023"
@@ -72,7 +72,7 @@
 
 <Timeline width="60%">
     <TimelineElement>
-        <strong>Monday, February 20, 2023:</strong> SMT International Registration opens
+        <strong>Monday, February 20, 2023:</strong> SMT Asyncronous Registration opens
     </TimelineElement>
     <TimelineElement>
         <strong>Wednesday, March 15, 2023 at 11:59 PM PT:</strong> Early Bird ($10/student) registration deadline
@@ -87,10 +87,7 @@
         <strong>Thursday, April 13, 2023:</strong> Late ($25/student) registration deadline
     </TimelineElement>
     <TimelineElement>
-        <strong>Sunday, April 16, 2023:</strong> SMT International
-    </TimelineElement>
-    <TimelineElement>
-        <strong>Date TBD:</strong> SMT International Award Ceremony
+        <strong>Sunday, April 10-16, 2023:</strong> SMT Asyncronous
     </TimelineElement>
 </Timeline>
 
@@ -171,14 +168,9 @@
         Q: Do students on the same team have to be from the same school or established mathematical organization?<br />
         A: Yes, students must be from the same school or mathematical organization<br />
         <br />
-        Q: What schools or organizations can participate in SMT International?<br />
-        A: SMT 2023 International will be open to all international schools or organizations not from the US or Canada.<br />
+        Q: What schools or organizations can participate in SMT Asyncronous?<br />
+        A: SMT 2023 Asyncronous will be open to all students.<br />
         <br />
-        Q: I live in a timezone that makes SMT International in the middle of the night. What can I do?<br
-        />
-        A: Email us at <a href="mailto:stanford.math.tournament@gmail.com"
-        >stanford.math.tournament@gmail.com</a>, we will let you participate in SMT Online a week earlier, but your scores will still count for International.<br
-        />
         <br />
         
         <strong>Testing</strong><br />
