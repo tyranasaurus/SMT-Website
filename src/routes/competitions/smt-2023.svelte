@@ -81,6 +81,15 @@
     </PanelBox>
 </div>
 
+<Heading text="COVID-19 Policy" size={2.5} />
+<div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox>
+        <div style="padding: 10px;">
+            <p>Proof of Vaccination and Proof of Negative COVID test within 24 hours of the start of the program are required. Students looking to request exemption from this protocol would have to email <a href="mailto:protectminors@stanford.edu">mailto:protectminors@stanford.edu</a>.</p>
+        </div>
+    </PanelBox>
+</div>
+
 <Heading text="Registration Timeline" size={2.5} />
 
 <Timeline width="60%">

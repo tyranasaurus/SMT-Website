@@ -85,7 +85,7 @@
 
 <Timeline width="60%">
     <TimelineElement>
-        <strong>Monday, February 20, 2023:</strong> SMT Online Registration opens
+        <strong>Very Soon:</strong> SMT Online Registration opens
     </TimelineElement>
     <TimelineElement>
         <strong>Wednesday, March 8, 2023 at 11:59 PM PT:</strong> Early Bird ($10/student) registration deadline

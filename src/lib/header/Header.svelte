@@ -79,14 +79,12 @@
     >
         <a style="text-decoration: none;" sveltekit:prefetch href="/">
             <img
-                src="/smt-logo-white.png"
-                alt="stanford math tournament logo"
+                src="/SMT White.png"
+                alt="SMT Logo"
             />
             <h1 style="font-size: 24px;">
                 {#if windowWidth > TITLE_BREAKPOINT}
                     Stanford Math Tournament
-                {:else}
-                    SMT
                 {/if}
             </h1>
         </a>
@@ -240,7 +238,7 @@
     }
 
     img {
-        height: 2em;
+        height: 3em;
         top: 0;
         margin-right: 10px;
     }
