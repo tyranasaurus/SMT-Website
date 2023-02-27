@@ -39,8 +39,8 @@
                     text: "SMT 2023 Online",
                 },
                 {
-                    path: "/competitions/smt-2023-international",
-                    text: "SMT 2023 International",
+                    path: "/competitions/smt-2023-async",
+                    text: "SMT 2023 Asynchronous",
                 },
             ],
         },

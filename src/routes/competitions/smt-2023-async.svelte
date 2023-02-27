@@ -34,28 +34,29 @@
 <br />
 
 <br id="registrationInfo" />
-<Heading text="Stanford Math Tournament 2023 Asyncronous" size={4} textColor="var(--heading-color)"/>
+<Heading text="Stanford Math Tournament 2023 Asynchronous" size={4} textColor="var(--heading-color)"/>
 <Heading text="Overview" size={2.5} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="padding: 10px;">
             <p>
-                <strong>DATE:</strong> April 10 util April 16 AoE <br />
+                <strong>DATE:</strong> April 10 until April 16 <br />
                 <strong>LOCATION:</strong> Online <br />
-                <strong>WHO:</strong> High School and Middle School students anywhere on Earth<br />
-                <strong>TEAM SIZE:</strong> 5-6 (smaller teams may be combined with others to make full teams) <br />
-                <strong>COST:</strong> $5 per participant<br /> <br />
+                <strong>WHO:</strong> Any student anywhere.<br />
+                <strong>TEAM SIZE:</strong> Up to 6 <br />
+                <strong>COST:</strong> $3 per participant<br /> <br />
             </p>
+            <strong>Note for International Students:</strong> We are no longer offering SMT International this year due to worries about test security. International students may participate in SMT Online, or if the timing is bad for them, SMT Asynchronous
         </div>
     </PanelBox>
 </div>
 <br />
 
-<Heading text="Registration Information" size={2.5} />
+<Heading text="Contest Information" size={2.5} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="padding: 10px;">
-            <p>Registration for SMT Asyncronous is not open yet! Please check below for the latest information about when registration will open!</p>
+            <p>SMT Asynchronous will be available after April 9, 2023.</p>
             <!--
             <HeaderButton
                 text="Apply for SMT 2023"
@@ -67,7 +68,7 @@
         </div>
     </PanelBox>
 </div>
-
+<!--
 <Heading text="Registration Timeline" size={2.5} />
 
 <Timeline width="60%">
@@ -112,7 +113,7 @@
     </FlexBox>
 </div>
 <br />
-
+-->
 <Heading text="Test Information" size={2.5} />
 
 <div style="margin-left: 10vw; margin-right: 10vw;">

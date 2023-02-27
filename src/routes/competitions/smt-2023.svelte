@@ -54,14 +54,13 @@
                 <i
                     ><strong>Note for International Students:</strong>
                     Please visit <Link
-                        url="/competitions/smt-2023-online"
+                        url="/competitions/smt-2023-async"
                         text="this page."
                     />
                 </i>
             </p>
             <HeaderButton
                 text="Apply for SMT 2023"
-                hasArrow={false}
                 href={formLink}
                 isSmall
             />
@@ -102,18 +101,18 @@
              /> -->
     </TimelineElement>
     <TimelineElement>
-        <strong>March 8, 2023 at 11:59 PM PT:</strong> Application deadline
+        <strong>March 12, 2023 at 11:59 PM PT:</strong> Application deadline
     </TimelineElement>
     <TimelineElement>
-        <strong>March 10, 2023:</strong> Announcement of teams selected for
+        <strong>March 14, 2023:</strong> Announcement of teams selected for
         in-person competition
     </TimelineElement>
     <TimelineElement>
-        <strong>March 17, 2023:</strong> Deadline for selected teams to register
+        <strong>March 21, 2023:</strong> Deadline for selected teams to register
         on Eventbrite
     </TimelineElement>
     <TimelineElement>
-        <strong>March 24, 2023:</strong> Deadline for proof of travel and housing.
+        <strong>March 28, 2023:</strong> Deadline for proof of travel and housing.
     </TimelineElement>
     <TimelineElement>
         <strong>April 1, 2023:</strong> Deadline for student waiver submission.

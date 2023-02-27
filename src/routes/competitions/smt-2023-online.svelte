@@ -60,15 +60,25 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="padding: 10px;">
-            <p>Registration for SMT Online is not open yet! Please check below for the latest information about when registration will open!</p>
-            <!--
-            <HeaderButton
-                text="Apply for SMT 2023"
-                hasArrow={false}
-                href={formLink}
+            <p>In order to properly register for SMT Online, all of the following steps must be completed by the coach and students:</p>
+            <ol>
+                <li>Coaches must make payment for participating students on <a href = "https://tinyurl.com/SMT2023OnlineEventbrite">Eventbrite</a>. Seats purchased on Eventbrite will be reflected in ContestDojo within two business days.</li>
+                <li>Coaches must create a coaches account  <a href = "https://contestdojo.com">ContestDojo</a> and register thir organization for SMT 2023 Online.</li>
+                <li>Coaches must invite students on ContestDojo by email or organization join code.</li>
+                <li>Students must join the organization and fill out the registration form.</li>
+                <li>Coaches organize their students into teams.</li>
+            </ol>
+            <HeaderButton class = "RegButtons"
+                text="Eventbrite Payment"
+                href={"https://tinyurl.com/SMT2023OnlineEventbrite"}
                 isSmall
             />
-            -->
+            <br>
+            <HeaderButton class = "RegButtons"
+                text="ContestDojo"
+                href={"https://tinyurl.com/SMT2023OnlineEvenetbrite"}
+                isSmall
+            />
         </div>
     </PanelBox>
 </div>
@@ -77,10 +87,10 @@
 
 <Timeline width="60%">
     <TimelineElement>
-        <strong>Very Soon:</strong> SMT Online Registration opens
+        <strong>Feburary 27, 2023:</strong> SMT Online Registration opens
     </TimelineElement>
     <TimelineElement>
-        <strong>March 8, 2023 at 11:59 PM PT:</strong> Early Bird ($10/student) registration deadline
+        <strong>March 15, 2023 at 11:59 PM PT:</strong> Early Bird ($10/student) registration deadline
     </TimelineElement>
     <TimelineElement>
         <strong>March 29, 2023:</strong> Regular ($15/student) registration deadline
@@ -217,3 +227,11 @@
         A: Yes! Feel free to use these problems provided you cite us in the format (Stanford Math Tournament [Year] [Round] [Problem #])<br />
     </PanelBox>
 </div>
+
+<style>
+    .RegButtons {
+        display: inline-flex;
+        padding: 5px;
+        margin: 5px;
+    }
+</style>
