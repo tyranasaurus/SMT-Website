@@ -162,7 +162,7 @@
         </div>
         <div class="flex-item border-right tournament">
             <h2>SMT Online</h2>
-            <p>In support of our mission to spread mathematics education and improve the accessibility of math tournaments, we are hosting a concurrent online tournament, identical to SMT. It will occur on <b>April 9, 2023</b> and is open to all middle and high school students from the United States and Canada</p>
+            <p>In support of our mission to spread mathematics education and improve the accessibility of math tournaments, we are hosting a concurrent online tournament, identical to SMT. It will occur on <b>April 9, 2023</b> and is open to all middle and high school students from <b>anywhere in the world</b>.</p>
             <div style="margin-top: 10px;">
                 <HeaderButton
                     href="/competitions/smt-2023-online"
@@ -172,12 +172,12 @@
             </div>
         </div>
         <div class="flex-item tournament">
-            <h2>SMT International</h2>
-            <p>For students outside of the United States or Canada, we are running another online tournament that is open to students from around the world. It is held on <b>April 16, 2023</b> and is open to middle and high school students from around the world.</p>
+            <h2>SMT Asynchronous</h2>
+            <p>For students unable to participate in SMT in-person or Online, we are offering SMT Asynchronous - a week long period where you can experience the SMT tests on your own or in a team at your own leisure.</p>
             <div style="margin-top: 10px;">
                 <HeaderButton
-                    href="/competitions/smt-2023-international"
-                    text="Go to SMT 2023 International"
+                    href="/competitions/smt-2023-async"
+                    text="Go to SMT 2023 Asynchronous"
                     isSmall={true}
                 />
             </div>

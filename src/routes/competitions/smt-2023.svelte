@@ -46,20 +46,24 @@
     <PanelBox>
         <div style="padding: 10px;">
             <p>
-                <strong>DATE:</strong> 4/8/2023 <br />
+                <strong>DATE:</strong> April 8, 2023 <br />
                 <strong>LOCATION:</strong> Stanford University <br />
                 <strong>WHO:</strong> High School students residing within the United States <br />
                 <strong>TEAM SIZE:</strong> 5-6 <br />
                 <strong>COST:</strong> $10 per student (Financial aid available upon request!) <br /> <br />
                 <i
-                    ><strong>Note for International Students:</strong> This page
-                    is for the in-person SMT, which you are not eligible for. If you would like to participate,
-                    please visit <Link
-                        url="/competitions/smt-2023-international"
+                    ><strong>Note for International Students:</strong>
+                    Please visit <Link
+                        url="/competitions/smt-2023-async"
                         text="this page."
                     />
                 </i>
             </p>
+            <HeaderButton
+                text="Apply for SMT 2023"
+                href={formLink}
+                isSmall
+            />
         </div>
     </PanelBox>
 </div>
@@ -71,12 +75,6 @@
         <div style="padding: 10px;">
             <p>For SMT 2023, Stanford University policy limits us to 42 teams of 5-6 students from the United States in-person at Stanford’s campus. As such, we are now accepting applications for in-person participation from United States based schools and established mathematical organizations. We will not be accepting individual applications or applications for teams of size less than 5. All teams who don’t want to travel or are international should participate in our online tournaments. </p>
             <p>We will be accepting 25 teams from within the Bay Area (defined as within 150 mi of Stanford University), and 17 are from other domestic locations. Of these, 10 Bay Area teams and 7 Domestic teams will be merit-based - selected on performance in previous year’s tournaments, and the rest will be selected based on a lottery system. The remaining teams will not be allowed to come in person and should participate in the online tournament happening on April 9, 2023.</p>
-            <HeaderButton
-                text="Apply for SMT 2023"
-                hasArrow={false}
-                href={formLink}
-                isSmall
-            />
         </div>
     </PanelBox>
 </div>
@@ -85,7 +83,7 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="padding: 10px;">
-            <p>Proof of Vaccination and Proof of Negative COVID test within 24 hours of the start of the program are required. Students looking to request exemption from this protocol would have to email <a href="mailto:protectminors@stanford.edu">mailto:protectminors@stanford.edu</a>.</p>
+            <p>Proof of Vaccination and Proof of Negative COVID test within 24 hours of the start of the program are required. Students looking to request exemption from this protocol would have to email <a href="mailto:protectminors@stanford.edu">protectminors@stanford.edu</a>.</p>
         </div>
     </PanelBox>
 </div>
@@ -94,32 +92,33 @@
 
 <Timeline width="60%">
     <TimelineElement>
-        <strong>Monday, February 13, 2023:</strong> In-person Application Form opens
-        <br />
-        <Link
-            url="https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link"
-            text="Link to registration form"
-        />
+        <strong>February 13, 2023:</strong> In-person application form opens
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link" target="_blank">here</a>
+        <!-- <br /> -->
+        <!-- <Link
+             url="https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link"
+             text="Link to registration form"
+             /> -->
     </TimelineElement>
     <TimelineElement>
-        <strong>Wednesday, March 8, 2023 at 11:59 PM PT:</strong> Application Deadline
+        <strong>March 12, 2023 at 11:59 PM PT:</strong> Application deadline
     </TimelineElement>
     <TimelineElement>
-        <strong>Friday, March 10, 2023:</strong> Announcement of teams selected for
+        <strong>March 14, 2023:</strong> Announcement of teams selected for
         in-person competition
     </TimelineElement>
     <TimelineElement>
-        <strong>Friday, March 17, 2023:</strong> Deadline for selected teams to register
+        <strong>March 21, 2023:</strong> Deadline for selected teams to register
         on Eventbrite
     </TimelineElement>
     <TimelineElement>
-        <strong>Friday, March 24, 2023:</strong> Deadline for proof of travel and housing.
+        <strong>March 28, 2023:</strong> Deadline for proof of travel and housing.
     </TimelineElement>
     <TimelineElement>
         <strong>April 1, 2023:</strong> Deadline for student waiver submission.
     </TimelineElement>
     <TimelineElement>
-        <strong>Saturday, April 8, 2023:</strong> SMT tournament day
+        <strong>April 8, 2023:</strong> SMT tournament day
     </TimelineElement>
 </Timeline>
 
@@ -203,7 +202,7 @@
         A: Teams must consist of 5-6 members. Teams with less or more students will not be accepted.<br />
         <br />
         Q: Can I participate in SMT remotely?<br />
-        A: Yes, see the SMT Online and SMT International Pages<br />
+        A: Yes, see the SMT Online and SMT Asyncronous Pages<br />
         <br />
         Q: Do students on the same team have to be from the same school or established mathematical organization?<br />
         A: Yes, students must be from the same school or mathematical organization<br />
@@ -213,7 +212,7 @@
         <br />
         Q: Can international teams participate in SMT? If so, how do they register?<br
         />
-        A: Yes, but they must participate in SMT International - see that page for more details.<br
+        A: Yes, but they must participate in SMT Online or SMT Asyncronous - see that page for more details.<br
         />
         <br />
         <strong>Testing</strong><br />

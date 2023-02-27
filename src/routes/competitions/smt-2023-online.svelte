@@ -45,19 +45,11 @@
     <PanelBox>
         <div style="padding: 10px;">
             <p>
-                <strong>DATE:</strong> 4/9/2023 <br />
-                <strong>LOCATION:</strong> Online <br />
-                <strong>WHO:</strong> High School and Middle School students residing within the United States or Canada <br />
+                <strong>DATE:</strong> April 9, 2023 <br />
+                <strong>LOCATION:</strong> Online, PST Timezone<br />
+                <strong>WHO:</strong> High School and Middle School students<br />
                 <strong>TEAM SIZE:</strong> 5-6 (smaller teams may be combined with others to make full teams) <br />
                 <strong>COST:</strong> $10 early bird registration per student, $15 regular registration, $25 last-minute registration (Financial Aid available on request!) <br /> <br />
-                <i
-                    ><strong>Note for International Students:</strong> This page
-                    is for SMT Online, which you are not eligible for. If you would like to participate,
-                    please visit <Link
-                        url="/competitions/smt-2023-international"
-                        text="this page."
-                    />
-                </i>
             </p>
         </div>
     </PanelBox>
@@ -68,15 +60,25 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="padding: 10px;">
-            <p>Registration for SMT Online is not open yet! Please check below for the latest information about when registration will open!</p>
-            <!--
-            <HeaderButton
-                text="Apply for SMT 2023"
-                hasArrow={false}
-                href={formLink}
+            <p>In order to properly register for SMT Online, all of the following steps must be completed by the coach and students:</p>
+            <ol>
+                <li>Coaches must make payment for participating students on <a href = "https://tinyurl.com/SMT2023OnlineEventbrite">Eventbrite</a>. Seats purchased on Eventbrite will be reflected in ContestDojo within two business days.</li>
+                <li>Coaches must create a coaches account  <a href = "https://contestdojo.com">ContestDojo</a> and register thir organization for SMT 2023 Online.</li>
+                <li>Coaches must invite students on ContestDojo by email or organization join code.</li>
+                <li>Students must join the organization and fill out the registration form.</li>
+                <li>Coaches organize their students into teams.</li>
+            </ol>
+            <HeaderButton class = "RegButtons"
+                text="Eventbrite Payment"
+                href={"https://tinyurl.com/SMT2023OnlineEventbrite"}
                 isSmall
             />
-            -->
+            <br>
+            <HeaderButton class = "RegButtons"
+                text="ContestDojo"
+                href={"https://tinyurl.com/SMT2023OnlineEvenetbrite"}
+                isSmall
+            />
         </div>
     </PanelBox>
 </div>
@@ -85,25 +87,25 @@
 
 <Timeline width="60%">
     <TimelineElement>
-        <strong>Very Soon:</strong> SMT Online Registration opens
+        <strong>Feburary 27, 2023:</strong> SMT Online Registration opens
     </TimelineElement>
     <TimelineElement>
-        <strong>Wednesday, March 8, 2023 at 11:59 PM PT:</strong> Early Bird ($10/student) registration deadline
+        <strong>March 15, 2023 at 11:59 PM PT:</strong> Early Bird ($10/student) registration deadline
     </TimelineElement>
     <TimelineElement>
-        <strong>Wednesday, March 29, 2023:</strong> Regular ($15/student) registration deadline
+        <strong>March 29, 2023:</strong> Regular ($15/student) registration deadline
     </TimelineElement>
     <TimelineElement>
         <strong>April 1, 2023:</strong> Deadline for student waiver submission.
     </TimelineElement>
     <TimelineElement>
-        <strong>Thursday, April 6, 2023:</strong> Late ($25/student) registration deadline
+        <strong>April 6, 2023:</strong> Late ($25/student) registration deadline
     </TimelineElement>
     <TimelineElement>
-        <strong>Sunday, April 9, 2023:</strong> SMT Online!!!
+        <strong>April 9, 2023:</strong> SMT Online!!!
     </TimelineElement>
     <TimelineElement>
-        <strong>Sunday, April 16, 2023:</strong> SMT Online Award Ceremony
+        <strong>April 16, 2023:</strong> SMT Online Award Ceremony
     </TimelineElement>
 </Timeline>
 
@@ -191,12 +193,15 @@
         <br />
         
         Q: What schools or organizations can participate in SMT Online?<br />
-        A: SMT 2023 Online will be open to all students from US or Canada-based schools or organizations.<br />
+        A: SMT 2023 Online will be open to all students.<br />
         <br />
         Q: Can international teams participate in SMT? If so, how do they register?<br
         />
-        A: Yes, but they must participate in SMT International - see that page for more details.<br
+        A: Yes, as long as they are able to take the test in PST time.<br
         />
+        <br />
+        Q: PST time does not work for me. What do I do?
+        A: You can participate in <Link url="/competitions/smt-2023-async" text="SMT Asyncronous!" />
         <br />
         <strong>Testing</strong><br />
         Q: Are calculators allowed?<br />
@@ -222,3 +227,11 @@
         A: Yes! Feel free to use these problems provided you cite us in the format (Stanford Math Tournament [Year] [Round] [Problem #])<br />
     </PanelBox>
 </div>
+
+<style>
+    .RegButtons {
+        display: inline-flex;
+        padding: 5px;
+        margin: 5px;
+    }
+</style>
