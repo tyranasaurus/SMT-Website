@@ -48,7 +48,7 @@
                 <strong>DATE:</strong> April 9, 2023 <br />
                 <strong>LOCATION:</strong> Online, PST Timezone<br />
                 <strong>WHO:</strong> High School and Middle School students<br />
-                <strong>TEAM SIZE:</strong> 5-6 (smaller teams may be combined with others to make full teams) <br />
+                <strong>TEAM SIZE:</strong> 6-8 (smaller teams may be combined with others to make full teams) <br />
                 <strong>COST:</strong> $10 early bird registration per student, $15 regular registration, $25 last-minute registration (Financial Aid available on request!) <br /> <br />
             </p>
         </div>

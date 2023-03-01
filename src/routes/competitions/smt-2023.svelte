@@ -74,7 +74,8 @@
     <PanelBox>
         <div style="padding: 10px;">
             <p>For SMT 2023, Stanford University policy limits us to 42 teams of 5-6 students from the United States in-person at Stanford’s campus. As such, we are now accepting applications for in-person participation from United States based schools and established mathematical organizations. We will not be accepting individual applications or applications for teams of size less than 5. All teams who don’t want to travel or are international should participate in our online tournaments. </p>
-            <p>We will be accepting 25 teams from within the Bay Area (defined as within 150 mi of Stanford University), and 17 are from other domestic locations. Of these, 10 Bay Area teams and 7 Domestic teams will be merit-based - selected on performance in previous year’s tournaments, and the rest will be selected based on a lottery system. The remaining teams will not be allowed to come in person and should participate in the online tournament happening on April 9, 2023.</p>
+            <p>We will be accepting 25 teams from within the Bay Area (defined as within 150 mi of Stanford University), and 17 are from other domestic locations. Of these, 10 Bay Area teams and 7 Domestic teams will be merit-based - selected on performance in previous year’s and other relevant tournaments, and the rest will be selected based on a lottery system. Note, depdendent on interest, we may cap the number of teams participating from an individual organization to 2. The remaining teams will not be allowed to come in person and should participate in the online tournament happening on April 9, 2023.</p>
+            <p>Do note that these selection criteria are not final and may change as we look for a set of criteria that make sense to promote both diversity and competition for this year and future ones. Decisions made by SMT Organizers are final and non-negotiable.</p>
         </div>
     </PanelBox>
 </div>
