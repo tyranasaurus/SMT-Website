@@ -76,7 +76,7 @@
             <br>
             <HeaderButton class = "RegButtons"
                 text="ContestDojo"
-                href={"https://tinyurl.com/SMT2023OnlineEvenetbrite"}
+                href={"https://contestdojo.com"}
                 isSmall
             />
         </div>
