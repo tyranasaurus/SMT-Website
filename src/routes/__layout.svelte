@@ -19,12 +19,23 @@
     <!-- hide footer because we don't have socials? TODO: add socials -->
     {#if $page.url.pathname !== "/"}
         <footer>
-            <div class="socials" />
+            <div class="socials">
+                <SocialsLink url="mailto:stanford.math.tournament@gmail.com" type="solid" icon="envelope" />
+            </div>
         </footer>
     {/if}
 </div>
 
 <style>
+    .socials {
+        color: white
+    }
+    .divider {
+		width: 2px;
+		background-color: white;
+		height: 50px;
+		margin-left: 10px;
+	}
     main {
         flex: 1;
         display: flex;
