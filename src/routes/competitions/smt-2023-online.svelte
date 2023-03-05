@@ -186,7 +186,7 @@
         <br />
         <strong>Registration</strong><br />
         Q: How many students may be on a team?<br />
-        A: Teams consist of 5-6 members. Individuals and incomplete teams may be combined by organizers to form complete teams.<br />
+        A: Teams consist of 6-8 members. Individuals and incomplete teams may be combined by organizers to form complete teams.<br />
         <br />
         Q: Do students on the same team have to be from the same school or established mathematical organization?<br />
         A: Yes, students must be from the same school or mathematical organization<br />
