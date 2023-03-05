@@ -28,4 +28,7 @@
         background-color: var(--hover-color);
         opacity: 1;
     }
+    figcaption {
+        text-align: center;
+    }
 </style>
