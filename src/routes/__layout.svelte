@@ -21,6 +21,8 @@
         <footer>
             <div class="socials">
                 <SocialsLink url="mailto:stanford.math.tournament@gmail.com" type="solid" icon="envelope" />
+                <SocialsLink url="https://www.facebook.com/StanfordMathTournament" type="brands" icon="facebook" />
+			    <SocialsLink url="https://www.instagram.com/StanfordMathTournament/" type="brands" icon="instagram" />
             </div>
         </footer>
     {/if}
