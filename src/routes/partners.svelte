@@ -10,41 +10,22 @@
 </script>
 
 <svelte:head>
-  <title>Partners and Sponsors</title>
+  <title>Partners</title>
 </svelte:head>
-
-<PageHeader
-  title="Partners & Sponsors"
-  description="The Organizations Making MM Possible"
-  button_url="
-https://tinyurl.com/MMSponsors2023"
-  button_text="Sponsor Mustang Math!"
-  button_id="sponsorMM"
-/>
 
 <Section>
   <br /> <br />
-  <Heading text="Sponsors and Partners" size={4} />
-  <FlexBox>
-    <PanelBox width="60%" style="min-width: 360px;">
+  <Heading text="Partners" size={4} textColor="var(--heading-color)"/>
+  <div style="margin-left: 10vw; margin-right: 10vw;">
+    <PanelBox style="min-width: 360px;">
       <p style="font-size: 1.2em; margin: 5px">
-        Thank you to our sponsors and partners for supporting the Mustang Math
-        Tournament and our vision of providing a fun, collaborative team
-        competition to motivated and bright middle school students!<br /><br />
-        Interested in sponsoring or partnering? Check out our
-        <b
-          ><a href="https://tinyurl.com/MMSponsors2023">sponsorship packet</a
-          ></b
-        >
-        and reach out to us at <Link
-          target="_blank"
-          url="mailto:contact@mustangmath.com"
-          text="contact@mustangmath.com"
-        />. All sponsorships are used to help fund our competitions, classes,
-        and other activities and improving the quality of such events.
+        The SMT website is a clone of <a href = "https://mustangmath.com">Mustang Math</a>. Mustang Math is a 501(c)(3) nonprofit organization of committed high school & college volunteers who aim to foster collaborative problem solving skills among middle school students around the world. We highly recommend you check out <a href = "https://mustangmath.com/competitions/mmt-2023">their middle school tournament</a>.
+      </p>
+      <p style="font-size: 1.2em; margin: 5px">
+        SMT has a long-standing collaboration with our friends at the <a href = "https://bmt.berkeley.edu">Berkeley Math Tournament</a>. BMT is a college-run tournament that runs a wonderful high school and middle school tournament yearly. Register for <a href = "https://bmt.berkeley.edu">BmMT</a> now!
       </p>
     </PanelBox>
-  </FlexBox>
+  </div>
 </Section>
 
 {#each sponsorTiers as lvl}
@@ -68,9 +49,13 @@ https://tinyurl.com/MMSponsors2023"
                 src={sponsor.url}
                 alt={sponsor.alt}
                 style="max-width: 100%;"
+                
               />
+              
             </a>
+            
           </PanelBox>
+          
         {/each}
       {:else}
         <p>Become our first {lvl.singular}!</p>
