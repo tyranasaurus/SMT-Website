@@ -17,8 +17,7 @@
 </svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
-<br>
-<br>
+<br><br>
 <Heading text="Our Team" size={4} textColor="var(--heading-color)"/>
 <section>
     <FlexBox wrap={true}>
