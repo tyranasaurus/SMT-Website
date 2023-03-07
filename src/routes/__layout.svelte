@@ -10,12 +10,12 @@
 
 <div class="all-container">
     <Header />
-    <br><br>
+
     <main>
         <slot />
         <Newsletter {show} />
     </main>
-    <br><br>
+
     <!-- hide footer because we don't have socials? TODO: add socials -->
     {#if $page.url.pathname !== "/"}
         <footer>
