@@ -44,7 +44,7 @@
                 },
             ],
         },
-        /*{ path: "/our-team", text: "Our Team", hasSubPages: false },*/
+        { path: "/our-team", text: "Our Team", hasSubPages: false },
         { path: "/rules", text: "Rules", hasSubPages: false },
         { path: "/partners", text: "Partners", hasSubPages: false },
         {
