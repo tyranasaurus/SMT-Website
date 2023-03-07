@@ -1,140 +1,338 @@
 [
   {
+    "fullName": "Aarjav Jain",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "image": "about-us-images/Aarjav-Jain.jpg"
+  },
+  {
+    "fullName": "Aarushi Mehrotra",
+    "preferredPronouns": "she/her/hers",
+    "grade": 9,
+    "teamsroles": "Curriculum Development, Tournament Development",
+    "image": "about-us-images/Aarushi-Mehrotra.jpg",
+    "optionalProvideALinkToAPersonalSiteYoudLikeYourWebsitePictureToLinkToEgInstagramLinkedinPersonalWebpageEtc": "https://www.linkedin.com/in/aarushi-mehrotra-7bb63b212"
+  },
+  {
+    "fullName": "Alan Duan",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "teamsroles": "Problem Writing, Tech, Curriculum Development, Business",
+    "image": "about-us-images/Alan-Duan.jpg"
+  },
+  {
+    "fullName": "Alex Chen",
+    "preferredPronouns": "he/him/his",
+    "grade": 9,
+    "teamsroles": "Tech, Problem Writing, YouTube",
+    "image": "about-us-images/Alex-Chen.jpg"
+  },
+  {
+    "fullName": "Alexander Do",
+    "preferredPronouns": "he/him/his",
+    "grade": 11,
+    "image": "about-us-images/Alexander-Do.jpg"
+  },
+  {
+    "fullName": "Alon Ragoler",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "image": "about-us-images/Alon-Ragoler.jpg"
+  },
+  {
+    "fullName": "Amogh Janganure",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "teamsroles": "Problem Writing, Tech",
+    "image": "about-us-images/Amogh-Janganure.jpg"
+  },
+  {
+    "fullName": "Ananya Bezbaruah",
+    "preferredPronouns": "she/her/hers",
+    "grade": 10,
+    "image": "about-us-images/Ananya-Bezbaruah.jpg"
+  },
+  {
+    "fullName": "Andrew Liu",
+    "preferredPronouns": "he/him/his",
+    "grade": "13+",
+    "teamsroles": "Design, Tournament Development",
+    "image": "about-us-images/Andrew-Liu.jpg"
+  },
+  {
+    "fullName": "Angie Huang",
+    "preferredPronouns": "she/her/hers",
+    "grade": 9,
+    "teamsroles": "Tournament Development, Design, Curriculum Development, YouTube",
+    "image": "about-us-images/Angie-Huang.jpg"
+  },
+  {
+    "fullName": "Anna Li",
+    "preferredPronouns": "she/her/hers",
+    "grade": 12,
+    "teamsroles": "Tournament Development, Design",
+    "image": "about-us-images/Anna-Li.jpg"
+  },
+  {
     "fullName": "Arpit Ranasaria",
-    "preferredPronouns": "he/him",
-    "grade": "Junior",
-    "role": "Director",
-    "primary": "about-us-images/primary/Arpit_Ranasaria_primary.jpg",
-    "secondary": "about-us-images/secondary/Arpit_Ranasaria_secondary.jpg",
-    "link": "https://linkedin.com/in/arpitranasaria"
+    "preferredPronouns": "he/him/his",
+    "grade": "13+",
+    "teamsroles": "Everything? Nothing? I dunno",
+    "image": "about-us-images/Arpit-Ranasaria.jpg",
+    "optionalProvideALinkToAPersonalSiteYoudLikeYourWebsitePictureToLinkToEgInstagramLinkedinPersonalWebpageEtc": "https://www.linkedin.com/in/arpitranasaria/"
   },
   {
-    "fullName": "Katherine Yang",
-    "preferredPronouns": "she/her",
-    "grade": "Junior",
-    "role": "Problem Writing Lead",
-    "primary": "about-us-images/primary/Katherine_Yang_primary.jpg",
-    "secondary": "about-us-images/secondary/Katherine_Yang_secondary.jpg"
+    "fullName": "Arya Sharma",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "teamsroles": "YouTube Lead",
+    "image": "about-us-images/Arya-Sharma.jpg",
+    "optionalProvideALinkToAPersonalSiteYoudLikeYourWebsitePictureToLinkToEgInstagramLinkedinPersonalWebpageEtc": "https://www.instagram.com/arya_s_real/?hl=en"
   },
   {
-    "fullName": "Ramya Iyer",
-    "preferredPronouns": "she/her",
-    "grade": "Freshman",
-    "role": "Marketing, General Test, Geometry Test, Guts Test",
-    "primary": "about-us-images/primary/Ramya_Iyer_primary.jpg",
-    "secondary": "about-us-images/secondary/Ramya_Iyer_secondary.jpg"
+    "fullName": "Ashwika Sharma",
+    "preferredPronouns": "she/her/hers",
+    "grade": 10,
+    "image": "about-us-images/Ashwika-Sharma.jpg"
   },
   {
-    "fullName": "Victor Kolev",
-    "preferredPronouns": "he/him",
-    "grade": "Sophomore",
-    "role": "Social Chair",
-    "primary": "about-us-images/primary/Victor_Kolev_primary.jpg",
-    "secondary": "about-us-images/secondary/Victor_Kolev_secondary.jpg"
+    "fullName": "Carson Mitchell",
+    "preferredPronouns": "he/him/his",
+    "grade": "13+",
+    "image": "about-us-images/Carson-Mitchell.jpg"
   },
   {
-    "fullName": "Eric Gao",
-    "preferredPronouns": "he/him",
-    "grade": "Sophomore",
-    "role": "Financial Officer, Power Writer",
-    "primary": "about-us-images/primary/Eric_Gao_primary.jpg",
-    "secondary": "about-us-images/secondary/Eric_Gao_secondary.jpg"
+    "fullName": "Daniel Chirakarn",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "image": "about-us-images/Daniel-Chirakarn.jpg"
   },
   {
-    "fullName": "Alice Zhu",
-    "preferredPronouns": "she/her",
-    "grade": "Freshman",
-    "role": "Marketing, Algebra Test",
-    "primary": "about-us-images/primary/Alice_Zhu_primary.jpg",
-    "secondary": "about-us-images/secondary/Alice_Zhu_secondary.jpg"
+    "fullName": "Daniel Z Lu",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "image": "about-us-images/Daniel-Z-Lu.jpg"
   },
   {
-    "fullName": "Conor Kennedy",
-    "preferredPronouns": "he/him",
-    "grade": "Freshman",
-    "role": "Tech",
-    "primary": "about-us-images/primary/Conor_Kennedy_primary.jpg",
-    "secondary": "about-us-images/secondary/Conor_Kennedy_secondary.jpg"
+    "fullName": "Dhruv Kasarabada ",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "teamsroles": "Problem Writing",
+    "image": "about-us-images/Dhruv-Kasarabada.jpg"
   },
   {
-    "fullName": "Ethan Zhang",
-    "preferredPronouns": "he/him",
-    "grade": "Freshman",
-    "role": "Discrete Test",
-    "primary": "about-us-images/primary/Ethan_Zhang_primary.jpg",
-    "secondary": "about-us-images/secondary/Ethan_Zhang_secondary.jpg"
+    "fullName": "Eesha Jain",
+    "preferredPronouns": "she/her/hers",
+    "grade": 10,
+    "teamsroles": "Tech, YouTube, Business",
+    "image": "about-us-images/Eesha-Jain.jpg",
+    "optionalProvideALinkToAPersonalSiteYoudLikeYourWebsitePictureToLinkToEgInstagramLinkedinPersonalWebpageEtc": "https://github.com/Eesha-Jain"
   },
   {
-    "fullName": "Isaac Zhao",
-    "preferredPronouns": "he/him",
-    "grade": "Sophomore",
-    "role": "Team Test",
-    "primary": "about-us-images/primary/Isaac_Zhao_primary.jpg",
-    "secondary": "about-us-images/secondary/Isaac Zhao_secondary.jpg"
+    "fullName": "Eric Ge",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "teamsroles": "Community Engagement, Tournament Development",
+    "image": "about-us-images/Eric-Ge.jpg"
   },
   {
-    "fullName": "Ivan Ge",
-    "preferredPronouns": "he/him",
-    "grade": "Freshman",
-    "role": "Logistics",
-    "primary": "about-us-images/primary/Ivan_Ge_primary.jpg",
-    "secondary": "about-us-images/secondary/Ivan_Ge_secondary.jpg"
+    "fullName": "Grace Tan",
+    "preferredPronouns": "she/her/hers",
+    "grade": 11,
+    "image": "about-us-images/Grace-Tan.jpg"
   },
   {
-    "fullName": "Lisa Liu",
-    "preferredPronouns": "she/her",
-    "grade": "Freshman",
-    "role": "Guts Test",
-    "primary": "about-us-images/primary/Lisa_Liu_primary.jpg",
-    "secondary": "about-us-images/secondary/Lisa_Liu_secondary.jpg"
+    "fullName": "Grace Zhao",
+    "preferredPronouns": "she/her/hers",
+    "grade": 10,
+    "teamsroles": "Design, Community Engagement",
+    "image": "about-us-images/Grace-Zhao.jpg"
   },
   {
-    "fullName": "Matthew Ding",
-    "preferredPronouns": "he/him",
-    "grade": "Junior",
-    "role": "Logistics",
-    "primary": "about-us-images/primary/Matthew_Ding_primary.jpg",
-    "secondary": "about-us-images/secondary/Matthew_Ding_secondary.jpg"
+    "fullName": "Greta Hsieh",
+    "preferredPronouns": "she/her/hers",
+    "grade": 11,
+    "teamsroles": "Design, Tournament Development",
+    "image": "about-us-images/Greta-Hsieh.jpg"
   },
   {
-    "fullName": "Misha Ivkov",
-    "preferredPronouns": "he/him",
-    "grade": "2nd year PhD",
-    "role": "Problem Writer",
-    "primary": "about-us-images/primary/Misha_Ivkov_primary.jpg",
-    "secondary": "about-us-images/secondary/Misha_Ivkov_secondary.jpg"
+    "fullName": "Harshil Nukala",
+    "preferredPronouns": "he/him/his",
+    "grade": 9,
+    "image": "about-us-images/Harshil-Nukala.jpg"
   },
   {
-    "fullName": "Nancy Jiang",
-    "preferredPronouns": "she/her",
-    "grade": "Freshman",
-    "role": "Geometry Test",
-    "primary": "about-us-images/primary/Nancy_Jiang_primary.jpg",
-    "secondary": "about-us-images/secondary/Nancy_Jiang_secondary.jpg"
+    "fullName": "Joyce Huang",
+    "preferredPronouns": "she/her/hers",
+    "grade": 10,
+    "teamsroles": "Problem Writing",
+    "image": "about-us-images/Joyce-Huang.jpg",
+    "optionalProvideALinkToAPersonalSiteYoudLikeYourWebsitePictureToLinkToEgInstagramLinkedinPersonalWebpageEtc": "https://www.connectedbystem.org/thegardenofmath"
   },
   {
-    "fullName": "Neil Rathi",
-    "preferredPronouns": "he/him",
-    "grade": "Freshman",
-    "role": "Design, Calculus Test",
-    "primary": "about-us-images/primary/Neil_Rathi_primary.jpg",
-    "secondary": "about-us-images/secondary/Neil_Rathi_secondary.jpg"
-  },
-
-  {
-    "fullName": "Ruosong Gao",
-    "preferredPronouns": "he/him",
-    "grade": "Freshman",
-    "role": "Guts Test",
-    "primary": "about-us-images/primary/Ruosong_Gao_primary.jpg",
-    "secondary": "about-us-images/secondary/Ruosong_Gao_secondary.jpg"
+    "fullName": "Kiran Parthasarathy ",
+    "preferredPronouns": "he/him/his",
+    "grade": 12,
+    "teamsroles": "YouTube, Curriculum Development",
+    "image": "about-us-images/Kiran-Parthasarathy.jpg"
   },
   {
-    "fullName": "Javokhir Arifov",
-    "preferredPronouns": "he/him",
-    "grade": "Sophomore",
-    "role": "Design",
-    "primary": "about-us-images/primary/Javokhir_Arifov_primary.jpg",
-    "secondary": "about-us-images/secondary/Javokhir_Arifov_secondary.jpg"
+    "fullName": "Krishna Iyer ",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "image": "about-us-images/Krishna-Iyer.jpg"
+  },
+  {
+    "fullName": "Markus Mantyvaara",
+    "preferredPronouns": "he/him/his",
+    "grade": 12,
+    "teamsroles": "Tournament Development, Problem Writing",
+    "image": "about-us-images/Markus-Mantyvaara.jpg"
+  },
+  {
+    "fullName": "Matthew Fan",
+    "preferredPronouns": "he/him/his",
+    "grade": 12,
+    "teamsroles": "Tech",
+    "image": "about-us-images/Matthew-Fan.jpg"
+  },
+  {
+    "fullName": "Michael Li",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "image": "about-us-images/Michael-Li.jpg"
+  },
+  {
+    "fullName": "Michael Liu",
+    "preferredPronouns": "he/him/his",
+    "grade": 11,
+    "image": "about-us-images/Michael-Liu.jpg"
+  },
+  {
+    "fullName": "Nihal Josyula",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "image": "about-us-images/Nihal-Josyula.jpg"
+  },
+  {
+    "fullName": "Noel Prince Muthuplakal",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "image": "about-us-images/Noel-Prince-Muthuplakal.jpg"
+  },
+  {
+    "fullName": "Owen Zhang",
+    "preferredPronouns": "he/him/his",
+    "grade": 12,
+    "image": "about-us-images/Owen-Zhang.png"
+  },
+  {
+    "fullName": "Rachel Lee",
+    "preferredPronouns": "she/her/hers",
+    "grade": 11,
+    "teamsroles": "Community Engagement",
+    "image": "about-us-images/Rachel-Lee.jpg"
+  },
+  {
+    "fullName": "Raymon Zhang",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "teamsroles": "Tech",
+    "image": "about-us-images/Raymon-Zhang.jpg",
+    "optionalProvideALinkToAPersonalSiteYoudLikeYourWebsitePictureToLinkToEgInstagramLinkedinPersonalWebpageEtc": "https://raymonzhang.is-a.dev/"
+  },
+  {
+    "fullName": "Reese Long",
+    "preferredPronouns": "she/her/hers",
+    "grade": 10,
+    "image": "about-us-images/Reese-Long.png"
+  },
+  {
+    "fullName": "Rishabh Oswal",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "image": "about-us-images/Rishabh-Oswal.jpeg"
+  },
+  {
+    "fullName": "Rithwick Pal",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "teamsroles": "Community Engagement, Business, Tournament Development, Curriculum Engagement",
+    "image": "about-us-images/Rithwick-Pal.jpg"
+  },
+  {
+    "fullName": "Rohan Das",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "teamsroles": "YouTube, Curriculum Development",
+    "image": "about-us-images/Rohan-Das.jpg"
+  },
+  {
+    "fullName": "Rohan Parthipan",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "image": "about-us-images/Rohan-Parthipan.jpg"
+  },
+  {
+    "fullName": "Sambhu Ganesan",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "teamsroles": "YouTube, Problem Writing",
+    "image": "about-us-images/Sambhu-Ganesan.jpg"
+  },
+  {
+    "fullName": "Sebastian Kumar",
+    "preferredPronouns": "he/him/his",
+    "grade": 12,
+    "image": "about-us-images/Sebastian-Kumar.png"
+  },
+  {
+    "fullName": "Serena Xu",
+    "preferredPronouns": "she/her/hers",
+    "grade": 12,
+    "teamsroles": "Curriculum Development, Problem Writing",
+    "image": "about-us-images/Serena-Xu.jpg",
+    "optionalProvideALinkToAPersonalSiteYoudLikeYourWebsitePictureToLinkToEgInstagramLinkedinPersonalWebpageEtc": "https://rabbbbbbbbbti.github.io/"
+  },
+  {
+    "fullName": "Shak Ragoler",
+    "grade": 12,
+    "image": "about-us-images/Shak-Ragoler.png"
+  },
+  {
+    "fullName": "Shrey Shah",
+    "preferredPronouns": "he/him/his",
+    "grade": 10,
+    "image": "about-us-images/Shrey-Shah.jpg"
+  },
+  {
+    "fullName": "Sofia Furman",
+    "preferredPronouns": "she/her/hers",
+    "grade": 9,
+    "image": "about-us-images/Sofia-Furman.jpg"
+  },
+  {
+    "fullName": "Sriram Venkatesh",
+    "preferredPronouns": "he/him/his",
+    "grade": 9,
+    "image": "about-us-images/Sriram-Venkatesh.jpg"
+  },
+  {
+    "fullName": "Stephen Xie",
+    "preferredPronouns": "he/him/his",
+    "grade": 11,
+    "image": "about-us-images/Stephen-Xie.jpg"
+  },
+  {
+    "fullName": "Tristan Kay",
+    "preferredPronouns": "he/him/his",
+    "grade": 12,
+    "image": "about-us-images/Tristan-Kay.jpg"
+  },
+  {
+    "fullName": "Yuuki Sawanoi",
+    "preferredPronouns": "he/him/his",
+    "grade": 12,
+    "image": "about-us-images/Yuuki-Sawanoi.jpg"
   }
 ]
