@@ -7,8 +7,9 @@
     import Person from "$lib/components/Person.svelte";
     import PageHeader from "$lib/components/PageHeader.svelte";
     import Alumni from "$lib/components/Alumni.svelte";
-    import Members from "$lib/Members.json";
     import Heading from "$lib/components/Heading.svelte"
+    import Members from "$lib/Members.json";
+    
     let windowWidth;
 </script>
 
