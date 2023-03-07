@@ -37,9 +37,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
-<br />
-
-<br id="registrationInfo" />
+<br><br>
 <Heading text="Stanford Math Tournament 2023" size={4} textColor="var(--heading-color)"/>
 <Heading text="Overview" size={2.5} />
 <div style="margin-left: 10vw; margin-right: 10vw;">
