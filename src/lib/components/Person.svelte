@@ -20,6 +20,7 @@
     </div>
 </PanelBox>
 
+
 <style>
     .person-flex{
         display: flex;
