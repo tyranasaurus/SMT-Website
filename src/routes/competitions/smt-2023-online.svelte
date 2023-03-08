@@ -187,7 +187,7 @@
         A: Teams consist of 6-8 members. Individuals and incomplete teams may be combined by organizers to form complete teams.<br />
         <br />
         Q: Do students on the same team have to be from the same school or established mathematical organization?<br />
-        A: Yes, students must be from the same school or mathematical organization<br />
+        A: No, you are free to form teams from outside of your school/in your area.<br />
         <br />
         
         Q: What schools or organizations can participate in SMT Online?<br />
