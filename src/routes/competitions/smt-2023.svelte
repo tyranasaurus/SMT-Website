@@ -52,7 +52,7 @@
                 <i
                     ><strong>Note for International Students:</strong>
                     Please visit <Link
-                        url="/competitions/smt-2023-async"
+                        url="/competitions/smt-2023-online"
                         text="this page."
                     />
                 </i>
