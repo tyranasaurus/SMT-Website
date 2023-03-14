@@ -223,6 +223,10 @@
         Q: Can I use the problems from previous SMT tests listed below in my classroom/book/etc?<br
         />
         A: Yes! Feel free to use these problems provided you cite us in the format (Stanford Math Tournament [Year] [Round] [Problem #])<br />
+        <br>
+        Q: Will SMT Online have Awards?<br
+        />
+        A: There are no physical awards, but we will be announcing results and providing digital certificates of achievement.<br />
     </PanelBox>
 </div>
 
