@@ -54,7 +54,8 @@
 <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox>
         <div style="padding: 10px;">
-            <p>SMT Asynchronous will be available after April 9, 2023.</p>
+            <p>SMT Asynchronous will be available after April 9, 2023. Registration for the event will be available soon.</p>
+            <p>There are no awards or pfficial rankings for SMT Asynchronous, but you will receive your scores and reports, and we will release overall statistics.</p>
             <!--
             <HeaderButton
                 text="Apply for SMT 2023"
