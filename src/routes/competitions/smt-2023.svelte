@@ -103,7 +103,7 @@
         <strong>March 12, 2023 at 11:59 PM PT:</strong> Application deadline
     </TimelineElement>
     <TimelineElement>
-        <strong>March 14, 2023:</strong> Announcement of teams selected for
+        <strong>March 15, 2023:</strong> Announcement of teams selected for
         in-person competition
     </TimelineElement>
     <TimelineElement>
