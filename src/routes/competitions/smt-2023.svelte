@@ -48,7 +48,7 @@
                 <strong>LOCATION:</strong> Stanford University <br />
                 <strong>WHO:</strong> High School students residing within the United States <br />
                 <strong>TEAM SIZE:</strong> 5-6 <br />
-                <strong>COST:</strong> $10 per student (Financial aid available upon request!) <br /> <br />
+                <strong>COST:</strong> $15 per student (Financial aid available upon request!) <br /> <br />
                 <i
                     ><strong>Note for International Students:</strong>
                     Please visit <Link
@@ -103,11 +103,11 @@
         <strong>March 12, 2023 at 11:59 PM PT:</strong> Application deadline
     </TimelineElement>
     <TimelineElement>
-        <strong>March 15, 2023:</strong> Announcement of teams selected for
+        <strong>March 16, 2023:</strong> Announcement of teams selected for
         in-person competition
     </TimelineElement>
     <TimelineElement>
-        <strong>March 21, 2023:</strong> Deadline for selected teams to register
+        <strong>March 22, 2023:</strong> Deadline for selected teams to register
         on Eventbrite
     </TimelineElement>
     <TimelineElement>
