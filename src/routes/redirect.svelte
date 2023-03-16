@@ -16,7 +16,7 @@
         } else {
             return {
                 status: 302,
-                redirect: "https://mustangmath.com"
+                redirect: "https://stanfordmathtournament.com"
             };
         }
     }
