@@ -111,7 +111,7 @@
         on Eventbrite
     </TimelineElement>
     <TimelineElement>
-        <strong>March 28, 2023:</strong> Deadline for proof of travel and housing.
+        <strong>March 29, 2023:</strong> Deadline for proof of travel and housing.
     </TimelineElement>
     <TimelineElement>
         <strong>April 1, 2023:</strong> Deadline for student waiver submission.
