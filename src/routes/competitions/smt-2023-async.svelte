@@ -8,6 +8,8 @@
     import Timeline from "$lib/components/timeline/Timeline.svelte";
     import TimelineElement from "$lib/components/timeline/TimelineElement.svelte";
     import HeaderButton from "$lib/components/HeaderButton.svelte";
+    import QA from "$lib/components/FAQitem.svelte";
+    import Questions from "$lib/FAQ-smt-2023-async.json";
 
     let windowWidth;
     const scheduleData = [
@@ -44,7 +46,7 @@
                 <strong>TEAM SIZE:</strong> Up to 6 <br />
                 <strong>COST:</strong> $3 per participant<br /> <br />
             </p>
-            <strong>Note for International Students:</strong> We are no longer offering SMT International this year due to worries about test security. International students may participate in SMT Online, or if the timing is bad for them, SMT Asynchronous
+            <strong>Note for International Students:</strong> We are no longer offering SMT International this year. International students may participate in SMT Online, or if the timing is bad for them, SMT Asynchronous.
         </div>
     </PanelBox>
 </div>
@@ -55,7 +57,7 @@
     <PanelBox>
         <div style="padding: 10px;">
             <p>SMT Asynchronous will be available after April 9, 2023. Registration for the event will be available soon.</p>
-            <p>There are no awards or pfficial rankings for SMT Asynchronous, but you will receive your scores and reports, and we will release overall statistics.</p>
+            <p>There are no awards or official rankings for SMT Asynchronous, but you will receive your scores and reports, and we will release overall statistics.</p>
             <!--
             <HeaderButton
                 text="Apply for SMT 2023"
@@ -153,47 +155,13 @@
 </div>
 
 <Heading text="FAQ" size={2.5} />
-<div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
-        Make sure to check the rules page for detailed information regarding
-        SMT. If your question is not answered below, feel free to contact the
-        SMT coordinators at <a href="mailto:stanford.math.tournament@gmail.com"
-            >stanford.math.tournament@gmail.com</a
-        >. <br />
-        <br />
-        <strong>Registration</strong><br />
-        Q: How many students may be on a team?<br />
-        A: Teams consist of 5-6 members. Individuals and incomplete teams may be combined by organizers to form complete teams.<br />
-        <br />
-        Q: Do students on the same team have to be from the same school or established mathematical organization?<br />
-        A: Yes, students must be from the same school or mathematical organization<br />
-        <br />
-        Q: What schools or organizations can participate in SMT Asyncronous?<br />
-        A: SMT 2023 Asyncronous will be open to all students.<br />
-        <br />
-        <br />
-        
-        <strong>Testing</strong><br />
-        Q: Are calculators allowed?<br />
-        A: No. Calculators are not allowed on any portion of the tests. Check the
-        SMT rules for information on permitted items.<br />
-        <br />
-        Q: What topics may appear on the tests? How hard are the tests?<br />
-        A: See the mathematical expectations document for guidelines on what topics
-        may appear on each test. It is also advisable to look at the test from previous
-        years in order to get a sense of the typical style and difficulty of SMT
-        tests.<br />
-        <br />
-        <!--
-        Q: Which individual test should I take?<br />
-        A: If you have little or no experience with contest math, we strongly recommend
-        you take the General Test. Looking at past tests will help you get a sense
-        of the difficulty of each test.<br />
-        <br />
-        -->
-        <strong>Logistics</strong><br />
-        Q: Can I use the problems from previous SMT tests listed below in my classroom/book/etc?<br
-        />
-        A: Yes! Feel free to use these problems provided you cite us in the format (Stanford Math Tournament [Year] [Round] [Problem #])<br />
-    </PanelBox>
-</div>
+<section>
+    <FlexBox wrap={true}>
+        {#each Questions as QAitem}
+            <QA
+                question={QAitem.question}
+                answer={QAitem.answer}
+            />
+        {/each}
+    </FlexBox>
+</section>

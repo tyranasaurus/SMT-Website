@@ -8,6 +8,8 @@
     import Timeline from "$lib/components/timeline/Timeline.svelte";
     import TimelineElement from "$lib/components/timeline/TimelineElement.svelte";
     import HeaderButton from "$lib/components/HeaderButton.svelte";
+    import QA from "$lib/components/FAQitem.svelte";
+    import Questions from "$lib/FAQ-smt-2023.json";
 
     let windowWidth;
     const scheduleData = [
@@ -188,56 +190,13 @@
 </div>
 
 <Heading text="FAQ" size={2.5} />
-<div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
-        Make sure to check the rules page for detailed information regarding
-        SMT. If your question is not answered below, feel free to contact the
-        SMT coordinators at <a href="mailto:stanford.math.tournament@gmail.com"
-            >stanford.math.tournament@gmail.com</a
-        >. <br />
-        <br />
-        <strong>Registration</strong><br />
-        Q: How many students may be on a team?<br />
-        A: Teams must consist of 5-6 members. Teams with less or more students will not be accepted.<br />
-        <br />
-        Q: Can I participate in SMT remotely?<br />
-        A: Yes, see the SMT Online and SMT Asyncronous Pages<br />
-        <br />
-        Q: Do students on the same team have to be from the same school or established mathematical organization?<br />
-        A: Yes, students must be from the same school or mathematical organization<br />
-        <br />
-        Q: What schools or organizations can participate in SMT?<br />
-        A: SMT 2023 will be open to all domestic students from US-based schools or organizations.<br />
-        <br />
-        Q: Can international teams participate in SMT? If so, how do they register?<br
-        />
-        A: Yes, but they must participate in SMT Online or SMT Asyncronous - see that page for more details.<br
-        />
-        <br />
-        <strong>Testing</strong><br />
-        Q: Are calculators allowed?<br />
-        A: No. Calculators are not allowed on any portion of the tests. Check the
-        SMT rules for information on permitted items.<br />
-        <br />
-        Q: What topics may appear on the tests? How hard are the tests?<br />
-        A: See the mathematical expectations document for guidelines on what topics
-        may appear on each test. It is also advisable to look at the test from previous
-        years in order to get a sense of the typical style and difficulty of SMT
-        tests.<br />
-        <br />
-        <!--
-        Q: Which individual test should I take?<br />
-        A: If you have little or no experience with contest math, we strongly recommend
-        you take the General Test. Looking at past tests will help you get a sense
-        of the difficulty of each test.<br />
-        <br />
-        -->
-        <strong>Logistics</strong><br />
-        Q: Do we need to have a teacher or coach attend SMT in person?<br />
-        A: Yes, you must have at least one authorized adult chaperone present per team.<br/>
-        <br />
-        Q: Can I use the problems from previous SMT tests listed below in my classroom/book/etc?<br
-        />
-        A: Yes! Feel free to use these problems provided you cite us in the format (Stanford Math Tournament [Year] [Round] [Problem #])<br />
-    </PanelBox>
-</div>
+<section>
+    <FlexBox wrap={true}>
+        {#each Questions as QAitem}
+            <QA
+                question={QAitem.question}
+                answer={QAitem.answer}
+            />
+        {/each}
+    </FlexBox>
+</section>

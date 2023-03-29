@@ -8,6 +8,8 @@
     import Timeline from "$lib/components/timeline/Timeline.svelte";
     import TimelineElement from "$lib/components/timeline/TimelineElement.svelte";
     import HeaderButton from "$lib/components/HeaderButton.svelte";
+    import QA from "$lib/components/FAQitem.svelte";
+    import Questions from "$lib/FAQ-smt-2023-online.json";
 
     let windowWidth;
     const scheduleData = [
@@ -174,62 +176,16 @@
 </div>
 
 <Heading text="FAQ" size={2.5} />
-<div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
-        Make sure to check the rules page for detailed information regarding
-        SMT. If your question is not answered below, feel free to contact the
-        SMT coordinators at <a href="mailto:stanford.math.tournament@gmail.com"
-            >stanford.math.tournament@gmail.com</a
-        >. <br />
-        <br />
-        <strong>Registration</strong><br />
-        Q: How many students may be on a team?<br />
-        A: Teams consist of 6-8 members. Individuals and incomplete teams may be combined by organizers to form complete teams.<br />
-        <br />
-        Q: Do students on the same team have to be from the same school or established mathematical organization?<br />
-        A: No, you are free to form teams from outside of your school/in your area.<br />
-        <br />
-        
-        Q: What schools or organizations can participate in SMT Online?<br />
-        A: SMT 2023 Online will be open to all students.<br />
-        <br />
-        Q: Can international teams participate in SMT? If so, how do they register?<br
-        />
-        A: Yes, as long as they are able to take the test in PST time.<br
-        />
-        <br />
-        Q: PST time does not work for me. What do I do?
-        A: You can participate in <Link url="/competitions/smt-2023-async" text="SMT Asyncronous!" />
-        <br />
-        <strong>Testing</strong><br />
-        Q: Are calculators allowed?<br />
-        A: No. Calculators are not allowed on any portion of the tests. Check the
-        SMT rules for information on permitted items.<br />
-        <br />
-        Q: What topics may appear on the tests? How hard are the tests?<br />
-        A: See the mathematical expectations document for guidelines on what topics
-        may appear on each test. It is also advisable to look at the test from previous
-        years in order to get a sense of the typical style and difficulty of SMT
-        tests.<br />
-        <br />
-        <!--
-        Q: Which individual test should I take?<br />
-        A: If you have little or no experience with contest math, we strongly recommend
-        you take the General Test. Looking at past tests will help you get a sense
-        of the difficulty of each test.<br />
-        <br />
-        -->
-        <strong>Logistics</strong><br />
-        Q: Can I use the problems from previous SMT tests listed below in my classroom/book/etc?<br
-        />
-        A: Yes! Feel free to use these problems provided you cite us in the format (Stanford Math Tournament [Year] [Round] [Problem #])<br />
-        <br>
-        Q: Will SMT Online have Awards?<br
-        />
-        A: There are no physical awards, but we will be announcing results and providing digital certificates of achievement.<br />
-    </PanelBox>
-</div>
-
+<section>
+    <FlexBox wrap={true}>
+        {#each Questions as QAitem}
+            <QA
+                question={QAitem.question}
+                answer={QAitem.answer}
+            />
+        {/each}
+    </FlexBox>
+</section>
 <style>
     .RegButtons {
         display: inline-flex;
