@@ -41,7 +41,7 @@
 <br><br>
 <Heading text="Stanford Math Tournament 2023 Online" size={4} textColor="var(--heading-color)"/>
 <Heading text="Overview" size={2.5} />
-<div style="margin-left: 10vw; margin-right: 10vw;">
+<div class="section-wrapper">
     <PanelBox>
         <div style="padding: 10px;">
             <p>
@@ -57,7 +57,7 @@
 <br />
 
 <Heading text="Registration Information" size={2.5} />
-<div style="margin-left: 10vw; margin-right: 10vw;">
+<div class="section-wrapper">
     <PanelBox>
         <div style="padding: 10px;">
             <p>In order to properly register for SMT Online, all of the following steps must be completed by the coach and students:</p>
@@ -68,17 +68,19 @@
                 <li>Students must join the organization and fill out the registration form.</li>
                 <li>Coaches organize their students into teams.</li>
             </ol>
+            <div class="buttons-wrapper">
             <HeaderButton class = "RegButtons"
                 text="Eventbrite Payment"
                 href={"https://tinyurl.com/SMT2023OnlineEventbrite"}
                 isSmall
             />
-            <br>
+            <br/><br/>
             <HeaderButton class = "RegButtons"
                 text="ContestDojo"
                 href={"https://contestdojo.com"}
                 isSmall
             />
+            </div>
         </div>
     </PanelBox>
 </div>
@@ -109,8 +111,8 @@
     </TimelineElement>
 </Timeline>
 
-<Heading text="Contest Schedule" size={2.5} />
-<div class="schedule-wrapper">
+<Heading text="Contest Schedule" size={2.5} style="margin-top: 5rem" />
+<div class="schedule-wrapper section-wrapper">
     <FlexBox>
         <PanelBox>
             <Table
@@ -133,7 +135,7 @@
 
 <Heading text="Test Information" size={2.5} />
 
-<div style="margin-left: 10vw; margin-right: 10vw;">
+<div class="section-wrapper">
     <PanelBox>
         <p>
             The <strong>Power Round</strong> is a 80-minute exam focused on proof-writing.

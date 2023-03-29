@@ -42,7 +42,7 @@
 <br><br>
 <Heading text="Stanford Math Tournament 2023" size={4} textColor="var(--heading-color)"/>
 <Heading text="Overview" size={2.5} />
-<div style="margin-left: 10vw; margin-right: 10vw;">
+<div class="section-wrapper">
     <PanelBox>
         <div style="padding: 10px;">
             <p>
@@ -70,21 +70,12 @@
 <br />
 
 <Heading text="Application Information" size={2.5} />
-<div style="margin-left: 10vw; margin-right: 10vw;">
+<div class="section-wrapper">
     <PanelBox>
         <div style="padding: 10px;">
             <p>For SMT 2023, Stanford University policy limits us to 42 teams of 5-6 students from the United States in-person at Stanford’s campus. As such, we are now accepting applications for in-person participation from United States based schools and established mathematical organizations. We will not be accepting individual applications or applications for teams of size less than 5. All teams who don’t want to travel or are international should participate in our online tournaments. </p>
             <p>We will be accepting 25 teams from within the Bay Area (defined as within 150 mi of Stanford University), and 17 are from other domestic locations. Of these, 10 Bay Area teams and 7 Domestic teams will be merit-based - selected on performance in previous year’s and other relevant tournaments, and the rest will be selected based on a lottery system. Note, depdendent on interest, we may cap the number of teams participating from an individual organization to 2. The remaining teams will not be allowed to come in person and should participate in the online tournament happening on April 9, 2023.</p>
             <p>Do note that these selection criteria are not final and may change as we look for a set of criteria that make sense to promote both diversity and competition for this year and future ones. Decisions made by SMT Organizers are final and non-negotiable.</p>
-        </div>
-    </PanelBox>
-</div>
-
-<Heading text="COVID-19 Policy" size={2.5} />
-<div style="margin-left: 10vw; margin-right: 10vw;">
-    <PanelBox>
-        <div style="padding: 10px;">
-            <p>Proof of Vaccination and Proof of Negative COVID test within 24 hours of the start of the program are required. Students looking to request exemption from this protocol would have to email <a href="mailto:protectminors@stanford.edu">protectminors@stanford.edu</a>.</p>
         </div>
     </PanelBox>
 </div>
@@ -123,8 +114,8 @@
     </TimelineElement>
 </Timeline>
 
-<Heading text="Contest Schedule" size={2.5} />
-<div class="schedule-wrapper">
+<Heading text="Contest Schedule" size={2.5} style="margin-top: 5rem" />
+<div class="schedule-wrapper section-wrapper">
     <FlexBox>
         <PanelBox>
             <Table
@@ -147,7 +138,7 @@
 
 <Heading text="Test Information" size={2.5} />
 
-<div style="margin-left: 10vw; margin-right: 10vw;">
+<div class="section-wrapper">
     <PanelBox>
         <p>
             The <strong>Power Round</strong> is a 80-minute exam focused on proof-writing.
@@ -186,6 +177,15 @@
         <p>
             The <strong>Individual Round(s)</strong> are the rounds taken independent of your teams.
         </p>
+    </PanelBox>
+</div>
+
+<Heading text="COVID-19 Policy" size={2.5} />
+<div class="section-wrapper">
+    <PanelBox>
+        <div style="padding: 10px;">
+            <p>Proof of Vaccination and Proof of Negative COVID test within 24 hours of the start of the program are required. Students looking to request exemption from this protocol would have to email <a href="mailto:protectminors@stanford.edu">protectminors@stanford.edu</a>.</p>
+        </div>
     </PanelBox>
 </div>
 

@@ -36,7 +36,7 @@
 <br><br>
 <Heading text="Stanford Math Tournament 2023 Asynchronous" size={4} textColor="var(--heading-color)"/>
 <Heading text="Overview" size={2.5} />
-<div style="margin-left: 10vw; margin-right: 10vw;">
+<div class="section-wrapper">
     <PanelBox>
         <div style="padding: 10px;">
             <p>
@@ -53,7 +53,7 @@
 <br />
 
 <Heading text="Contest Information" size={2.5} />
-<div style="margin-left: 10vw; margin-right: 10vw;">
+<div class="section-wrapper">
     <PanelBox>
         <div style="padding: 10px;">
             <p>SMT Asynchronous will be available after April 9, 2023. Registration for the event will be available soon.</p>
@@ -117,7 +117,7 @@
 -->
 <Heading text="Test Information" size={2.5} />
 
-<div style="margin-left: 10vw; margin-right: 10vw;">
+<div class="section-wrapper">
     <PanelBox>
         <p>
             The <strong>Team Round</strong> is a 50-minute exam consisting of 15
