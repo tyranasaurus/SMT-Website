@@ -204,3 +204,28 @@ button:focus:not(:focus-visible) {
 .sign-up:hover {
 	background-color: var(--background-extra-dark);
 }
+
+.section-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+    max-width: 66.67%;
+    display: flex;
+}
+.buttons-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 500px) {
+    .section-wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+    .buttons-wrapper {
+        flex-direction: column;
+    }
+}
