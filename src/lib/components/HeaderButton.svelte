@@ -6,13 +6,18 @@
     export let isLink = true; // can be link or button
     export let href = "javascript:;";
     export let onClick = () => {};
+    export let style = "";
+    export let centered = false;
+    export let newTab=false;
 
     let className = isSmall ? "smallerButton" : "headerButton";
+    style = centered ? "margin-left: auto; margin-right: auto; {style}" : style;
+    let target = newTab ? "_blank" : "_self";
 </script>
 
 {#if isLink}
-    <div>
-        <a sveltekit:prefetch {href} class={className}>
+    <div style={style}>
+        <a sveltekit:prefetch {href} class={className} target={target}>
             <div class={className} on:click={onClick}>
                 <p class={className}>
                     {text}
@@ -27,7 +32,7 @@
         </a>
     </div>
 {:else}
-    <div class={className} on:click={onClick}>
+    <div class={className} on:click={onClick} style={style}>
         <p class={className}>
             {text}
         </p>
