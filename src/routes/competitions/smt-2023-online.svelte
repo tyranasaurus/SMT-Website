@@ -98,10 +98,10 @@
         <strong>March 29, 2023:</strong> Regular ($15/student) registration deadline
     </TimelineElement>
     <TimelineElement>
-        <strong>April 1, 2023:</strong> Deadline for student waiver submission.
+        <strong>April 6, 2023:</strong> Late ($25/student) registration deadline
     </TimelineElement>
     <TimelineElement>
-        <strong>April 6, 2023:</strong> Late ($25/student) registration deadline
+        <strong>April 7, 2023:</strong> Deadline for student waiver submission.
     </TimelineElement>
     <TimelineElement>
         <strong>April 9, 2023:</strong> SMT Online!!!
