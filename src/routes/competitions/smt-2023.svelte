@@ -63,6 +63,7 @@
                 text="Apply for SMT 2023"
                 href={formLink}
                 isSmall
+                centered
             />
         </div>
     </PanelBox>

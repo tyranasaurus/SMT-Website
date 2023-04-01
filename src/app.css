@@ -213,6 +213,12 @@ button:focus:not(:focus-visible) {
     max-width: 66.67%;
     display: flex;
 }
+.col-sm {
+    max-width : 50%;
+}
+.section-item {
+    padding: 10px
+}
 .buttons-wrapper {
     margin-left: auto;
     margin-right: auto;
@@ -222,8 +228,8 @@ button:focus:not(:focus-visible) {
 
 @media screen and (max-width: 500px) {
     .section-wrapper {
-        max-width: 100%;
-        width: 100%;
+        max-width: 100%!important;
+        width: 100%!important;
     }
     .buttons-wrapper {
         flex-direction: column;

@@ -81,6 +81,14 @@
                 "<ul><li>Fermat’s Little Theorem</li> <li>Euclidean Algorithm</li> <li>Chinese Remainder Theorem</li> <li>Divisibility</li> <li>Chicken McNugget Theorem</li> <li>GCD and LCM</li> <li>Number of Factors</li> <li>Sum of Factors</li> <li>Basic Modular Arithmetic</li> <li>Fundamental Theorem of Arithmetic</li></ul>",
         },
     ];
+
+
+
+const testInfo = "https://docs.google.com/document/d/1CZOsMz27ZdP3Ftj3DoCS9h8yFcukC5eu3nzf7GMdfWs/edit?usp=sharing";
+const rulesScoring = "https://docs.google.com/document/d/1gHIbirfCyn_2qybVmC0AhN3l2z2UVybVmsdFw8-T8W4/edit?usp=sharing";
+const cheating = "https://docs.google.com/document/d/1wYJbRgsZYBsGPNTlu6QEsgIG0GbEviulDaI-3oFamZU/edit?usp=sharing";
+const answerformat = "https://docs.google.com/document/d/1TWJQIqpJzT7engSTAJ9dIphMcG07vevcqWbsKhVOMqg/edit?usp=sharing";
+const notation = "https://drive.google.com/file/d/1jhHz2K4yUsKICDj4HvRhcICmHrINb1hL/view?usp=sharing";
 </script>
 
 <svelte:head>
@@ -88,32 +96,69 @@
 </svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
-<div class="outside" style="height: calc(max(600px, 100vh));">
-    <div class="header flex">
-        <div class="minidiv">
-            <Heading
-                className="glow"
-                text="Rules"
-                align="left"
-                textColor="black"
-                size={windowWidth > 700 ? 7 : 3}
-                marginLeft="0"
-                padding="0"
-            />
-            <p class="descript">
-                This page is still under construction, please come back later, or check out past rules below!
+
+<br><br>
+<Heading text="SMT 2023 Rules" size={4} textColor="var(--heading-color)"/>
+
+<div class="section-wrapper col-sm" style="margin-top: 10vh">
+    <PanelBox>
+        <div class="section-item">
+            <p>
+            The mathematical expectations for each test (both individual and team) can be found in the document below. It outlines the content that each test might include, and can serve as a useful guide for those debating which test to take. 
             </p>
             <HeaderButton
-                text="Past Rules Information"
-                arrowDirection="right"
-                onClick={() => open("https://sumo.stanford.edu/smt")}
-                isLink={true}
+                text="Test Information"
+                href={testInfo}
+                isSmall
+                centered
+                newTab
             />
         </div>
+        <div class="section-item">
+            <p>
+                The specific test rules, parameters (i.e. duration), and scoring can be found in the document below. It further outlines total scoring for the tournament, as well as awards and protests. 
+            </p>
+            <HeaderButton
+                text="Scoring"
+                href={rulesScoring}
+                isSmall
+                centered
+                newTab
+            />
+        </div>
+        <div class="section-item">
+            <p>
+                By participating in the tournament, one agrees to maintain and uphold academic honesty, and abide by the Code of Conduct and The Stanford Honor Code. These can be reviewed below.
+            </p>
+            <HeaderButton
+                text="Honor Code"
+                href={cheating}
+                isSmall
+                centered
+                newTab
+            />
+        </div>
+    <div class="section-item">
+        <p>
+            Only answers in the specified format will be labelled as correct, most notably on tests that are not proof-based. Please take time to review the answer formatting rules, as well as common mathematical notation used in the tests in the documents below. 
+        </p>
+        <div class="buttons-wrapper">
+        <HeaderButton
+            text="Answer Format"
+            href={answerformat}
+            isSmall
+            newTab
+        />
+        <HeaderButton
+            text="Notation"
+            href={notation}
+            isSmall
+            newTab
+        />
+        </div>
     </div>
+    </PanelBox>
 </div>
-
-<br />
 
 <style>
     .outside {
