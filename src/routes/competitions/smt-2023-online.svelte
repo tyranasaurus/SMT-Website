@@ -28,6 +28,15 @@
         ["3:00 PM-4:30 PM", "Guts Round (80 min)"],
     ];
 
+    let popupHidden = false;
+    let modalBind;
+
+    function modalTryClose(e, force) {
+        if (force || e.target === modalBind) {
+            popupHidden = true;
+        }
+    }
+
     const formLink =
         "https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link";
 </script>
@@ -36,7 +45,30 @@
     <title>SMT 2023</title>
 </svelte:head>
 
-<svelte:window bind:innerWidth={windowWidth} />
+<svelte:window bind:innerWidth={windowWidth} on:click={(e) => modalTryClose(e, false)} />
+
+<div bind:this={modalBind} class="popup" style="display: {popupHidden ? 'none' : 'auto'}">
+    <div class="popup-content">
+        <span class="close" on:click={(e) => modalTryClose(e, true)}>&times;</span>
+        <Heading text="Important Information" size={2.5} />
+        <PanelBox>
+            <p><b>If you are participating in SMT 2023 Online on 4/9, please read the guide and join the discord server!</b></p>
+            <HeaderButton
+                text="Guide to SMT 2023 Online"
+                href={"https://tinyurl.com/SMT2023OnlineGuide"}
+                isSmall
+                newTab
+            />
+            <br />
+            <HeaderButton
+                text="Discord Link (JOIN!)"
+                href={"https://discord.gg/r9p65c6spP"}
+                isSmall
+                newTab
+            />
+        </PanelBox>
+    </div>
+</div>
 
 <br><br>
 <Heading text="Stanford Math Tournament 2023 Online" size={4} textColor="var(--heading-color)"/>
@@ -193,5 +225,40 @@
         display: inline-flex;
         padding: 5px;
         margin: 5px;
+    }
+
+    .popup {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .popup-content {
+        background-color: var(--background-white);
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid var(--black-border);
+        width: 80%;
+        border-radius: 5px;
+    }
+
+    .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
     }
 </style>
