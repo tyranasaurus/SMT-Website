@@ -33,6 +33,22 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
+<div bind:this={modalBind} class="popup" style="display: {popupHidden ? 'none' : 'auto'}">
+    <div class="popup-content">
+        <span class="close" on:click={(e) => modalTryClose(e, true)}>&times;</span>
+        <Heading text="Registration Open!" size={2.5} />
+        <PanelBox>
+            <p><b>Regsistration for SMT Async is open on ContestDojo!</b></p>
+            <HeaderButton
+                text="Register Now!"
+                href={"https://contestdojo.com"}
+                isSmall
+                newTab
+            />
+        </PanelBox>
+    </div>
+</div>
+
 <br><br>
 <Heading text="Stanford Math Tournament 2023 Asynchronous" size={4} textColor="var(--heading-color)"/>
 <Heading text="Overview" size={2.5} />
@@ -40,11 +56,11 @@
     <PanelBox>
         <div style="padding: 10px;">
             <p>
-                <strong>DATE:</strong> April 10 until April 16 <br />
+                <strong>DATE:</strong> April 12 until April 16 <br />
                 <strong>LOCATION:</strong> Online <br />
                 <strong>WHO:</strong> Any student anywhere.<br />
-                <strong>TEAM SIZE:</strong> Up to 6 <br />
-                <strong>COST:</strong> $3 per participant<br /> <br />
+                <strong>TEAM SIZE:</strong> Up to 8 <br />
+                <strong>COST:</strong> $5 per participant<br /> <br />
             </p>
             <strong>Note for International Students:</strong> We are no longer offering SMT International this year. International students may participate in SMT Online, or if the timing is bad for them, SMT Asynchronous.
         </div>
@@ -56,16 +72,9 @@
 <div class="section-wrapper">
     <PanelBox>
         <div style="padding: 10px;">
-            <p>SMT Asynchronous will be available after April 9, 2023. Registration for the event will be available soon.</p>
-            <p>There are no awards or official rankings for SMT Asynchronous, but you will receive your scores and reports, and we will release overall statistics.</p>
-            <!--
-            <HeaderButton
-                text="Apply for SMT 2023"
-                hasArrow={false}
-                href={formLink}
-                isSmall
-            />
-            -->
+            <p>There are no awards or official rankings for SMT Asynchronous, but you will receive a certificate of participation, as well as score reports the give you general statistics and let you know how you compare to all participants in SMT 2023 (in-person, online, asynchronous).</p>
+            <p>SMT Asynchronous may take placeanywhere or anytime during the testing window - you can make it an entire-day affair, or you can split the tests up across multiple days.</p>
+            <p>For the team rounds (team and guts) you can form teams of up to 8, during which you all can work together on the test, and your answers will sync in ContestDojo. <b>One student starting the test will start it for the entire team!</b></p>
         </div>
     </PanelBox>
 </div>
@@ -153,15 +162,3 @@
         </p>
     </PanelBox>
 </div>
-
-<Heading text="FAQ" size={2.5} />
-<section>
-    <FlexBox wrap={true}>
-        {#each Questions as QAitem}
-            <QA
-                question={QAitem.question}
-                answer={QAitem.answer}
-            />
-        {/each}
-    </FlexBox>
-</section>
