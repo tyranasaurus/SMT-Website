@@ -40,7 +40,7 @@
     <title>SMT 2023</title>
 </svelte:head>
 
-<svelte:window bind:innerWidth={windowWidth} />
+<svelte:window bind:innerWidth={windowWidth} on:click={(e) => modalTryClose(e, false)} />
 
 <div bind:this={modalBind} class="popup" style="display: {popupHidden ? 'none' : 'auto'}">
     <div class="popup-content">
