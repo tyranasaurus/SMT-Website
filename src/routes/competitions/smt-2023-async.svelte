@@ -23,6 +23,7 @@
         ["9:30 AM-11:00 AM", "Guts Round (80 min)"],
     ];
 
+    let popupHidden = false;
     let modalBind;
 
     function modalTryClose(e, force) {
