@@ -47,6 +47,7 @@
 
 <svelte:window bind:innerWidth={windowWidth} on:click={(e) => modalTryClose(e, false)} />
 
+<!--
 <div bind:this={modalBind} class="popup" style="display: {popupHidden ? 'none' : 'auto'}">
     <div class="popup-content">
         <span class="close" on:click={(e) => modalTryClose(e, true)}>&times;</span>
@@ -69,7 +70,7 @@
         </PanelBox>
     </div>
 </div>
-
+-->
 <br><br>
 <Heading text="Stanford Math Tournament 2023 Online" size={4} textColor="var(--heading-color)"/>
 <Heading text="Overview" size={2.5} />
