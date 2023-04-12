@@ -47,7 +47,7 @@
         <span class="close" on:click={(e) => modalTryClose(e, true)}>&times;</span>
         <Heading text="Registration Open!" size={2.5} />
         <PanelBox>
-            <p><b>Regsistration for SMT Async is open on ContestDojo!</b></p>
+            <p><b>Registration for SMT Async is open on ContestDojo!</b></p>
             <HeaderButton
                 text="Register Now!"
                 href={"https://contestdojo.com"}
