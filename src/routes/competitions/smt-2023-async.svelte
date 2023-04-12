@@ -23,6 +23,14 @@
         ["9:30 AM-11:00 AM", "Guts Round (80 min)"],
     ];
 
+    let modalBind;
+
+    function modalTryClose(e, force) {
+        if (force || e.target === modalBind) {
+            popupHidden = true;
+        }
+    }
+
     const formLink =
         "https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link";
 </script>
@@ -63,6 +71,13 @@
                 <strong>COST:</strong> $5 per participant<br /> <br />
             </p>
             <strong>Note for International Students:</strong> We are no longer offering SMT International this year. International students may participate in SMT Online, or if the timing is bad for them, SMT Asynchronous.
+            <p><b>Regsistration for SMT Async is open on ContestDojo!</b></p>
+            <HeaderButton
+                text="Register Now!"
+                href={"https://contestdojo.com"}
+                isSmall
+                newTab
+            />
         </div>
     </PanelBox>
 </div>
