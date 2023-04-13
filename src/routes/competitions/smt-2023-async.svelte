@@ -40,11 +40,20 @@
     <title>SMT 2023</title>
 </svelte:head>
 
-<svelte:window bind:innerWidth={windowWidth} on:click={(e) => modalTryClose(e, false)} />
+<svelte:window
+    bind:innerWidth={windowWidth}
+    on:click={(e) => modalTryClose(e, false)}
+/>
 
-<div bind:this={modalBind} class="popup" style="display: {popupHidden ? 'none' : 'auto'}">
+<div
+    bind:this={modalBind}
+    class="popup"
+    style="display: {popupHidden ? 'none' : 'auto'}"
+>
     <div class="popup-content">
-        <span class="close" on:click={(e) => modalTryClose(e, true)}>&times;</span>
+        <span class="close" on:click={(e) => modalTryClose(e, true)}
+            >&times;</span
+        >
         <Heading text="Registration Open!" size={2.5} />
         <PanelBox>
             <p><b>Registration for SMT Async is open on ContestDojo!</b></p>
@@ -58,8 +67,12 @@
     </div>
 </div>
 
-<br><br>
-<Heading text="Stanford Math Tournament 2023 Asynchronous" size={4} textColor="var(--heading-color)"/>
+<br /><br />
+<Heading
+    text="Stanford Math Tournament 2023 Asynchronous"
+    size={4}
+    textColor="var(--heading-color)"
+/>
 <Heading text="Overview" size={2.5} />
 <div class="section-wrapper">
     <PanelBox>
@@ -71,7 +84,10 @@
                 <strong>TEAM SIZE:</strong> Up to 8 <br />
                 <strong>COST:</strong> $5 per participant<br /> <br />
             </p>
-            <strong>Note for International Students:</strong> We are no longer offering SMT International this year. International students may participate in SMT Online, or if the timing is bad for them, SMT Asynchronous.
+            <strong>Note for International Students:</strong> We are no longer
+            offering SMT International this year. International students may
+            participate in SMT Online, or if the timing is bad for them, SMT
+            Asynchronous.
             <p><b>Regsistration for SMT Async is open on ContestDojo!</b></p>
             <HeaderButton
                 text="Register Now!"
@@ -88,9 +104,26 @@
 <div class="section-wrapper">
     <PanelBox>
         <div style="padding: 10px;">
-            <p>There are no awards or official rankings for SMT Asynchronous, but you will receive a certificate of participation, as well as score reports the give you general statistics and let you know how you compare to all participants in SMT 2023 (in-person, online, asynchronous).</p>
-            <p>SMT Asynchronous may take placeanywhere or anytime during the testing window - you can make it an entire-day affair, or you can split the tests up across multiple days.</p>
-            <p>For the team rounds (team and guts) you can form teams of up to 8, during which you all can work together on the test, and your answers will sync in ContestDojo. <b>One student starting the test will start it for the entire team!</b></p>
+            <p>
+                There are no awards or official rankings for SMT Asynchronous,
+                but you will receive a certificate of participation, as well as
+                score reports the give you general statistics and let you know
+                how you compare to all participants in SMT 2023 (in-person,
+                online, asynchronous).
+            </p>
+            <p>
+                SMT Asynchronous may take placeanywhere or anytime during the
+                testing window - you can make it an entire-day affair, or you
+                can split the tests up across multiple days.
+            </p>
+            <p>
+                For the team rounds (team and guts) you can form teams of up to
+                8, during which you all can work together on the test, and your
+                answers will sync in ContestDojo. <b
+                    >One student starting the test will start it for the entire
+                    team!</b
+                >
+            </p>
         </div>
     </PanelBox>
 </div>
@@ -174,7 +207,45 @@
         </p>
         -->
         <p>
-            The <strong>Individual Round(s)</strong> are the rounds taken independent of your teams.
+            The <strong>Individual Round(s)</strong> are the rounds taken independent
+            of your teams.
         </p>
     </PanelBox>
 </div>
+
+<style>
+    .popup {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .popup-content {
+        background-color: var(--background-white);
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid var(--black-border);
+        width: 80%;
+        border-radius: 5px;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
