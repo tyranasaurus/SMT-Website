@@ -5,7 +5,7 @@
     import PanelBox from "$lib/components/PanelBox.svelte";
     import Table from "$lib/components/Table.svelte";
 
-    const supportedYears = [2011, 2012, 2013, 2014, 2018, 2019, 2020, 2021, 2022];
+    const supportedYears = [2011, 2012, 2013, 2014, 2018, 2019, 2020, 2021, 2022, 2023];
 
     let year = $page.params.year;
 
@@ -30,6 +30,17 @@
         }
 
         let rounds = {
+            tests2023: [
+                "Team",
+                "Algebra",
+                "Calculus",
+                "Discrete",
+                "Geometry",
+                "General",
+                "Guts",
+                "Power",
+            ],
+            tb2023: ["Algebra", "Calculus", "Discrete", "Geometry", "General"],
             tests2022: [
                 "Team",
                 "Algebra",
@@ -142,6 +153,16 @@
                 {
                     text: "International Results",
                     url: `/pdfs/smt2022/international-results.pdf`,
+                },
+            ],
+            results2023: [
+                {
+                    text: "Results",
+                    url: `/pdfs/smt2023/results.pdf`
+                },
+                {
+                    text: "Online Results",
+                    url: `/pdfs/smt2023/online-results.pdf`
                 },
             ],
         };
