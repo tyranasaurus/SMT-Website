@@ -162,7 +162,7 @@
                 },
                 {
                     text: "Online Results",
-                    url: `/pdfs/smt2023/online-results.pdf`
+                    url: `/pdfs/smt2023/results-online.pdf`
                 },
             ],
         };
