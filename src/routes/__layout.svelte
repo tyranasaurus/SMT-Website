@@ -5,7 +5,7 @@
     import { page } from "$app/stores";
     import Newsletter from "$lib/components/Newsletter.svelte";
 
-    let show = false;
+    let show = true;
 </script>
 
 <div class="all-container">

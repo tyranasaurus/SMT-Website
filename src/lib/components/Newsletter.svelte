@@ -1,4 +1,5 @@
 <script>
+    import { user } from '$lib/store';
     export let show = false;
     let firstName = "";
     let lastName = "";
@@ -9,11 +10,13 @@
     let school = "";
 
     async function setAction() {
-        if (firstName == "" || lastName == "" || email == "" || grade == "" || !email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+        user.update((u) => (u = false));
+        if (firstName == "" || lastName == "" || email == "" || grade == "" | !email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
             alert("Please fill out all required fields");
             return;
         } else {
             let formData = new FormData();
+
             formData.append('FNAME', firstName);
             formData.append('LNAME', lastName);
             formData.append('EMAIL', email);
@@ -21,8 +24,8 @@
             formData.append('COUNTRY', country);
             formData.append('STATE', state);
             formData.append('SCHOOL', school);
-
-            await fetch("https://mustangmath.us14.list-manage.com/subscribe/post?u=c80101147f7690b2cd88056c7&amp;id=10f0771adf&amp;f_id=007a87e0f0",
+            console.log("Submitting")
+            await fetch("https://stanford.us14.list-manage.com/subscribe/post?u=491215d1bdd0bc030363b5dd3&amp;id=cc16fac9fb&amp;f_id=00b2a0e0f0",
                 {
                     body: formData,
                     method: "post",
@@ -41,12 +44,13 @@
 <!-- Begin Mailchimp Signup Form -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
     <div id="mc_embed_signup">
-        <div style="position: absolute; top: 10px; right: 10px;"><i class="fa-solid fa-x" style="color: gray;cursor:pointer;" on:click={() => {show = !show;}}></i></div>
+        <div style="position: absolute; top: 10px; right: 10px;"><i class="fa-solid fa-x" style="color: gray;cursor:pointer;" on:click={() => {show = !show; user.update((u) => (u = false));}}></i></div>
         <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
             <div>
-                <h2 style="margin: 0; padding:0;"><strong>Join Mustang Math Newsletter</strong></h2>
-                <p style="margin: 0; padding:0;">Our Monthly Newsletter will include a lot of information about our various classes, competitions, and events, as well as interesting math tidbits and information about other cool opportunities! We use location information to help tell you about local math opportunities, and we highly recommend you join!</p>
+                <h2 style="margin: 0; padding:0;"><strong>Join the SMT Mailing List!</strong></h2>
+                <br />
+                <p style="margin: 0; padding:0;">Stay up to date with important SMT Information, including SMT 2024 date announcements, deadlines, and more!</p>
                 <br />
             </div>
     <div class="mc-field-group">
@@ -66,24 +70,32 @@
         <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-GRADE">Student Grade (2022-23) <span class="asterisk">*</span></label>
-        <select name="GRADE" bind:value={grade} class="" id="mce-GRADE" required>
-            <option value=""></option>
-            <option value="4-">4-</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9+">9+</option>
+        <label for="mce-undefined">Student Grade (2023-24) <span class="asterisk">*</span></label>
+        <select name="GRADE" class="" id="mce-undefined" bind:value={grade}>
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13+">college or beyond</option>
+    
         </select>
         <span id="mce-GRADE-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-COUNTRY">Country </label>
-        <select name="COUNTRY" class="" bind:value={country} id="mce-COUNTRY">
+        <label for="mce-undefined">Country </label>
+        <select name="COUNTRY" class="" bind:value={country} id="mce-undefined">
             <option value=""></option>
             <option value="United States of America">United States of America</option>
-            <option value="Singapore">Singapore</option>
+            <option value="Canada">Canada</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Albania">Albania</option>
             <option value="Algeria">Algeria</option>
@@ -114,7 +126,6 @@
             <option value="Burundi">Burundi</option>
             <option value="Cambodia">Cambodia</option>
             <option value="Cameroon">Cameroon</option>
-            <option value="Canada">Canada</option>
             <option value="Cape Verde">Cape Verde</option>
             <option value="Central African Republic">Central African Republic</option>
             <option value="Chad">Chad</option>
@@ -383,13 +394,25 @@
 
     #mc_embed_signup{
         background:#fff; 
-        clear:left; 
-        width:400px;
+        clear:left;
+        width: 400px;
         padding: 5px;
         padding-right: 10px;
         border-radius: 15px;
         position: relative;
         grid-template-columns: 4fr;
+    }
+
+    @media only screen and (max-width: 450px) {
+        #mc_embed_signup {
+            width: 300px;
+        }
+    }
+
+    @media only screen and (max-width: 350px) {
+        #mc_embed_signup {
+            width: 90%;
+        }
     }
 
     #mc_embed_signup .foot {
@@ -401,7 +424,13 @@
     .button {
         width: 100% !important;
         margin: 0 !important;
-        background-color: #2c9c39 !important;
+        padding: 4px !important;
+        border-radius: 50px !important;
+        background-color: #981c1d !important;
+    }
+
+    .button:hover {
+        background-color: #981c1d !important;
     }
 
     #mc_embed_signup_scroll {
@@ -416,13 +445,20 @@
     #mc_embed_signup .mc-field-group input {
         border: 1px solid rgb(199, 199, 199);
         outline: none;
-        border-radius: 5px;
-        width: 100%;
+        border-radius: 50px;
+        width: 98% !important;
+        color: rgb(95, 95, 95);
+        font-size: 15px;
+        padding: 10px 0px 10px 7px !important;
+    }
+
+    #mc_embed_signup .mc-field-group select {
+        width: 100% !important;
     }
 
     #mc_embed_signup .mc-field-group select:focus,
     #mc_embed_signup .mc-field-group input:focus {
-        border: 1px solid green;
+        border: 1px solid #981c1d;
         outline: none;
     }
 </style>
