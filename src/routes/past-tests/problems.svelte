@@ -10,13 +10,13 @@
     for (let i of supportedYears) {
         yearLinks.push({
             year: i,
-            url: `/archive/${i}`,
+            url: `/past-tests/${i}`,
         });
     }
 </script>
-
+<br><br>
 <div style="min-height: 100vh">
-    <Heading size={6} textColor="black" text="SMT Archive" />
+    <Heading text="Past Tournaments" size={4} textColor="var(--heading-color)"/>
     <div class="flex" style="max-width: 100vw;">
         <PanelBox>
             <div

@@ -177,7 +177,8 @@
     </h2>
 {:else}
     <div style="min-height: 100vh;">
-        <Heading size={5} text={year + " Archive"} textColor="black" />
+        <br><br>
+        <Heading text={"SMT " + year} size={4} textColor="var(--heading-color)"/>
 
         <div style="margin-left: 10vw; margin-right: 10vw;">
             <PanelBox>
