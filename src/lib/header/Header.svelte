@@ -48,8 +48,8 @@
         { path: "/rules", text: "Rules", hasSubPages: false },
         { path: "/partners", text: "Partners", hasSubPages: false },
         {
-            path: "/archive/problems",
-            text: "Archive",
+            path: "/past-tests/problems",
+            text: "Past Tests",
             hasSubPages: false,
             alignLeft: true,
         },
