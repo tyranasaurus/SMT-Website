@@ -1,5 +1,6 @@
 <script>
     export let text;
+    export let icon = false;
     export let hasArrow = true;
     export let arrowDirection = "right";
     export let isSmall = false;
@@ -20,6 +21,9 @@
         <a sveltekit:prefetch {href} class={className} target={target}>
             <div class={className} on:click={onClick}>
                 <p class={className}>
+                    {#if icon} 
+                        <i class={icon}></i>
+                    {/if}
                     {text}
                 </p>
                 {#if hasArrow}

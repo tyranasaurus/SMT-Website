@@ -19,10 +19,10 @@
   <div style="margin-left: 10vw; margin-right: 10vw;">
     <PanelBox style="min-width: 360px;">
       <p style="font-size: 1.2em; margin: 5px">
-        The SMT website is a clone of <a href = "https://mustangmath.com">Mustang Math</a>. Mustang Math is a 501(c)(3) nonprofit organization of committed high school & college volunteers who aim to foster collaborative problem solving skills among middle school students around the world. We highly recommend you check out <a href = "https://mustangmath.com/competitions/mmt-2023">their middle school tournament</a>.
+        The SMT website is a clone of <a href = "https://mustangmath.com">Mustang Math</a>. Mustang Math is a 501(c)(3) nonprofit organization of committed high school & college volunteers who aim to foster collaborative problem solving skills among middle school students around the world. We highly recommend you check out <a href = "https://mustangmath.com/">their website</a>.
       </p>
       <p style="font-size: 1.2em; margin: 5px">
-        SMT has a long-standing collaboration with our friends at the <a href = "https://bmt.berkeley.edu">Berkeley Math Tournament</a>. BMT is a college-run tournament that runs a wonderful high school and middle school tournament yearly. Register for <a href = "https://bmt.berkeley.edu">BmMT</a> now!
+        SMT has a long-standing collaboration with our friends at the <a href = "https://bmt.berkeley.edu">Berkeley Math Tournament</a>. BMT is a college-run tournament that runs a wonderful high school and middle school tournament yearly.
       </p>
     </PanelBox>
   </div>

@@ -25,6 +25,8 @@
     {#if $page.url.pathname !== "/"}
         <footer>
             <div class="socials">
+                <button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Signup</button>
+			    <div class="divider"></div>
                 <SocialsLink url="mailto:stanford.math.tournament@gmail.com" type="solid" icon="envelope" />
                 <SocialsLink url="https://www.facebook.com/StanfordMathTournament" type="brands" icon="facebook" />
 			    <SocialsLink url="https://www.instagram.com/StanfordMathTournament/" type="brands" icon="instagram" />

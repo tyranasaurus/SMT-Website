@@ -50,7 +50,7 @@
             <div>
                 <h2 style="margin: 0; padding:0;"><strong>Join the SMT Mailing List!</strong></h2>
                 <br />
-                <p style="margin: 0; padding:0;">SMT 2024 will be in person in March/April 2024, and available to students from <b>anywhere in the USA</b>. Sign up for our mailing list for date announcements, deadlines, and more!</p>
+                <p style="margin: 0; padding:0;">Sign up for our mailing list for date announcements, deadlines, and more!</p>
                 <br />
             </div>
     <div class="mc-field-group">
