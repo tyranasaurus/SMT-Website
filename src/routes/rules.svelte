@@ -92,17 +92,18 @@ const notation = "https://drive.google.com/file/d/1jhHz2K4yUsKICDj4HvRhcICmHrINb
 </script>
 
 <svelte:head>
-    <title>SMT 2023</title>
+    <title>SMT Rules</title>
 </svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
 
 <br><br>
-<Heading text="SMT 2023 Rules" size={4} textColor="var(--heading-color)"/>
+<Heading text="SMT Rules" size={4} textColor="var(--heading-color)"/>
 
 <div class="section-wrapper col-sm" style="margin-top: 1vh">
     <PanelBox>
         <div class="section-item">
+            <p><b><i>These rules have not been updated for 2024 - there may be some changes.</i></b></p>
             <p>
             The mathematical expectations for each test (both individual and team) can be found in the document below. It outlines the content that each test might include, and can serve as a useful guide for those debating which test to take. 
             </p>

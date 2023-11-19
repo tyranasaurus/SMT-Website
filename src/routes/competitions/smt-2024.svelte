@@ -75,10 +75,11 @@
 <div class="section-wrapper">
     <PanelBox>
         <div style="padding: 10px;">
-            <p>For SMT 2024, we will be inviting 400 students (~65-80 teams) from around the United States to compete in-person on Stanford’s campus. As such, we are now accepting applications for in-person participation from United States based schools and established mathematical organizations. We will not be accepting individual applications or applications for teams of size less than 5. All teams who don’t want to travel or are international should participate in our online tournaments. </p>
-            <p>Some spots for teams are reserved for top teams from SMT 2023, and a few spots are reserved for teams that have been historically underrepresented in mathematics. The rest of the spots will be assigned to teams via a lottery, prioritizing teams from different organizations. Teams not selected to come in person should participate in the online tournament happening later in April.</p>
-            <p>Note that this year, a student may not participate with an established mathematical organization should their school be sending a team to SMT.</p>
-            <p>Do note that these selection criteria are not final and may change as we look for a set of criteria that make sense to promote both diversity and competition for this year and future ones. Decisions made by SMT Organizers are final and non-negotiable.</p>
+            <p>For SMT 2024, we will be inviting <b>400 students</b> (~65-80 teams) from around the United States to compete in-person on Stanford’s campus. We are <b>now accepting applications</b> for in-person participation from schools and established mathematical organizations in the United States. We will not be accepting applications from individuals or teams with less than 5 participants. Teams that are unable to participate in our in-person tournament are invited to participate in our online tournaments.</p>
+            <p>We will reserve spots for <b>top teams</b> from SMT 2023 and for teams that have been <b>historically underrepresented</b> in mathematics. The rest of the spots will be assigned via a lottery, prioritizing teams from different organizations.</p>
+            
+            <p>Do note that these selection criteria are not final and may change as we look for a set of criteria that make sense to promote both diversity and competition for this year and future ones. Decisions made by SMTare final and non-negotiable.</p>
+            <p><i><b>Note: a student may not participate as part of an established mathematical organization if their school is sending a team to SMT 2024 in-person</b></i>.</p>
         </div>
     </PanelBox>
 </div>
@@ -88,7 +89,7 @@
 <Timeline width="60%">
     <TimelineElement>
         <strong>November 19, 2023:</strong> In-person application form opens
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link" target="_blank">here</a>
+        <a href={formLink} target="_blank">here</a>
         <!-- <br /> -->
         <!-- <Link
              url="https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link"
@@ -104,7 +105,6 @@
     </TimelineElement>
     <TimelineElement>
         <strong>March 14, 2024:</strong> Deadline for selected teams to register
-        on Eventbrite
     </TimelineElement>
     <!--<TimelineElement>
         <strong>March 29, 2024:</strong> Deadline for proof of travel and housing.
@@ -183,7 +183,7 @@
         </p>
     </PanelBox>
 </div>
-
+<!--
 <Heading text="COVID-19 Policy" size={2.5} />
 <div class="section-wrapper">
     <PanelBox>
@@ -192,7 +192,7 @@
         </div>
     </PanelBox>
 </div>
-
+-->
 <Heading text="FAQ" size={2.5} />
 <section>
     <FlexBox wrap={true}>

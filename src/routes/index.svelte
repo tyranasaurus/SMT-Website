@@ -151,7 +151,7 @@
     <div class="mobile-flex" style="width: 100%">
         <div class="flex-item border-right tournament">
             <h2>SMT</h2>
-            <p>The Stanford Math Tournament (SMT) is a contest organized by Stanford students, held on Stanford’s campus. In 2024, SMT will be held on <b>April 13, 2024</b>, and will be open via application to 250 high school contestants from within the United States. </p>
+            <p>The Stanford Math Tournament (SMT) is a contest organized by Stanford students, held on Stanford’s campus. In 2024, SMT will be held on <b>April 13, 2024</b>, and will be open via application to 400 high school contestants from around the United States. </p>
             <div style="margin-top: 10px;">
                 <HeaderButton
                     href="/competitions/smt-2024"
