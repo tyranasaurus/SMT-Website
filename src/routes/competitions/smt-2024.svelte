@@ -75,11 +75,11 @@
 <div class="section-wrapper">
     <PanelBox>
         <div style="padding: 10px;">
-            <p>For SMT 2024, we will be inviting <b>400 students</b> (~65-80 teams) from around the United States to compete in-person on Stanford’s campus. We are <b>now accepting applications</b> for in-person participation from schools and established mathematical organizations in the United States. We will not be accepting applications from individuals or teams with less than 5 participants. Teams that are unable to participate in our in-person tournament are invited to participate in our online tournaments.</p>
-            <p>We will reserve spots for <b>top teams</b> from SMT 2023 and for teams that have been <b>historically underrepresented</b> in mathematics. The rest of the spots will be assigned via a lottery, prioritizing teams from different organizations.</p>
-            
-            <p>Do note that these selection criteria are not final and may change as we look for a set of criteria that make sense to promote both diversity and competition for this year and future ones. Decisions made by SMTare final and non-negotiable.</p>
-            <p><i><b>Note: a student may not participate as part of an established mathematical organization if their school is sending a team to SMT 2024 in-person</b></i>.</p>
+            <p>For SMT 2024, we will be inviting <b>400 students</b> (~65-80 teams) from around the United States to compete in-person on Stanford’s campus. We are <b>now accepting applications</b> for in-person participation from schools and local organizations in the United States. We will not be accepting applications from individuals or teams with less than 5 participants. Teams that are unable to participate in our in-person tournament are invited to participate in our online tournaments.</p>
+            <p>Students are highly encouraged to participate in SMT 2024 as part of their <b>school</b>. Students who do not have the opportunity to participate in SMT as part of their school may participate as part of a <b>local organization</b>. An organization is considered local if its students are within a roughly 50 mile radius of the organization’s headquarters. <i>Students may not participate as part of a mathematical organization if their school is sending a team to SMT 2024 in-person.</i></p>
+            <p>A certain number of spots will be reserved for students from within the Bay Area (defined as within 150 miles of Stanford University) with the rest reserved for students from outside the Bay. For each of these categories, we will reserve spots for <b>top school teams</b> (non-orgs) from SMT 2023 and for teams that are <b>low-income</b> and/or <b>historically underrepresented</b> in mathematics. The rest of the spots will be assigned via a lottery, with preference given to school-based teams.</p>
+            <p>These criteria only apply for SMT 2024 at Stanford, not for SMT 2024 Online. These selection criteria are not final and may change as we look for a set of criteria that make sense to promote both diversity and competition for this year and future ones. Decisions made by SMT are final and non-negotiable.</p>
+            <p style="font-size: 0.8em;"><i>Updated on 11/22/2023</i></p>
         </div>
     </PanelBox>
 </div>
