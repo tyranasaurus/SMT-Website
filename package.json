@@ -19,6 +19,7 @@
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
-    "svelte-hamburgers": "^4.0.1"
+    "svelte-hamburgers": "^4.0.1",
+    "svelte-multiselect": "^10.2.0"
   }
 }

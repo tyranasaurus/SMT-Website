@@ -99,7 +99,6 @@ const notation = "https://drive.google.com/file/d/1jhHz2K4yUsKICDj4HvRhcICmHrINb
 
 <br><br>
 <Heading text="SMT Rules" size={4} textColor="var(--heading-color)"/>
-
 <div class="section-wrapper col-sm" style="margin-top: 1vh">
     <PanelBox>
         <div class="section-item">
