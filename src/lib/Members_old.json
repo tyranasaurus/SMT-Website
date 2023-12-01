@@ -1,0 +1,140 @@
+[
+  {
+    "fullName": "Arpit Ranasaria",
+    "preferredPronouns": "he/him",
+    "grade": "Junior",
+    "role": "Director",
+    "primary": "about-us-images/primary/Arpit_Ranasaria_primary.jpg",
+    "secondary": "about-us-images/secondary/Arpit_Ranasaria_secondary.jpg",
+    "link": "https://linkedin.com/in/arpitranasaria"
+  },
+  {
+    "fullName": "Katherine Yu",
+    "preferredPronouns": "she/her",
+    "grade": "Junior",
+    "role": "Problem Writing Lead",
+    "primary": "about-us-images/primary/Katherine_Yu_primary.jpg",
+    "secondary": "about-us-images/secondary/Katherine_Yu_secondary.jpg"
+  },
+  {
+    "fullName": "Ramya Iyer",
+    "preferredPronouns": "she/her",
+    "grade": "Freshman",
+    "role": "Marketing, General Test, Geometry Test, Guts Test",
+    "primary": "about-us-images/primary/Ramya_Iyer_primary.jpg",
+    "secondary": "about-us-images/secondary/Ramya_Iyer_secondary.jpg"
+  },
+  {
+    "fullName": "Victor Kolev",
+    "preferredPronouns": "he/him",
+    "grade": "Sophomore",
+    "role": "Social Chair",
+    "primary": "about-us-images/primary/Victor_Kolev_primary.jpg",
+    "secondary": "about-us-images/secondary/Victor_Kolev_secondary.jpg"
+  },
+  {
+    "fullName": "Eric Gao",
+    "preferredPronouns": "he/him",
+    "grade": "Sophomore",
+    "role": "Financial Officer, Power Writer",
+    "primary": "about-us-images/primary/Eric_Gao_primary.jpg",
+    "secondary": "about-us-images/secondary/Eric_Gao_secondary.jpg"
+  },
+  {
+    "fullName": "Alice Zhu",
+    "preferredPronouns": "she/her",
+    "grade": "Freshman",
+    "role": "Marketing, Algebra Test",
+    "primary": "about-us-images/primary/Alice_Zhu_primary.jpg",
+    "secondary": "about-us-images/secondary/Alice_Zhu_secondary.jpg"
+  },
+  {
+    "fullName": "Conor Kennedy",
+    "preferredPronouns": "he/him",
+    "grade": "Freshman",
+    "role": "Tech",
+    "primary": "about-us-images/primary/Conor_Kennedy_primary.jpg",
+    "secondary": "about-us-images/secondary/Conor_Kennedy_secondary.jpg"
+  },
+  {
+    "fullName": "Ethan Zhang",
+    "preferredPronouns": "he/him",
+    "grade": "Freshman",
+    "role": "Discrete Test",
+    "primary": "about-us-images/primary/Ethan_Zhang_primary.jpg",
+    "secondary": "about-us-images/secondary/Ethan_Zhang_secondary.jpg"
+  },
+  {
+    "fullName": "Isaac Zhao",
+    "preferredPronouns": "he/him",
+    "grade": "Sophomore",
+    "role": "Team Test",
+    "primary": "about-us-images/primary/Isaac_Zhao_primary.jpg",
+    "secondary": "about-us-images/secondary/Isaac_Zhao_secondary.jpg"
+  },
+  {
+    "fullName": "Ivan Ge",
+    "preferredPronouns": "he/him",
+    "grade": "Freshman",
+    "role": "Logistics",
+    "primary": "about-us-images/primary/Ivan_Ge_primary.jpg",
+    "secondary": "about-us-images/secondary/Ivan_Ge_secondary.jpg"
+  },
+  {
+    "fullName": "Lisa Liu",
+    "preferredPronouns": "she/her",
+    "grade": "Freshman",
+    "role": "Guts Test",
+    "primary": "about-us-images/primary/Lisa_Liu_primary.jpg",
+    "secondary": "about-us-images/secondary/Lisa_Liu_secondary.jpg"
+  },
+  {
+    "fullName": "Matthew Ding",
+    "preferredPronouns": "he/him",
+    "grade": "Junior",
+    "role": "Logistics",
+    "primary": "about-us-images/primary/Matthew_Ding_primary.jpg",
+    "secondary": "about-us-images/secondary/Matthew_Ding_secondary.jpg"
+  },
+  {
+    "fullName": "Misha Ivkov",
+    "preferredPronouns": "he/him",
+    "grade": "2nd year PhD",
+    "role": "Problem Writer",
+    "primary": "about-us-images/primary/Misha_Ivkov_primary.jpg",
+    "secondary": "about-us-images/secondary/Misha_Ivkov_secondary.jpg"
+  },
+  {
+    "fullName": "Nancy Jiang",
+    "preferredPronouns": "she/her",
+    "grade": "Freshman",
+    "role": "Geometry Test",
+    "primary": "about-us-images/primary/Nancy_Jiang_primary.jpg",
+    "secondary": "about-us-images/secondary/Nancy_Jiang_secondary.jpg"
+  },
+  {
+    "fullName": "Neil Rathi",
+    "preferredPronouns": "he/him",
+    "grade": "Freshman",
+    "role": "Design, Calculus Test",
+    "primary": "about-us-images/primary/Neil_Rathi_primary.jpg",
+    "secondary": "about-us-images/secondary/Neil_Rathi_secondary.jpg"
+  },
+
+  {
+    "fullName": "Ruosong Gao",
+    "preferredPronouns": "he/him",
+    "grade": "Freshman",
+    "role": "Guts Test",
+    "primary": "about-us-images/primary/Ruosong_Gao_primary.jpg",
+    "secondary": "about-us-images/secondary/Ruosong_Gao_secondary.jpg"
+  },
+  {
+    "fullName": "Javokhir Arifov",
+    "preferredPronouns": "he/him",
+    "grade": "Sophomore",
+    "role": "Design",
+    "primary": "about-us-images/primary/Javokhir_Arifov_primary.jpg",
+    "secondary": "about-us-images/secondary/Javokhir_Arifov_secondary.jpg"
+  }
+]
