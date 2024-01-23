@@ -15,6 +15,7 @@
 </script>
 
 <div class="all-container">
+    Hi
     <Header />
     <main>
         <slot />
