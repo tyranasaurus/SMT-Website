@@ -1,5 +1,5 @@
 import cookie from 'cookie';
-import { v4 as uuid } from '@lukeed/uuid';
+import { v4 as uuid } from 'uuid';
 
 export const handle = async ({ event, resolve }) => {
 	const cookies = cookie.parse(event.request.headers.get('cookie') || '');

@@ -1,10 +1,12 @@
 <script context="module">
 	/** @type {import('@sveltejs/kit').Load} */
 	export function load({ error, status }) {
+		console.log(error, status)
 		return {
 			props: { error, status }
 		};
 	}
+	import { page } from '$app/stores';
 </script>
 
 <script>
@@ -17,8 +19,7 @@
 	import PageHeader from '$lib/components/PageHeader.svelte';
 </script>
 <html lang="">
-	
-<PageHeader title="Error: {status}" description="{error.message}" button_url="/" button_text= "Come back to charted territory!" button_id="homeButton"/> 
+<PageHeader title="Error: {$page.status}" description="{$page.error.message}" button_url="/" button_text= "Come back to charted territory!" button_id="homeButton"/> 
 	
 
 </html>

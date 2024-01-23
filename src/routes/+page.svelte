@@ -127,7 +127,7 @@
             />
             <div style="margin-top: 10px; margin-left: 10px;">
                 <HeaderButton
-                    href="/archive/problems"
+                    href="/past-tests/problems"
                     text="See More Past Problems"
                 />
             </div>
