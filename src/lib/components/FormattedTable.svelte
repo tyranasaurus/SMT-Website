@@ -123,4 +123,10 @@
         font-size: 110%
     }
 
+    @media only screen and (max-width: 600px) {
+        table {
+            font-size: 0.4rem; /* Adjust the font size for smaller screens */
+        }
+    }
+
 </style>
