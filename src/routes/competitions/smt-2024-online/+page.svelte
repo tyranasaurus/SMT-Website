@@ -81,7 +81,7 @@
     <PanelBox>
         <div style="padding: 10px;">
             <p>
-                SMT 2024 Online will be occuring in April. Sign up for our mailing list to get notified when registration for SMT Online opens!
+                SMT 2024 Online will be occuring on <b>April 14, 2024</b>. Sign up for our mailing list to get notified when registration for SMT Online opens!
             </p>
             <HeaderButton
                 text="Sign Up"

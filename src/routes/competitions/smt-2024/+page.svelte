@@ -4,6 +4,7 @@
     import PageHeader from "$lib/components/PageHeader.svelte";
     import FlexBox from "$lib/components/FlexBox.svelte";
     import Table from "$lib/components/Table.svelte";
+    import FormattedTable from "$lib/components/FormattedTable.svelte";
     import PanelBox from "$lib/components/PanelBox.svelte";
     import Timeline from "$lib/components/timeline/Timeline.svelte";
     import TimelineElement from "$lib/components/timeline/TimelineElement.svelte";
@@ -13,21 +14,49 @@
 
     let windowWidth;
     const scheduleData = [
-        {
-            Time: "8:00 AM-8:30 AM",
-            Event: "Event Checkin",
-        },
-        ["8:30 AM-9:00 AM", "Opening Ceremony"],
-        ["9:10 AM-10:40 AM", "Power Round (80 min)"],
-        ["10:40 AM-11:40 AM", "Team Round (50 min)"],
-        ["11:40 AM-12:30 PM", "Lunch Break (50 min)"],
-        [
-            "12:30 PM-2:30 PM",
-            "Individual Round(s)",
-        ],
-        ["2:30 PM-4:00 PM", "Guts Round (80 min)"],
-        ["5:30 PM-6:00 PM", "Award Ceremony"],
-    ];
+        ["Day", "Time", "Event", "Event", "Event"],
+        ["<font style='font-size: 150%'>Friday</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "4:00 PM", "Early Check-In", "Early Check-In", "Early Check-In"],
+        ["<font style='font-size: 150%'>Friday</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "5:00 PM", "Mini Class 1", "Student Panel", "Puzzle Hunt"],
+        ["<font style='font-size: 150%'>Friday</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "6:00 PM", "Mini Class 2", "Estimathon", "Puzzle Hunt"],
+        ["<font style='font-size: 150%'>Friday</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "7:00 PM", "Dinner", "Dinner", "Dinner"],
+        ["<font style='font-size: 150%'>Friday</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "8:00 PM", "Games", "Games", "Games"],
+        ["<font style='font-size: 150%'>Saturday</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "8:00 AM", "Check-In", "Check-In", "Check-In"],
+        ["<font style='font-size: 150%'>Saturday</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "8:30 AM", "Opening Ceremony", "Opening Ceremony", "Opening Ceremony"],
+        ["<font style='font-size: 150%'>Saturday</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "9:00 AM", "Power Round", "Power Round", "Power Round"],
+        ["<font style='font-size: 150%'>Saturday</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "10:45 AM", "Team Round", "Team Round", "Team Round"],
+        ["<font style='font-size: 150%'>Saturday</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "11:45 AM", "Lunch Break", "Lunch Break", "Lunch Break"],
+        ["<font style='font-size: 150%'>Saturday</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "1:00 PM", "Subject Test #1", "Subject Test #1", "General Test"],
+        ["<font style='font-size: 150%'>Saturday</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "2:00 PM", "Subject Test #2", "Subject Test #2", "General Test"],
+        ["<font style='font-size: 150%'>Saturday</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "3:00 PM", "Guts Round", "Guts Round", "Guts Round"],
+        ["<font style='font-size: 150%'>Saturday</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "4:30 PM", "Activities", "Activities", "Activities"],
+        ["<font style='font-size: 150%'>Saturday</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "6:00 PM", "Awards", "Awards", "Awards"],
+    ]
+    const scheduleStyles = [
+        "transform: rotate(-90deg); height: auto;",
+        "width: 1px; white-space: nowrap;",
+        "width: auto;",
+        "width: auto;",
+        "width: auto;"
+    ]
+
+    const testData = [
+        ["", "", "Summary", "# of Questions", "Duration", "% of Team Score"],
+        ["Power", "Power", "<i style='font-size:80%'>Team</i><br>Proof-Based", "TBD", "80'", "30%"],
+        ["Team", "Team", "<i style='font-size:80%'>Team</i><br>Short Answer", "15", "50'", "20%"],
+        ["Individual", "General", "<i style='font-size:80%'>Individual</i><br>Mixed topics<br><i style='font-size:80%'>Worth 60% of Subject Tests</i>", "25", "110'", "30%"],
+        ["Individual", "Subject", "<i style='font-size:80%'>Individual</i><br><font style='font-size: 90%'>Algebra Calculus<br>Discrete Geometry</font><br><i style='font-size:80%'>Pick two</i>", "10", "50'", "30%"],
+        ["Guts", "Guts", "<i style='font-size:80%'>Team</i><br>Live-scored", "27<br><i style='font-size:80%'>9 sets of 3</i>", "80'", "20%"]
+    ]
+
+    const testStyles = [
+        "font-weight: bold; font-size: 120%; color: var(--bold-color); width: 1px",
+        "font-weight:bold; color: var(--bold-color); width: 1px",
+        "width: auto",
+        "width: 1 px",
+        "width: 1 px",
+        "width: 1 px"
+    ]
+
 
     const formLink =
         "https://forms.gle/YUYraZ9A5aWPXNfz6";
@@ -46,7 +75,7 @@
     <PanelBox>
         <div style="padding: 10px;">
             <p>
-                <strong>DATE:</strong> April 13, 2024 <br />
+                <strong>DATE:</strong> April 12-13, 2024 <br />
                 <strong>LOCATION:</strong> Stanford University <br />
                 <strong>WHO:</strong> High School students residing within the United States <br />
                 <strong>TEAM SIZE:</strong> 5-6 <br />
@@ -114,6 +143,9 @@
     </TimelineElement>
 -->
     <TimelineElement>
+        <strong>April 12, 2024:</strong> Optional Social Activities
+    </TimelineElement>
+    <TimelineElement>
         <strong>April 13, 2024:</strong> SMT tournament day
     </TimelineElement>
 </Timeline>
@@ -122,18 +154,16 @@
 <div class="schedule-wrapper section-wrapper">
     <FlexBox>
         <PanelBox>
-            <Table
+            <FormattedTable
                 data={scheduleData}
-                width="auto"
-                cellPadding={5}
-                cellPaddingRight={20}
-                tableStyle="margin-left: auto; margin-right: auto"
-                overallHeader="Tournament Schedule (8:00 AM-6:00 PM PT)"
+                colStyles={scheduleStyles}
             />
             <p style="margin-top: 2px; margin-bottom: 0px;">
-                *Schedule subject to change. Note that there is built-in buffer
-                time to explain instructions and assist with technical
-                difficulties.*
+                <i>
+                    *Schedule and activities subject to change. Note that there is built-in buffer
+                    time to explain instructions and assist with technical
+                    difficulties.
+                </i>
             </p>
         </PanelBox>
     </FlexBox>
@@ -144,6 +174,10 @@
 
 <div class="section-wrapper">
     <PanelBox>
+        <FormattedTable
+            data={testData}
+            colStyles={testStyles}
+        />
         <p>
             The <strong>Power Round</strong> is a 80-minute exam focused on proof-writing.
             The content of the test focuses on a single subject matter that is usually
@@ -154,33 +188,27 @@
             short answer questions.
         </p>
         <p>
-            The <strong>Guts Round</strong> is an 80 minute team exam consisting
+            The <strong>General Test</strong> is a 110-minute individual exam consisting of
+            25 short answer questions that is designed for students that have less
+            specialized mathematical background. <br><i>The General Test is worth 60% of the Subject Tests</i>.
+        </p>
+
+        <p>
+            The <strong>Subject Tests</strong> are two 50-minute individual exams consisting of
+            10 short answer questions. The subjects offered are
+            <strong>
+                Algebra, Calculus, Discrete (Number Theory & Combinatorics), and Geometry
+            </strong>
+        </p>
+        <p>
+            The <strong>Guts Round</strong> is an 80 minute live-scored team exam consisting
             of 9 series of 3 questions each, whereby teams must submit answers to
             a previous round in order to gain access to the next. Subsequent rounds
             are both harder and worth more points than previous rounds.
         </p>
-        <p>
-            For the individual portion, students may choose to take two subject
-            tests in a specific topic or take a single, longer General Test.
-        </p>
-        <!--
-        <p>
-            The <strong>Subject Tests</strong> are 50-minute exams consisting of
-            10 short answer questions. The subjects offered are
-            <strong>
-                Algebra, Combinatorics, Number Theory, and Geometry.
-            </strong>
-        </p>
         
-        <p>
-            The <strong>General Test</strong> is a 110-minute exam consisting of
-            25 short answer questions that is designed for students that have less
-            specialized mathematical background.
-        </p>
-        -->
-        <p>
-            The <strong>Individual Round(s)</strong> are the rounds taken independent of your teams.
-        </p>
+        
+        
     </PanelBox>
 </div>
 <!--
