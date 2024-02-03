@@ -3,6 +3,8 @@
     export let colStyles = [];
     export let headerRow = true;
 
+    import { onMount } from 'svelte';
+
     const getColumnStyles = (column) => {
         let styles = '';
 
@@ -65,7 +67,11 @@
         //console.log(tableData)
 	}
 
-	processData(data);
+    onMount(async () => {
+        processData(data);
+    });
+
+	
 </script>
 
 <!-- Table rendering -->
