@@ -17,9 +17,10 @@
     };
 
 	let tableData = [];
+    let loading = true;
 
 	console.log(data);
-    function merge(rowIdx, colIdx) {
+    async function merge(rowIdx, colIdx) {
 		let curRowIdx = rowIdx;
 		let curColIdx = colIdx;
 		const value = data[rowIdx][colIdx];
@@ -59,7 +60,7 @@
             tableData.push([]);
 			for (let j = 0; j < data[i].length; j++) {
 				//console.log(i, j);
-				merge(i, j);
+				await merge(i, j);
 				//console.log(data);
 				//console.log(tableData);
 			}
@@ -68,45 +69,45 @@
 	}
 
     onMount(async () => {
-        processData(data);
+        await processData(data);
+        console.log(tableData);
+        loading = false;
     });
 
 	
 </script>
 
 <!-- Table rendering -->
-<table>
-    <colgroup>
-        {#each colStyles as style, colIndex (col)}
-            <col {style}>
+{#if !loading}
+    <table>
+        {#each tableData as row, rowIndex (row)}
+            <tr>
+                {#if headerRow && rowIndex == 0}
+                    {#each row as cell, colIndex (cell)}
+                        <th 
+                            rowspan={cell[1]} 
+                            colspan={cell[2]}
+                        >
+                            {@html cell[0]}
+                        </th>
+                    {/each}
+                {:else}
+                    {#each row as cell, colIndex (cell)}
+                        <td 
+                            style={cell[3]}
+                            rowspan={cell[1]} 
+                            colspan={cell[2]}
+                        >
+                            {@html cell[0]}
+                        </td>
+                    {/each}
+                {/if}
+            </tr>
         {/each}
-        <!-- Add more col elements if you have more columns -->
-    </colgroup>
-	{#each tableData as row, rowIndex (row)}
-		<tr>
-            {#if headerRow && rowIndex == 0}
-                {#each row as cell, colIndex (cell)}
-                    <th 
-                        rowspan={cell[1]} 
-                        colspan={cell[2]}
-                    >
-                        {@html cell[0]}
-                    </th>
-                {/each}
-            {:else}
-                {#each row as cell, colIndex (cell)}
-                    <td 
-                        style={cell[3]}
-                        rowspan={cell[1]} 
-                        colspan={cell[2]}
-                    >
-                        {@html cell[0]}
-                    </td>
-                {/each}
-            {/if}
-		</tr>
-	{/each}
-</table>
+    </table>
+{:else}
+    <p>Loading...</p>
+{/if}
 
 <style>
 	/* Add your styling here */
