@@ -34,6 +34,10 @@
     $: scrollOpacity = Math.max((windowHeight - 2 * y) / windowHeight, 0);
     $: learnMoreIsVisible = scrollOpacity > 0;
 
+    let isMobile = false; // Initially assuming not mobile
+
+    $: isMobile = windowWidth < 700;
+
     let infoElem;
     let tournElem;
 
@@ -54,13 +58,15 @@
     <title>Stanford Math Tournament</title>
 </svelte:head>
 
-<div class="outside" style="height: calc(max(600px, 100vh));">
+<div class="header-container" style="height: calc(max(600px, 100vh));">
     <div class="header flex">
+        <img src="Header-Background.svg" alt="Header Background" class="header-background-1">
+        <!--<img src="Header-Background.svg" alt="Header Background" class="header-background-2">-->
         <div class="minidiv">
             <Heading
                 className="glow"
                 text="Stanford Math Tournament"
-                align="left"
+                align={isMobile ? "center" : "left"}
                 textColor="black"
                 size={windowWidth > 700 ? 7 : 3}
                 marginLeft="0"
@@ -199,18 +205,12 @@
 </div>
 
 <style>
-    .outside {
-        background-color: var(--background-white);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        overflow: hidden;
-    }
+    
 
     .descript {
         width: 70%;
-        font-weight: 300;
-        font-size: 22px;
+        font-weight: 500;
+        font-size: 24px;
         color: black;
     }
 
@@ -257,12 +257,6 @@
     }
 
     @media (max-width: 700px) {
-        .outside {
-            background-color: var(--background-white);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
 
         .descript {
             width: auto;
@@ -284,6 +278,46 @@
         text-align: center;
         position: relative;
         height: calc(100% - 70px);
+        overflow: hidden;
+    }
+
+    .header-background-1 {
+        position: absolute;
+        opacity: 12%;
+        height: auto;
+        width: 250%;
+        animation: rotate-1 120s linear infinite; /* Adjust duration and timing function as needed */
+    }
+    .header-background-2 {
+        position: absolute;
+        opacity: 6%;
+        height: auto;
+        width: 250%;
+        animation: rotate-2 240s linear infinite; /* Adjust duration and timing function as needed */
+    }
+
+    .header-container {
+        position: relative;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        z-index: 1; /* Ensure the header content is above other page content */
+    }
+    @keyframes rotate-1 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotate-2 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(-360deg);
+        }
     }
 
     .svg {
@@ -296,7 +330,7 @@
     }
 
     .minidiv {
-        z-index: 9;
+        z-index: 1;
         margin: 20px;
         max-width: 90%;
         text-align: left;
