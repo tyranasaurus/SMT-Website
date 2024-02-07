@@ -16,7 +16,7 @@
 
     const registrationData = [
         ["Step", "Coaches", "Students"],
-        ["1", "Buy the seats for your participating students on <a href='https://tinyurl.com/SMT2024OnlineEventbrite' target='_blank'>Eventbrite</a>.", ""],
+        ["1", "Buy the seats for your participating students on <a href='https://smt2024online.eventbrite.com/' target='_blank'>Eventbrite</a>.", ""],
         ["2", "Create a coaches account on <a href='https://contestdojo.com' target='_blank'>ContestDojo</a>. <b>Make sure to use the same organization name and email as on Eventbrite</b>.", ""],
         ["3", "Add your students to the ContestDojo platform. The deadline to add students (by email or Join Code) and have them input their information is <b>4/10/2024 at 11:59 PM PT. This is a hard deadline.</b>", "Students join their team's organization on ContestDojo by email or join code."],
         ["4", "Once they have joined, organize your students into teams.", "Parents of students will need to fill out waivers sent to them by Stanford."],
@@ -69,7 +69,7 @@
 
 
     const formLink =
-        "https://tinyurl.com/SMT2024OnlineEventbrite";
+        "https://smt2024online.eventbrite.com/";
 </script>
 
 <svelte:head>
@@ -109,7 +109,7 @@
         <div class="button-wrapper">
             <HeaderButton
                 text="Eventbrite"
-                href="https://tinyurl.com/SMT2024OnlineEventbrite"
+                href="https://smt2024online.eventbrite.com/"
                 newTab=true
                 isSmall
                 centered
