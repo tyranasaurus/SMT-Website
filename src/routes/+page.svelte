@@ -61,7 +61,7 @@
 <div class="header-container" style="height: calc(max(600px, 100vh));">
     <div class="header flex">
         <img src="Header-Background.svg" alt="Header Background" class="header-background-1">
-        <!--<img src="Header-Background.svg" alt="Header Background" class="header-background-2">-->
+        <img src="Header-Background.svg" alt="Header Background" class="header-background-2">
         <div class="minidiv">
             <Heading
                 className="glow"
