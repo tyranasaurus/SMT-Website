@@ -87,9 +87,9 @@
             <p>
                 <strong>DATE:</strong> April 14, 2024 <br />
                 <strong>LOCATION:</strong> Online <br />
-                <strong>WHO:</strong> High School students residing within the United States <br />
+                <strong>WHO:</strong> High School & below students from anywhere in the world. <br />
                 <strong>TEAM SIZE:</strong> 6-8 <br />
-                <strong>COST:</strong> $15-25 per student (see timeline below) <br /> <br />
+                <strong>COST:</strong> $15-$25 per student (see timeline below) <br /> <br />
             </p>
             <HeaderButton
                 text="Register for SMT Online"
