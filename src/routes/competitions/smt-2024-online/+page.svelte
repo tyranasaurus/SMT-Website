@@ -20,7 +20,7 @@
         ["2", "Buy the seats for your participating students on <a href='https://smt2024online.eventbrite.com/' target='_blank'>Eventbrite</a>. <b>Make sure to use the same organization name and email as on ContestDojo!</b>", "Arrange payment with your coach.", "Buy a seat on <a href='https://smt2024online.eventbrite.com/' target='_blank'>Eventbrite</a>. Use <b>Individual</b> as the organization name, <b>smtindividual@gmail.com</b> as the organization email, and the <b>student ContestDojo email</b> as the email associated with the ContestDojo account."],
         ["3", "Add your students to the ContestDojo platform. The deadline to add students (by Email or Join Code) and have them input their information is <b>4/10/2024 at 11:59 PM PT. This is a hard deadline.</b>", "Students join their team's organization on ContestDojo by Email or join code.", "The individual will eventually be added to the Individual organization on ContestDojo and assigned to a team."],
         ["4", "Once they have joined, organize your students into teams.", "Parents of students will need to fill out waivers sent to them by Stanford.", "Parents of students will need to fill out waivers sent to them by Stanford.&nbsp"],
-        ["5", "More steps to follow closer to contest day.", "More steps to follow closer to contest day.", "More steps to follow closer to contest day."],
+        ["5", "You're registered! More steps to follow via email closer to contest day.", "You're registered! More steps to follow via email closer to contest day.", "You're registered! More steps to follow via email closer to contest day."],
     ]
     const registrationStyles = [
         "width: auto;",
@@ -126,6 +126,7 @@
             data={registrationData}
             colStyles={registrationStyles}
         />
+        <p style="text-align: center">Questions or issues? Reach out to <a href='mailto:stanford.math.tournament@gmail.com'>stanford.math.tournament@gmail.com</a></p>
     </PanelBox>
 </div>
 <br />
