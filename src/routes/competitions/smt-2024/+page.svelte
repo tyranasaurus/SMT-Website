@@ -32,7 +32,7 @@
         ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "6:00 PM", "Awards", "Awards", "Awards"],
     ]
     const scheduleStyles = [
-        "transform: rotate(-90deg); height: auto;",
+        "width: auto;",
         "width: 1px; white-space: nowrap;",
         "width: auto;",
         "width: auto;",
