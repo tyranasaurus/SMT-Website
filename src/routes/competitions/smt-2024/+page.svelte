@@ -15,11 +15,11 @@
     let windowWidth;
     const scheduleData = [
         ["Day", "Time", "Event", "Event", "Event"],
-        ["<font style='font-size: 150%'>Friday Fun Functions (ƒ<sup>3</sup>)</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "4:00 PM", "Early Check-In", "Early Check-In", "Early Check-In"],
-        ["<font style='font-size: 150%'>Friday Fun Functions (ƒ<sup>3</sup>)</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "5:00 PM", "Mini Class 1", "Student Panel", "Puzzle Hunt"],
-        ["<font style='font-size: 150%'>Friday Fun Functions (ƒ<sup>3</sup>)</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "6:00 PM", "Mini Class 2", "Estimathon", "Puzzle Hunt"],
-        ["<font style='font-size: 150%'>Friday Fun Functions (ƒ<sup>3</sup>)</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "7:00 PM", "Dinner", "Dinner", "Dinner"],
-        ["<font style='font-size: 150%'>Friday Fun Functions (ƒ<sup>3</sup>)</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "8:00 PM", "Games", "Games", "Games"],
+        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "4:00 PM", "Early Check-In", "Early Check-In", "Early Check-In"],
+        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "5:00 PM", "Mini Class 1", "Student Panel", "Puzzle Hunt"],
+        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "6:00 PM", "Mini Class 2", "Estimathon", "Puzzle Hunt"],
+        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "7:00 PM", "Dinner", "Dinner", "Dinner"],
+        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "8:00 PM", "Games", "Games", "Games"],
         ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "8:00 AM", "Check-In", "Check-In", "Check-In"],
         ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "8:30 AM", "Opening Ceremony", "Opening Ceremony", "Opening Ceremony"],
         ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "9:00 AM", "Power Round", "Power Round", "Power Round"],
