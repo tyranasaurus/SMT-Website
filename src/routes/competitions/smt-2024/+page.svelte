@@ -81,20 +81,13 @@
                 <strong>TEAM SIZE:</strong> 5-6 <br />
                 <strong>COST:</strong> $20 per student (Financial aid available upon request!) <br /> <br />
                 <i
-                    ><strong>Note for International Students:</strong>
-                    Please visit <Link
-                        url="/competitions/smt-2024-online"
-                        text="this page."
-                    />
+                    >Applications for SMT 2024 are now closed. We encourage you to participate in <Link
+                    url="/competitions/smt-2024-online"
+                    text="SMT 2024 Online"
+                />!
                 </i>
             </p>
-            <HeaderButton
-                text="Apply for SMT 2024"
-                href={formLink}
-                newTab=true
-                isSmall
-                centered
-            />
+            
         </div>
     </PanelBox>
 </div>
