@@ -13,6 +13,21 @@
     import Questions from "$lib/FAQ-smt-2024.json";
 
     let windowWidth;
+
+    const registrationData = [
+        ["Step", "Coaches", "Students"],
+        ["1", "Create a <b>Coach</b> account on <a href='https://contestdojo.com' target='_blank'>ContestDojo</a>.", "Create a <b>Student</b> account on <a href='https://contestdojo.com' target='_blank'>ContestDojo</a>."],
+        ["2", "Buy the seats for your participating students on Eventbrite (link in acceptance email). <b>Make sure to use the same organization name and email as on ContestDojo!</b> Seats may take 1-2 days to update in ContestDojo following payment.", "Arrange payment with your coach."],
+        ["3", "Add your students to the ContestDojo platform", "Students <b>join their organization</b> on ContestDojo by email or join code."],
+        ["4", "Once they have joined, organize your students into teams.", "Parents of students will need to <b>fill out waivers</b> sent to them by Stanford. This may take up to 3 days from registering to send, and another 3 days after submission to update on ContestDojo. <b>All waivers must be submitted by 4/6/2024</b>."],
+        ["5", "You're registered! More steps to follow via email closer to contest day.", "You're registered! More steps to follow via email closer to contest day."],
+    ]
+    const registrationStyles = [
+        "width: auto;",
+        "width: auto;",
+        "width: auto;"
+    ]
+
     const scheduleData = [
         ["Day", "Time", "Event", "Event", "Event"],
         ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "4:00 PM", "Early Check-In", "Early Check-In", "Early Check-In"],
@@ -106,6 +121,18 @@
     </PanelBox>
 </div>
 
+<Heading text="Registration Information" size={2.5} />
+<div class="section-wrapper" >
+    <PanelBox >
+        <FormattedTable
+            data={registrationData}
+            colStyles={registrationStyles}
+        />
+        <p style="text-align: center">Questions or issues? Reach out to <a href='mailto:stanford.math.tournament@gmail.com'>stanford.math.tournament@gmail.com</a></p>
+    </PanelBox>
+</div>
+<br />
+
 <Heading text="Registration Timeline" size={2.5} />
 
 <Timeline width="60%">
@@ -126,7 +153,7 @@
         in-person competition
     </TimelineElement>
     <TimelineElement>
-        <strong>March 14, 2024:</strong> Deadline for selected teams to register
+        <strong>March 13, 2024:</strong> Deadline for selected teams to register
     </TimelineElement>
     <!--<TimelineElement>
         <strong>March 29, 2024:</strong> Deadline for proof of travel and housing.
