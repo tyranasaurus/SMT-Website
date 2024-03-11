@@ -59,7 +59,7 @@
         ["Power", "Power", "<i style='font-size:80%'>Team</i><br>Proof-Based", "TBD", "80'", "30%"],
         ["Team", "Team", "<i style='font-size:80%'>Team</i><br>Short Answer", "15", "50'", "20%"],
         ["Individual", "General", "<i style='font-size:80%'>Individual</i><br>Mixed topics<br><i style='font-size:80%'>Worth 60% of Subject Tests</i>", "25", "110'", "30%"],
-        ["Individual", "Subject", "<i style='font-size:80%'>Individual</i><br><font style='font-size: 90%'>Algebra Calculus<br>Discrete Geometry</font><br><i style='font-size:80%'>Pick two</i>", "10", "50'", "30%"],
+        ["Individual", "Subject", "<i style='font-size:80%'>Individual</i><br><font style='font-size: 100%'>Algebra&nbsp|&nbspCalculus&nbsp|&nbspDiscrete&nbsp|&nbspGeometry</font><br><i style='font-size:80%'>Pick two</i>", "10", "50'", "30%"],
         ["Guts", "Guts", "<i style='font-size:80%'>Team</i><br>Live-scored", "27<br><i style='font-size:80%'>9 sets of 3</i>", "80'", "20%"]
     ]
 
