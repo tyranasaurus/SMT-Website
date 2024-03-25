@@ -29,22 +29,27 @@
     ]
 
     const scheduleData = [
-        ["Day", "Time", "Event", "Event", "Event"],
-        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "4:00 PM", "Early Check-In", "Early Check-In", "Early Check-In"],
-        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "5:00 PM", "Mini Class 1", "Student Panel", "Puzzle Hunt"],
-        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "6:00 PM", "Mini Class 2", "Estimathon", "Puzzle Hunt"],
-        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "7:00 PM", "Dinner", "Dinner", "Dinner"],
-        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "8:00 PM", "Games", "Games", "Games"],
-        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "8:00 AM", "Check-In", "Check-In", "Check-In"],
-        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "8:30 AM", "Opening Ceremony", "Opening Ceremony", "Opening Ceremony"],
-        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "9:00 AM", "Power Round", "Power Round", "Power Round"],
-        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "10:45 AM", "Team Round", "Team Round", "Team Round"],
-        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "11:45 AM", "Lunch Break", "Lunch Break", "Lunch Break"],
-        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "1:00 PM", "Subject Test #1", "Subject Test #1", "General Test"],
-        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "2:00 PM", "Subject Test #2", "Subject Test #2", "General Test"],
-        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "3:00 PM", "Guts Round", "Guts Round", "Guts Round"],
-        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "4:30 PM", "Activities", "Activities", "Activities"],
-        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "6:00 PM", "Awards", "Awards", "Awards"],
+        ["Event", "Time", "Students", "Students", "Students","Parents/Coaches"],
+        ["<font style='font-size: 150%'>Problem of the Day</font><br>4/8 - 4/12<br><i style='font-size: 80%'>Unique and challenging problems leading up to the tournament</i>", "Monday, 4/8", "PotD #1", "PotD #1", "PotD #1", "N/A"],
+        ["<font style='font-size: 150%'>Problem of the Day</font><br>4/8 - 4/12<br><i style='font-size: 80%'>Unique and challenging problems leading up to the tournament</i>", "Tuesday, 4/9", "PotD #2", "PotD #2", "PotD #2", "N/A"],
+        ["<font style='font-size: 150%'>Problem of the Day</font><br>4/8 - 4/12<br><i style='font-size: 80%'>Unique and challenging problems leading up to the tournament</i>", "Wednesday, 4/10", "PotD #3", "PotD #3", "PotD #3", "N/A"],
+        ["<font style='font-size: 150%'>Problem of the Day</font><br>4/8 - 4/12<br><i style='font-size: 80%'>Unique and challenging problems leading up to the tournament</i>", "Thursday, 4/11", "PotD #4", "PotD #4", "PotD #4", "N/A"],
+        ["<font style='font-size: 150%'>Problem of the Day</font><br>4/8 - 4/12<br><i style='font-size: 80%'>Unique and challenging problems leading up to the tournament</i>", "Friday, 4/12", "PotD #5", "PotD #5", "PotD #5", "N/A"],
+        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "4:00 PM", "Early Check-In", "Early Check-In", "Early Check-In", "Early Check-In"],
+        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "5:00 PM", "Estimathon", "Puzzle Hunt", "Stanford Tours", "Stanford Tours"],
+        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "6:00 PM", "Mini Class: Game Theory", "Puzzle Hunt", "Student Panel", "Student Panel"],
+        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "7:00 PM", "Dinner", "Dinner", "Dinner", "Dinner"],
+        ["<font style='font-size: 150%'>Friday Fun Functions [ƒ<sup>3</sup>]</font><br>4/12<br><i style='font-size: 80%'>Optional Social<br>Events</i>", "8:00 PM", "Games", "Games", "Games", "Unstructured Time"],
+        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "8:00 AM", "Check-In", "Check-In", "Check-In", "Check-In"],
+        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "8:30 AM", "Opening Ceremony", "Opening Ceremony", "Opening Ceremony", "Opening Ceremony"],
+        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "9:00 AM", "Power Round", "Power Round", "Power Round", "Talk with Po-Shen Loh"],
+        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "10:45 AM", "Team Round", "Team Round", "Team Round", "Unstructured Time"],
+        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "11:45 AM", "Lunch Break", "Lunch Break", "Lunch Break", "Lunch Break"],
+        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "1:00 PM", "Subject Test #1", "Subject Test #1", "General Test", "Unstructured Time"],
+        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "2:00 PM", "Subject Test #2", "Subject Test #2", "General Test", "Unstructured Time"],
+        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "3:00 PM", "Guts Round", "Guts Round", "Guts Round", "Guts Scoreboard Livestream"],
+        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "4:30 PM", "Math Talk w/ Brian Conrad", "Integration Bee", "Troll Round", "Unstructured Time"],
+        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/13<br><i style='font-size: 80%'>Tournament Day</i>", "6:00 PM", "Awards", "Awards", "Awards", "Awards"],
     ]
     const scheduleStyles = [
         "width: auto;",
@@ -107,19 +112,6 @@
     </PanelBox>
 </div>
 <br />
-
-<Heading text="Application Information" size={2.5} />
-<div class="section-wrapper">
-    <PanelBox>
-        <div style="padding: 10px;">
-            <p>For SMT 2024, we will be inviting <b>400 students</b> (~65-80 teams) from around the United States to compete in-person on Stanford’s campus. We are <b>now accepting applications</b> for in-person participation from schools and local established mathematical organizations in the United States. We will not be accepting applications from individuals or teams with less than 5 participants. Teams that are unable to participate in our in-person tournament are invited to participate in our online tournaments.</p>
-            <p>Students are highly encouraged to participate in SMT 2024 as part of their <b>school</b>. Homeschooled students are considered to be a part of their local public school. Students who do not have the opportunity to participate in SMT as part of their school may participate as part of a <b>local established mathematical organization</b>. An organization is considered local if its students are within a roughly 50 mile radius of the organization’s headquarters. An organization is considered established if it conducts activities for the mathematical enrichment of students beyond participating in competitions, and provides clear avenues for any student to get involved. <i>Students may not participate as part of a local established mathematical organization if their school is sending a team to SMT 2024 in-person.</i></p>
-            <p>A certain number of spots will be reserved for students from within the Bay Area (defined as within 150 miles of Stanford University) with the rest reserved for students from outside the Bay. For each of these categories, we will reserve spots for <b>top school teams</b> (non-orgs) from SMT 2023 and for teams that are <b>low-income</b> and/or <b>historically underrepresented</b> in mathematics. The rest of the spots will be assigned via a lottery, with preference given to school-based teams.</p>
-            <p>These criteria only apply for SMT 2024 at Stanford, not for SMT 2024 Online. These selection criteria are not final and may change as we look for a set of criteria that make sense to promote both diversity and competition for this year and future ones. Decisions made by SMT are final and non-negotiable.</p>
-            <p style="font-size: 0.8em;"><i>Updated on 3/5/2024</i></p>
-        </div>
-    </PanelBox>
-</div>
 
 <Heading text="Registration Information" size={2.5} />
 <div class="section-wrapper" >
@@ -229,6 +221,19 @@
         
         
         
+    </PanelBox>
+</div>
+
+<Heading text="Application Information" size={2.5} />
+<div class="section-wrapper">
+    <PanelBox>
+        <div style="padding: 10px;">
+            <p>For SMT 2024, we will be inviting <b>400 students</b> (~65-80 teams) from around the United States to compete in-person on Stanford’s campus. We are <b>now accepting applications</b> for in-person participation from schools and local established mathematical organizations in the United States. We will not be accepting applications from individuals or teams with less than 5 participants. Teams that are unable to participate in our in-person tournament are invited to participate in our online tournaments.</p>
+            <p>Students are highly encouraged to participate in SMT 2024 as part of their <b>school</b>. Homeschooled students are considered to be a part of their local public school. Students who do not have the opportunity to participate in SMT as part of their school may participate as part of a <b>local established mathematical organization</b>. An organization is considered local if its students are within a roughly 50 mile radius of the organization’s headquarters. An organization is considered established if it conducts activities for the mathematical enrichment of students beyond participating in competitions, and provides clear avenues for any student to get involved. <i>Students may not participate as part of a local established mathematical organization if their school is sending a team to SMT 2024 in-person.</i></p>
+            <p>A certain number of spots will be reserved for students from within the Bay Area (defined as within 150 miles of Stanford University) with the rest reserved for students from outside the Bay. For each of these categories, we will reserve spots for <b>top school teams</b> (non-orgs) from SMT 2023 and for teams that are <b>low-income</b> and/or <b>historically underrepresented</b> in mathematics. The rest of the spots will be assigned via a lottery, with preference given to school-based teams.</p>
+            <p>These criteria only apply for SMT 2024 at Stanford, not for SMT 2024 Online. These selection criteria are not final and may change as we look for a set of criteria that make sense to promote both diversity and competition for this year and future ones. Decisions made by SMT are final and non-negotiable.</p>
+            <p style="font-size: 0.8em;"><i>Updated on 3/5/2024</i></p>
+        </div>
     </PanelBox>
 </div>
 <!--

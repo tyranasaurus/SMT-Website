@@ -29,16 +29,21 @@
     ]
 
     const scheduleData = [
-        ["Day", "Time (PDT)", "Event", "Event", "Event"],
-        ["<font style='font-size: 150%'>4/14</font><br><i>Tournament Day</i>", "8:00 AM", "Check-In", "Check-In", "Check-In"],
-        ["<font style='font-size: 150%'>4/14</font><br><i>Tournament Day</i>", "9:00 AM", "Opening Ceremony", "Opening Ceremony", "Opening Ceremony"],
-        ["<font style='font-size: 150%'>4/14</font><br><i>Tournament Day</i>", "9:30 AM", "Power Round", "Power Round", "Power Round"],
-        ["<font style='font-size: 150%'>4/14</font><br><i>Tournament Day</i>", "11:10 AM", "Team Round", "Team Round", "Team Round"],
-        ["<font style='font-size: 150%'>4/14</font><br><i>Tournament Day</i>", "12:00 PM", "Lunch Break", "Lunch Break", "Lunch Break"],
-        ["<font style='font-size: 150%'>4/14</font><br><i>Tournament Day</i>", "1:00 PM", "Subject Test #1", "Subject Test #1", "General Test"],
-        ["<font style='font-size: 150%'>4/14</font><br><i>Tournament Day</i>", "2:00 PM", "Subject Test #2", "Subject Test #2", "General Test"],
-        ["<font style='font-size: 150%'>4/14</font><br><i>Tournament Day</i>", "3:00 PM", "Guts Round", "Guts Round", "Guts Round"],
-        ["<font style='font-size: 150%'>4/14</font><br><i>Tournament Day</i>", "4:30 PM", "Activities", "Activities", "Activities"],
+        ["Event", "Time (PDT)", "Students", "Students", "Students"],
+        ["<font style='font-size: 150%'>Problem of the Day</font><br>4/8 - 4/12<br><i style='font-size: 80%'>Unique and challenging problems leading up to the tournament</i>", "Monday, 4/8", "PotD #1", "PotD #1", "PotD #1"],
+        ["<font style='font-size: 150%'>Problem of the Day</font><br>4/8 - 4/12<br><i style='font-size: 80%'>Unique and challenging problems leading up to the tournament</i>", "Tuesday, 4/9", "PotD #2", "PotD #2", "PotD #2"],
+        ["<font style='font-size: 150%'>Problem of the Day</font><br>4/8 - 4/12<br><i style='font-size: 80%'>Unique and challenging problems leading up to the tournament</i>", "Wednesday, 4/10", "PotD #3", "PotD #3", "PotD #3"],
+        ["<font style='font-size: 150%'>Problem of the Day</font><br>4/8 - 4/12<br><i style='font-size: 80%'>Unique and challenging problems leading up to the tournament</i>", "Thursday, 4/11", "PotD #4", "PotD #4", "PotD #4"],
+        ["<font style='font-size: 150%'>Problem of the Day</font><br>4/8 - 4/12<br><i style='font-size: 80%'>Unique and challenging problems leading up to the tournament</i>", "Friday, 4/12", "PotD #5", "PotD #5", "PotD #5"],
+        ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "8:00 AM", "Check-In", "Check-In", "Check-In"],
+        ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "9:00 AM", "Opening Ceremony", "Opening Ceremony", "Opening Ceremony"],
+        ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "9:30 AM", "Power Round", "Power Round", "Power Round"],
+        ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "11:10 AM", "Team Round", "Team Round", "Team Round"],
+        ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "12:00 PM", "Lunch Break", "Lunch Break", "Lunch Break"],
+        ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "1:00 PM", "Subject Test #1", "Subject Test #1", "General Test"],
+        ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "2:00 PM", "Subject Test #2", "Subject Test #2", "General Test"],
+        ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "3:00 PM", "Guts Round", "Guts Round", "Guts Round"],
+        ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "4:30 PM", "Activities", "Activities", "Activities"],
         ["<font style='font-size: 150%'>4/21</font><br><i>Awards Ceremony</i>", "5:00 PM", "Awards", "Awards", "Awards"],
     ]
     const scheduleStyles = [
