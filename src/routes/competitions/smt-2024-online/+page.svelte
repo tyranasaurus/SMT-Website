@@ -157,6 +157,9 @@
         <strong>April 7, 2024 at 11:59 PM PT:</strong> Late ($25/student) registration deadline.
     </TimelineElement>
     <TimelineElement>
+        <strong>April 10, 2024 at 11:59 PM PT:</strong> Deadline for adding students to teams and filling out waivers. ContestDojo teams are frozen.
+    </TimelineElement>
+    <TimelineElement>
         <strong>April 14, 2024:</strong> SMT Online
     </TimelineElement>
     <TimelineElement>
