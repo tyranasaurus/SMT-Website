@@ -43,7 +43,6 @@
         ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "1:00 PM", "Subject Test #1", "Subject Test #1", "General Test"],
         ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "2:00 PM", "Subject Test #2", "Subject Test #2", "General Test"],
         ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "3:00 PM", "Guts Round", "Guts Round", "Guts Round"],
-        ["<font style='font-size: 150%'>Tournament Day</font><br><i>4/14</i>", "4:30 PM", "Activities", "Activities", "Activities"],
         ["<font style='font-size: 150%'>4/21</font><br><i>Awards Ceremony</i>", "5:00 PM", "Awards", "Awards", "Awards"],
     ]
     const scheduleStyles = [
