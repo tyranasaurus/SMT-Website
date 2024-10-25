@@ -102,7 +102,6 @@ const notation = "https://drive.google.com/file/d/1jhHz2K4yUsKICDj4HvRhcICmHrINb
 <div class="section-wrapper col-sm" style="margin-top: 1vh">
     <PanelBox>
         <div class="section-item">
-            <p><b><i>These rules have not been updated for 2024 - there may be some changes.</i></b></p>
             <p>
             The mathematical expectations for each test (both individual and team) can be found in the document below. It outlines the content that each test might include, and can serve as a useful guide for those debating which test to take. 
             </p>
