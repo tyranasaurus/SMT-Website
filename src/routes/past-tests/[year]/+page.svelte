@@ -5,7 +5,7 @@
     import PanelBox from "$lib/components/PanelBox.svelte";
     import Table from "$lib/components/Table.svelte";
 
-    const supportedYears = [2011, 2012, 2013, 2014, 2018, 2019, 2020, 2021, 2022, 2023];
+    const supportedYears = [2011, 2012, 2013, 2014, 2018, 2019, 2020, 2021, 2022, 2023, 2024];
 
     let year = $page.params.year;
 
@@ -30,6 +30,17 @@
         }
 
         let rounds = {
+            tests2024: [
+                "Team",
+                "Algebra",
+                "Calculus",
+                "Discrete",
+                "Geometry",
+                "General",
+                "Guts",
+                "Power",
+            ],
+            tb2024: ["Algebra", "Calculus", "Discrete", "Geometry", "General"],
             tests2023: [
                 "Team",
                 "Algebra",

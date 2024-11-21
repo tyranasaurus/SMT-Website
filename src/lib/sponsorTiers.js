@@ -1,5 +1,16 @@
 const sponsorTiers = [
   {
+    name: "Sponsors",
+    singular: "Sponsor",
+    sponsors: [
+      {
+        url: "sponsors/partners/Citadel.png",
+        alt: "Citadel",
+        link: "https://www.citadelsecurities.com/",
+      },
+    ],
+  },
+  {
     name: "Our Partners",
     singular: "Partner",
     sponsors: [

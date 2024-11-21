@@ -1,27 +1,27 @@
 [
   {
-      "priority": 1,
-      "org": "Director",
-      "td": "Lead",
-      "pw": "Leads",
-      "t": "Lead"
+    "priority": 1,
+    "org": "Director",
+    "td": "Lead",
+    "pw": "Leads",
+    "t": "Lead"
   },
   {
-      "priority": 2,
-      "org": "Leadership",
-      "pw": "Test Coordinators"
+    "priority": 2,
+    "org": "Leadership",
+    "pw": "Test Coordinators"
   },
   {
-      "priority": 3
+    "priority": 3
   },
   {
-      "priority": 4
+    "priority": 4
   },
   {
-      "priority": 5,
-      "org": "Members",
-      "td": "Organizers",
-      "pw": "Problem Writers",
-      "t": "Developers"
+    "priority": 5,
+    "org": "Members",
+    "td": "Organizers",
+    "pw": "Problem Writers",
+    "t": "Developers"
   }
 ]
