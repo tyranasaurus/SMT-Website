@@ -133,7 +133,7 @@
             <p>If your school is not sending a team to SMT 2025 in-person and you can't find or form a local organization to participate with, you may register as an <b>individual competitor</b>. Students who register as individuals will be placed in a team of 5 other individual competitors, based on geographic proximity. Individuals may have a lower chance of being accepted to compete in SMT than students participating as part of a school or organization.</p>
             <h4>Selection Method</h4>
             <p>We will reserve spots for <b>top school teams</b> (non-orgs) from SMT 2024 and for teams that are <b>low-income</b> and/or <b>historically underrepresented</b> in mathematics. The rest of the spots will be assigned via a lottery, with preference given to school-based teams, followed by local organizations and individuals.</p>
-            <p><i>These criteria only apply for SMT 2025 in-person, not for SMT 2025 Online. These selection criteria are not final and may change as we develop criteria that promote both diversity and competition for this year and future ones. Decisions made by SMT are final and non-negotiable.</i></p>
+            <p><i>These criteria only apply for SMT 2025 in-person, not for SMT 2025 Online. These selection criteria are not final; they may change as we work to promote both diversity and a competitive spirit. Decisions made by SMT are final and non-negotiable.</i></p>
             <p style="font-size: 0.8em;"><i>Last updated on 12/7/2024</i></p>
         </div>
     </PanelBox>
