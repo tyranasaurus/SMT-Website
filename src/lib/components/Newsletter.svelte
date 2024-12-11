@@ -70,7 +70,7 @@
         <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="mc-field-group">
-        <label for="mce-undefined">Student Grade (2023-24) <span class="asterisk">*</span></label>
+        <label for="mce-undefined">Student Grade (2024-25) <span class="asterisk">*</span></label>
         <select name="GRADE" class="" id="mce-undefined" bind:value={grade}>
         <option value=""></option>
         <option value="1">1</option>
