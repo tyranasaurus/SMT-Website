@@ -61,7 +61,7 @@
 <div class="header-container" style="height: calc(max(600px, 100vh));">
     <div class="header flex">
         <img src="Header-Background.svg" alt="Header Background" class="header-background-1">
-        <img src="Header-Background.svg" alt="Header Background" class="header-background-2">
+        <!--<img src="Header-Background.svg" alt="Header Background" class="header-background-2">-->
         <div class="minidiv">
             <Heading
                 className="glow"
@@ -286,18 +286,12 @@
 
     .header-background-1 {
         position: absolute;
-        opacity: 12%;
+        opacity: 24%;
         height: auto;
         width: 250%;
-        animation: rotate-1 120s linear infinite; /* Adjust duration and timing function as needed */
+        /*animation: rotate-1 120s linear infinite; /* Adjust duration and timing function as needed */
     }
-    .header-background-2 {
-        position: absolute;
-        opacity: 6%;
-        height: auto;
-        width: 250%;
-        animation: rotate-2 240s linear infinite; /* Adjust duration and timing function as needed */
-    }
+    
 
     .header-container {
         position: relative;
