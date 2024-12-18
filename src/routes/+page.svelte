@@ -68,7 +68,7 @@
                 text="Stanford Math Tournament"
                 align={isMobile ? "center" : "left"}
                 textColor="black"
-                size={windowWidth > 700 ? 7 : 3}
+                size={windowWidth > 700 ? 5 : 3}
                 marginLeft="0"
                 padding="0"
             />
