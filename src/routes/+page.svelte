@@ -286,7 +286,7 @@
 
     .header-background-1 {
         position: absolute;
-        opacity: 24%;
+        opacity: 12%;
         height: auto;
         width: 250%;
         /*animation: rotate-1 120s linear infinite; /* Adjust duration and timing function as needed */
