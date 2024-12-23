@@ -144,6 +144,22 @@
     "pic2path": "about-us-images/silly/Nishikar Paruchuri.jpg"
   },
   {
+    "displayname": "Nishka Kacheria",
+    "td": false,
+    "pw": false,
+    "t": true,
+    "org": true,
+    "orgpriority": 5,
+    "tdpriority": 5,
+    "pwpriority": 5,
+    "tpriority": 5,
+    "pic1path": "about-us-images/serious/Nishka_Kacheria.jpg",
+    "bio": "Nishka is a freshman studying math and computer science. Outside of the tech team, she enjoys solving puzzles and being puzzled by preposterous problems. She also likes hiking and reading mysteries!",
+    "first": "Nishka",
+    "last": "Kacheria",
+    "pic2path": "about-us-images/silly/Nishka Kacheria.jpg"
+  },
+  {
     "displayname": "Anvi Padhi",
     "td": false,
     "pw": false,
