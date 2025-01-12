@@ -176,6 +176,12 @@
                     url: `/pdfs/smt2023/results-online.pdf`
                 },
             ],
+            results2024: [
+                {
+                    text: "Online Results",
+                    url: `/pdfs/smt2024/results-online.pdf`
+                },
+            ],
         };
 
         return resultLinks["results" + year] ?? [];
