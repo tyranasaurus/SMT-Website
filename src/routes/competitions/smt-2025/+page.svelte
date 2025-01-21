@@ -48,7 +48,7 @@
         ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>", "1:00 PM", "Subject Test #1", "Subject Test #1", "General Test", "Unstructured Time"],
         ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>", "2:00 PM", "Subject Test #2", "Subject Test #2", "General Test", "Unstructured Time"],
         ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>", "3:00 PM", "Guts Round", "Guts Round", "Guts Round", "Guts Scoreboard Livestream"],
-        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>", "4:30 PM", "Math Talk w/ Brian Conrad", "Integration Bee", "Troll Round", "Unstructured Time"],
+        ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>", "4:30 PM", "TBA", "Integration Bee", "Troll Round", "Unstructured Time"],
         ["<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>", "6:00 PM", "Awards", "Awards", "Awards", "Awards"],
     ]
     const scheduleStyles = [
