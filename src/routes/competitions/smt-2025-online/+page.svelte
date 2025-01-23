@@ -58,11 +58,11 @@
 
     const testData = [
         ["", "", "Summary", "# of Questions", "Duration", "% of Team Score"],
-        ["Power", "Power", "<i style='font-size:80%'>Team</i><br>Proof-Based", "TBD", "80'", "30%"],
-        ["Team", "Team", "<i style='font-size:80%'>Team</i><br>Short Answer", "15", "50'", "20%"],
-        ["Individual", "General", "<i style='font-size:80%'>Individual</i><br>Mixed topics<br><i style='font-size:80%'>Worth 60% of Subject Tests</i>", "25", "110'", "30%"],
-        ["Individual", "Subject", "<i style='font-size:80%'>Individual</i><br><font style='font-size: 100%'>Algebra&nbsp|&nbspCalculus&nbsp|&nbspDiscrete&nbsp|&nbspGeometry</font><br><i style='font-size:80%'>Pick two</i>", "10", "50'", "30%"],
-        ["Guts", "Guts", "<i style='font-size:80%'>Team</i><br>Live-scored", "27<br><i style='font-size:80%'>9 sets of 3</i>", "80'", "20%"]
+        ["Power", "Power", "<i style='font-size:80%'>Team</i><br>Proof-Based", "TBD", "80 min", "30%"],
+        ["Team", "Team", "<i style='font-size:80%'>Team</i><br>Short Answer", "15", "50 min", "20%"],
+        ["Individual", "General", "<i style='font-size:80%'>Individual</i><br>Mixed topics<br><i style='font-size:80%'>Worth 60% of Subject Tests</i>", "25", "110 min", "30%"],
+        ["Individual", "Subject", "<i style='font-size:80%'>Individual</i><br><font style='font-size: 100%'>Algebra&nbsp|&nbspCalculus&nbsp|&nbspDiscrete&nbsp|&nbspGeometry</font><br><i style='font-size:80%'>Pick two</i>", "10", "50 min", "30%"],
+        ["Guts", "Guts", "<i style='font-size:80%'>Team</i><br>Live-scored", "27<br><i style='font-size:80%'>9 sets of 3</i>", "80 min", "20%"]
     ]
 
     const testStyles = [
@@ -245,7 +245,7 @@
         <ul>
             <li><strong>Zoom Breakout Rooms:</strong> During tests, participants will be in Zoom breakout rooms, and they must have both screen sharing and their video cameras on at all times.</li>
             <li>If your device does not have a video camera, please let us know in advance. You also must record yourself with the second camera, described below.</li>
-            <li><strong>Monitoring of Computer Activity:</strong> We will monitor suspicious computer activity throughout the tournament.</li>
+            <li><strong>Monitoring of Computer Activity:</strong> We will monitor suspicious computer activity throughout the tournament, using information from our online test-taking platform.</li>
             <li><strong>Post-tournament review:</strong> After the tournament, answers flagged as suspicious will be reviewed for potential cheating.</li>
         </ul>
 
