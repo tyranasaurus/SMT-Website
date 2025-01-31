@@ -8,6 +8,16 @@ const sponsorTiers = [
         alt: "Citadel",
         link: "https://www.citadelsecurities.com/",
       },
+      {
+        url: "sponsors/partners/Jane Street.png",
+        alt: "Jane Street",
+        link: "https://www.janestreet.com",
+      },
+      {
+        url: "sponsors/partners/HRT.png",
+        alt: "Hudson River Trading",
+        link: "https://hudsonrivertrading.com/",
+      },
     ],
   },
   {
