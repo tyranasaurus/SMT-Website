@@ -34,6 +34,10 @@
     $: scrollOpacity = Math.max((windowHeight - 2 * y) / windowHeight, 0);
     $: learnMoreIsVisible = scrollOpacity > 0;
 
+    let isMobile = false; // Initially assuming not mobile
+
+    $: isMobile = windowWidth < 700;
+
     let infoElem;
     let tournElem;
 
@@ -54,15 +58,17 @@
     <title>Stanford Math Tournament</title>
 </svelte:head>
 
-<div class="outside" style="height: calc(max(600px, 100vh));">
+<div class="header-container" style="height: calc(max(600px, 100vh));">
     <div class="header flex">
+        <img src="Header-Background.svg" alt="Header Background" class="header-background-1">
+        <!--<img src="Header-Background.svg" alt="Header Background" class="header-background-2">-->
         <div class="minidiv">
             <Heading
                 className="glow"
                 text="Stanford Math Tournament"
-                align="left"
+                align={isMobile ? "center" : "left"}
                 textColor="black"
-                size={windowWidth > 700 ? 7 : 3}
+                size={windowWidth > 700 ? 5 : 3}
                 marginLeft="0"
                 padding="0"
             />
@@ -72,8 +78,11 @@
                 passionate about providing a high quality and challenging event
                 to students interested in mathematics globally.
             </p>
+            <p class ="descript">
+                <i>Applications for SMT 2025 are now open!</i>
+            </p>
             <HeaderButton
-                text="Register for SMT 2024!"
+                text="Apply for SMT 2025!"
                 arrowDirection="down"
                 onClick={() => scrollToElem(tournElem)}
                 isLink={false}
@@ -101,8 +110,8 @@
             />
             <p class="other-text">
                 Stanford Math Tournament is run entirely by Stanford students.
-                We are one of the largest university-run math contests with over
-                1700 participants globally in 2023. We are proudly supported by the
+                We are one of the largest university-run math contests, with over 2300 
+                participants globally in 2024. We are proudly supported by the
                 Stanford Undergraduate Mathematics Organization (SUMO) and the
                 Stanford Department of Mathematics.
             </p>
@@ -151,22 +160,22 @@
     <div class="mobile-flex" style="width: 100%">
         <div class="flex-item border-right tournament">
             <h2>SMT</h2>
-            <p>The Stanford Math Tournament (SMT) is a contest organized by Stanford students, held on Stanford’s campus. In 2024, SMT will be held on <b>April 13, 2024</b>, and will be open via application to 400 high school contestants from around the United States. </p>
+            <p>The Stanford Math Tournament (SMT) is a contest organized by Stanford students, held on Stanford’s campus. In 2025, SMT will be held on <b>April 11-12, 2025</b> for 800 high school contestants from around the United States. </p>
             <div style="margin-top: 10px;">
                 <HeaderButton
-                    href="/competitions/smt-2024"
-                    text="Go to SMT 2024"
+                    href="/competitions/smt-2025"
+                    text="Go to SMT 2025"
                     isSmall={true}
                 />
             </div>
         </div>
         <div class="flex-item border-right tournament">
             <h2>SMT Online</h2>
-            <p>In support of our mission to spread mathematics education and improve the accessibility of math tournaments, we are hosting a concurrent online tournament, identical to SMT. It will occur in April and is open to all middle and high school students from <b>anywhere in the world</b>.</p>
+            <p>In support of our mission to spread mathematics education and improve the accessibility of math tournaments, we are hosting an online tournament, similar to the in-person contest. It will occur soon after SMT and is open to all middle and high school students from <b>anywhere in the world</b>.</p>
             <div style="margin-top: 10px;">
                 <HeaderButton
-                    href="/competitions/smt-2024-online"
-                    text="Go to SMT 2024 Online"
+                    href="/competitions/smt-2025-online"
+                    text="Learn More"
                     isSmall={true}
                 />
             </div>
@@ -199,18 +208,12 @@
 </div>
 
 <style>
-    .outside {
-        background-color: var(--background-white);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        overflow: hidden;
-    }
+    
 
     .descript {
         width: 70%;
-        font-weight: 300;
-        font-size: 22px;
+        font-weight: 500;
+        font-size: 24px;
         color: black;
     }
 
@@ -257,12 +260,6 @@
     }
 
     @media (max-width: 700px) {
-        .outside {
-            background-color: var(--background-white);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
 
         .descript {
             width: auto;
@@ -284,6 +281,40 @@
         text-align: center;
         position: relative;
         height: calc(100% - 70px);
+        overflow: hidden;
+    }
+
+    .header-background-1 {
+        position: absolute;
+        opacity: 12%;
+        height: auto;
+        width: 250%;
+        /*animation: rotate-1 120s linear infinite; /* Adjust duration and timing function as needed */
+    }
+    
+
+    .header-container {
+        position: relative;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        z-index: 1; /* Ensure the header content is above other page content */
+    }
+    @keyframes rotate-1 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotate-2 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(-360deg);
+        }
     }
 
     .svg {
@@ -296,7 +327,7 @@
     }
 
     .minidiv {
-        z-index: 9;
+        z-index: 1;
         margin: 20px;
         max-width: 90%;
         text-align: left;

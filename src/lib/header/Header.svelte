@@ -29,14 +29,14 @@
             hasSubPages: false,
         },*/
         {
-            path: "/competitions/smt-2024",
-            text: "SMT 2024",
+            path: "/competitions/smt-2025",
+            text: "SMT 2025",
             hasSubPages: true,
             subPages: [
-                { path: "/competitions/smt-2024", text: "SMT 2024 @ Stanford" },
+                { path: "/competitions/smt-2025", text: "SMT 2025 @ Stanford" },
                 {
-                    path: "/competitions/smt-2024-online",
-                    text: "SMT 2024 Online",
+                    path: "/competitions/smt-2025-online",
+                    text: "SMT 2025 Online",
                 }
             ],
         },

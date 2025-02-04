@@ -1,42 +1,42 @@
 [
-    {
-        "question": "Which individual test should I take?",
-        "answer": "You can take as many of the tests you like."
-    },
-    {
-        "question": "Do I have to take all the tests consecutively?",
-        "answer": "No, you are free to take any test at any time during the time SMT Asynchronous is active."
-    },
-    {
+  {
+    "question": "Which individual test should I take?",
+    "answer": "You can take as many of the tests you like."
+  },
+  {
+    "question": "Do I have to take all the tests consecutively?",
+    "answer": "No, you are free to take any test at any time during the time SMT Asynchronous is active."
+  },
+  {
     "question": "How many students may be on a team?",
     "answer": "We recommend teams of size 6-8, but you are free to form a team of any size."
-},
-    {
+  },
+  {
     "question": "Do students on the same team have to be from the same school or established mathematical organization?",
     "answer": "No, you are free to form teams from outside of your school/in your area or do the problems on your own."
-},
-    {
-        "question": "Can I register for SMT 2023 Asynchronous as an individual?",
-        "answer": "To register as an individual, have a parent form an org on ContestDojo and add you as the singular student to your own team. During the registration process when creating the team, there will be a question asking you if you want us to combine you with other incomplete teams so that you can also officially participate in the team rounds."
-    },
-    {
+  },
+  {
+    "question": "Can I register for SMT 2023 Asynchronous as an individual?",
+    "answer": "To register as an individual, have a parent form an org on ContestDojo and add you as the singular student to your own team. During the registration process when creating the team, there will be a question asking you if you want us to combine you with other incomplete teams so that you can also officially participate in the team rounds."
+  },
+  {
     "question": "What schools or organizations can participate in SMT?",
     "answer": "SMT 2023 Asynchronous will be open to all students."
-},
-    {
-        "question": "Will SMT Asynchronous have awards?",
+  },
+  {
+    "question": "Will SMT Asynchronous have awards?",
     "answer": "There will be no official results or awards, yet we will give you your personal result summary."
-    },
-    {
+  },
+  {
     "question": "Are calculators allowed?",
     "answer": "No. Calculators are not allowed on any portion of the tests. Check the SMT rules for information on permitted items."
-},
-    {
+  },
+  {
     "question": "What topics may appear on the tests? How hard are the tests?",
     "answer": "See the mathematical expectations document for guidelines on what topics may appear on each test. It is also advisable to look at the test from previous years in order to get a sense of the typical style and difficulty of SMT tests."
-},
-    {
+  },
+  {
     "question": "Can I use the problems from previous SMT tests listed below in my classroom/book/etc?",
     "answer": "Yes! Feel free to use these problems provided you cite us in the format (Stanford Math Tournament [Year] [Round] [Problem #])"
-}
+  }
 ]
