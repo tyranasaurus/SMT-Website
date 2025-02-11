@@ -142,7 +142,7 @@
 
 <Timeline width="60%">
     <TimelineElement>
-        <strong>Mid-February:</strong> Registration opens
+        <strong>Late February:</strong> Registration opens
         <!-- <a href={formLink} target="_blank">here</a> -->
         <!-- <br /> -->
         <!-- <Link
