@@ -99,13 +99,17 @@
                 <strong>LOCATION:</strong> Stanford University <br />
                 <strong>WHO:</strong> High School students residing within the United States <br />
                 <strong>TEAM SIZE:</strong> 5-6 <br />
-                <strong>COST:</strong> $20 per student (Financial aid available upon request!) <br /> <br />
+                <strong>COST:</strong> $20 per student* (Financial aid available upon request!) <br /> 
+            
+                <br />
                 <i
                     >SMT 2025 is only for US high school students. If this doesn't apply to you, we encourage you to participate in <Link
                     url="/competitions/smt-2025-online"
                     text="SMT 2025 Online"
                 /> instead.
-                </i>
+                </i> <br />
+                <br />
+                *Eventbrite charges around $2.00 per student in service fees. <br />
             </p>
             <HeaderButton
                 text="Apply for SMT"
