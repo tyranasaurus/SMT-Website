@@ -80,7 +80,7 @@
 </script>
 
 <svelte:head>
-    <title>SMT 2024 Online</title>
+    <title>SMT 2025 Online</title>
 </svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
@@ -96,7 +96,8 @@
                 <strong>LOCATION:</strong> Online <br />
                 <strong>WHO:</strong> Students in high school and below, from anywhere in the world <br />
                 <strong>TEAM SIZE:</strong> 6-8 <br />
-                <strong>COST:</strong> $15-$25 per student (see timeline below) <br /> 
+                <strong>COST:</strong> $15-$25 per student* (see timeline below) <br /> <br />
+                              *Eventbrite charges around $2.00 per student in service fees.
             </p>
             <!-- <HeaderButton
                 text="Register for SMT Online"
@@ -151,7 +152,7 @@
              /> -->
     </TimelineElement>
     <TimelineElement>
-        <strong>March 1, 2025 at 11:59 PM PT:</strong> Early Bird ($15/student) registration deadline.
+        <strong>March 7, 2025 at 11:59 PM PT:</strong> Early Bird ($15/student) registration deadline.
     </TimelineElement>
     <TimelineElement>
         <strong>March 31, 2025 at 11:59 PM PT:</strong> Regular ($20/student) registration deadline.
@@ -245,8 +246,7 @@
         <ul>
             <li><strong>Zoom Breakout Rooms:</strong> During tests, participants will be in Zoom breakout rooms, and they must have both screen sharing and their video cameras on at all times.</li>
             <li>If your device does not have a video camera, please let us know in advance. You also must record yourself with the second camera, described below.</li>
-            <li><strong>Monitoring of Computer Activity:</strong> We will monitor suspicious computer activity throughout the tournament, using information from our online test-taking platform.</li>
-            <li><strong>Post-tournament review:</strong> After the tournament, answers flagged as suspicious will be reviewed for potential cheating.</li>
+            <li><strong>Post-tournament review:</strong> After the tournament, students and teams flagged as suspicious will be reviewed for potential cheating.</li>
         </ul>
 
         <p>
