@@ -100,7 +100,7 @@
                               *Eventbrite charges around $2.00 per student in service fees.
             </p>
              <HeaderButton
-                text="Register for SMT Online"
+                text="Register on COMP.MT"
                 href={formLink}
                 newTab=true
                 isSmall
@@ -144,8 +144,8 @@
 
 <Timeline width="60%">
     <TimelineElement>
-        <strong>Late February:</strong> Registration opens
-        <a href={formLink} target="_blank">here</a>
+        <strong>Late February:</strong> Registration opens on 
+        <a href={formLink} target="_blank">COMP.MT</a>
         <!-- <br /> -->
         <!-- <Link
              url="https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link"
