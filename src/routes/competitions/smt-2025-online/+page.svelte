@@ -76,7 +76,7 @@
 
 
     const formLink =
-        "https://smt2024online.eventbrite.com/";
+        "https://comp.mt";
 </script>
 
 <svelte:head>
@@ -99,16 +99,17 @@
                 <strong>COST:</strong> $15-$25 per student* (see timeline below) <br /> <br />
                               *Eventbrite charges around $2.00 per student in service fees.
             </p>
-            <!-- <HeaderButton
+             <HeaderButton
                 text="Register for SMT Online"
                 href={formLink}
                 newTab=true
                 isSmall
                 centered
-            /> -->  
+            /> 
         </div>
     </PanelBox>
 </div>
+
 <br />
 
 <!-- <Heading text="Registration Information" size={2.5} /> 
@@ -144,7 +145,7 @@
 <Timeline width="60%">
     <TimelineElement>
         <strong>Late February:</strong> Registration opens
-        <!-- <a href={formLink} target="_blank">here</a> -->
+        <a href={formLink} target="_blank">here</a>
         <!-- <br /> -->
         <!-- <Link
              url="https://docs.google.com/forms/d/e/1FAIpQLScyywaWqPFLnGATcamhA_XGwfREfsu6qMkB5fx2LLUk9GRKOA/viewform?usp=share_link"
