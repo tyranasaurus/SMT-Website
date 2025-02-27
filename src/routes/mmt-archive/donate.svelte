@@ -1,12 +1,12 @@
 <script>
-  import PageHeader from "$lib/components/PageHeader.svelte";
-  import Section from "$lib/components/Section.svelte";
-  import Heading from "$lib/components/Heading.svelte";
-  import FlexBox from "$lib/components/FlexBox.svelte";
-  import Image from "$lib/components/Image.svelte";
-  import PanelBox from "$lib/components/PanelBox.svelte";
-  import Link from "$lib/components/Link.svelte";
-  import sponsorTiers from "$lib/sponsorTiers";
+  import PageHeader from '$lib/components/PageHeader.svelte'
+  import Section from '$lib/components/Section.svelte'
+  import Heading from '$lib/components/Heading.svelte'
+  import FlexBox from '$lib/components/FlexBox.svelte'
+  import Image from '$lib/components/Image.svelte'
+  import PanelBox from '$lib/components/PanelBox.svelte'
+  import Link from '$lib/components/Link.svelte'
+  import sponsorTiers from '$lib/sponsorTiers'
 </script>
 
 <svelte:head>
@@ -38,7 +38,8 @@ https://link.mustangmath.com/donate"
         multitude of costs, including but not limited to venue booking,
         technology services, and teaching resources. Your donation will be
         attributed directly towards these costs allowing us to work towards our
-        goal of <b>charging minimal to no registration fees</b> for our services.
+        goal of
+        <b>charging minimal to no registration fees</b> for our services.
       </p>
     </PanelBox>
   </FlexBox>
@@ -54,7 +55,8 @@ https://link.mustangmath.com/donate"
         through <a href="link.mustangmath.com/donate">PayPal</a>, or by mailing
         a check made out to Mustang Math at
         <b>8139 231st PL NE, Redmond WA 98053</b>. If you have any questions,
-        don't hesitate to <a href="mailto:contact@mustangmath.com">email us</a>.
+        don't hesitate to
+        <a href="mailto:contact@mustangmath.com">email us</a>.
       </p>
     </PanelBox>
   </FlexBox>
