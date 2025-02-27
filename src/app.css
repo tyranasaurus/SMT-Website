@@ -1,21 +1,10 @@
-@import "@fontsource/fira-mono";
+@import '@fontsource/fira-mono';
 
 :root {
-  font-family:
-    "Quattrocento",
-    "Roboto",
-    Arial,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Quattrocento,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
-  --font-mono: "Fira Mono", monospace;
+  font-family: 'Quattrocento', 'Roboto', Arial, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Quattrocento, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-mono: 'Fira Mono', monospace;
   --pure-white: #ffffff;
   --primary-color: #e5d1d1;
   --secondary-color: #ebdbdb;
@@ -75,7 +64,7 @@ body {
 }
 
 body::before {
-  content: "";
+  content: '';
   width: 80vw;
   height: 100vh;
   position: absolute;
