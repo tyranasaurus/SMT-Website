@@ -6,6 +6,9 @@
     import Newsletter from "$lib/components/Newsletter.svelte";
     import { user } from '$lib/store';
     import { onMount } from "svelte";
+		import Fa from 'svelte-fa'
+		import { faBook, faCamera, faEnvelope, faNewspaper } from "@fortawesome/free-solid-svg-icons"
+	import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
     let show = false;
 
@@ -25,11 +28,14 @@
     {#if $page.url.pathname !== "/"}
         <footer>
             <div class="socials">
-                <button class="sign-up" on:click={() => {show = !show;}}><i class="fa-regular fa-newspaper"></i> Signup</button>
+                <button class="sign-up" on:click={() => {show = !show;}}>
+									<Fa icon={faNewspaper}/>
+                	Signup
+	              </button>
 			    <div class="divider"></div>
-                <SocialsLink url="mailto:stanford.math.tournament@gmail.com" type="solid" icon="envelope" />
-                <SocialsLink url="https://www.facebook.com/StanfordMathTournament" type="brands" icon="facebook" />
-			    <SocialsLink url="https://www.instagram.com/StanfordMathTournament/" type="brands" icon="instagram" />
+                <SocialsLink url="mailto:stanford.math.tournament@gmail.com" type="solid" icon={faEnvelope} />
+                <SocialsLink url="https://www.facebook.com/StanfordMathTournament" type="brands" icon={faFacebook} />
+    			      <SocialsLink url="https://www.instagram.com/StanfordMathTournament/" type="brands" icon={faInstagram} />
             </div>
         </footer>
     {/if}

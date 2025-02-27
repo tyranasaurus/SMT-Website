@@ -6,6 +6,8 @@
     import Header from "$lib/header/Header.svelte";
     import HeaderButton from "$lib/components/HeaderButton.svelte";
     import PageHeader from "$lib/components/PageHeader.svelte";
+    import Fa from 'svelte-fa'
+    import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
 
     // need to do this to make the animation play on page load
     let visible = false;
@@ -204,7 +206,7 @@
     on:click={() => scrollToElem(infoElem)}
 >
     Learn more &nbsp;
-    <i class="fa fa-caret-down" style="margin-left: 2px;" />
+    <Fa icon={faCaretDown} style="margin-left: 2px;"/>
 </div>
 
 <style>

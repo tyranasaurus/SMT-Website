@@ -1,16 +1,12 @@
 <script>
+    import Fa from 'svelte-fa'
     export let url;
-    export let type;
     export let icon;
     export let text = false;
 </script>
 
 <a href={url} target="_blank" rel="noopener noreferrer" class="social-link" class:text>
-    {#if text}
-        {icon}
-    {:else}
-        <i class="fa-{type} fa-{icon}"></i>
-    {/if}
+    <Fa icon={icon}/>
 </a>
 
 <style>

@@ -1,4 +1,7 @@
 <script>
+    import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons"
+    import Fa from 'svelte-fa'
+
     export let text;
     export let icon = false;
     export let hasArrow = true;
@@ -27,10 +30,7 @@
                     {text}
                 </p>
                 {#if hasArrow}
-                    <i
-                        class="fa fa-caret-{arrowDirection}"
-                        aria-hidden="true"
-                    />
+                    <Fa icon={arrowDirection == "right" ? faCaretRight : faCaretLeft} aria-hidden="true"/>
                 {/if}
             </div>
         </a>
@@ -41,7 +41,7 @@
             {text}
         </p>
         {#if hasArrow}
-            <i class="fa fa-caret-{arrowDirection}" aria-hidden="true" />
+            <Fa icon={arrowDirection == "right" ? faCaretRight : faCaretLeft} aria-hidden="true"/>
         {/if}
     </div>
 {/if}

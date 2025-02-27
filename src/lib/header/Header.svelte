@@ -1,6 +1,8 @@
 <script>
     import { page } from "$app/stores";
     import { fly, slide, crossfade } from "svelte/transition";
+    import Fa from 'svelte-fa'
+    import { faBars, faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons'
 
     let windowWidth = 0;
     let open = false;
@@ -101,10 +103,7 @@
                             >
                                 <span>
                                     {navPage.text}
-                                    <i
-                                        class="fa fa-caret-down"
-                                        style="margin-left: 2px;"
-                                    />
+                                    <Fa icon={faCaretDown} style="margin-left: 2px;"/>
                                     {#if $page.url.pathname.includes(navPage.path)}
                                         <div
                                             class="textunderline"
@@ -152,7 +151,7 @@
             {/each}
         {:else}
             <div on:click={toggleMobile} id="hamburger-div">
-                <i id="hamburger-icon" class="fa fa-bars" />
+        		    <Fa id="hamburger-icon" icon={faBars}/>
             </div>
         {/if}
     </div>
@@ -172,25 +171,19 @@
                             sveltekit:prefetch
                             href={navPage.path}>{navPage.text}</a
                         >
-                        <div
-                            style="color: white;width:50px;"
+                        <button
+                            style="color: white;width:50px; background-color: transparent; border: none; width: 10px"
                             on:click={() => {
                                 show[navPage.index] =
                                     show[navPage.index] == 1 ? 0 : 1;
                             }}
                         >
                             {#if show[navPage.index] == 1}
-                                <i
-                                    class="fa fa-caret-up"
-                                    style="margin-left: 2px;"
-                                />
+                        		    <Fa icon={faCaretUp} style="margin-left: 2px;"/>
                             {:else}
-                                <i
-                                    class="fa fa-caret-down"
-                                    style="margin-left: 2px;"
-                                />
+                        		    <Fa icon={faCaretDown} style="margin-left: 2px;"/>
                             {/if}
-                        </div>
+                        </button>
                     </div>
                 </div>
                 {#if show[navPage.index] == 1}

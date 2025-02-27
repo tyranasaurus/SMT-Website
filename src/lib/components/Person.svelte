@@ -32,6 +32,8 @@
     import PanelBox from "$lib/components/PanelBox.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import { LightenDarkenColor, hexToRgb } from "$lib/utils/Colors.svelte";
+  	import { faCalculator, faComputer, faPenRuler } from "@fortawesome/free-solid-svg-icons"
+    import Fa from 'svelte-fa'
   </script>
   
   <div class="panel-box">
@@ -53,9 +55,7 @@
               <Tooltip title="Tournament Development">
                 <BoopAction boopParams={{ y: 5, timing: 200 }}>
                   {#if Member.td == true}
-                    <i
-                      class="fa-solid fa-pen-ruler icon tournament-development"
-                    />
+            		    <Fa style="margin: 3px" class="icon tournament-development" icon={faPenRuler}/>
                   {/if}
                 </BoopAction>
               </Tooltip>
@@ -63,7 +63,7 @@
               <Tooltip title="Problem Writing">
                 <BoopAction boopParams={{ y: 5, timing: 200 }}>
                   {#if Member.pw == true}
-                    <i class="fa-solid fa-calculator icon problem-writing" />
+            		    <Fa style="margin: 3px" class="icon problem-writing" icon={faCalculator}/>
                   {/if}
                 </BoopAction>
               </Tooltip>
@@ -71,7 +71,7 @@
               <Tooltip title="Technology">
                 <BoopAction boopParams={{ y: 5, timing: 200 }}>
                   {#if Member.t == true}
-                    <i class="fa-solid fa-computer icon technology" />
+            		    <Fa style="margin: 3px" class="icon technology" icon={faComputer}/>
                   {/if}
                 </BoopAction>
               </Tooltip>
@@ -122,35 +122,6 @@
             {/if}
           </div>
   
-          <div
-            style="display:flex;align-items:right;margin-top:0.3em;margin-bottom:0em;position:relative;"
-          >
-          <Tooltip title="Tournament Development">
-            <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if Member.td == true}
-                <i
-                  class="fa-solid fa-pen-ruler icon tournament-development"
-                />
-              {/if}
-            </BoopAction>
-          </Tooltip>
-
-          <Tooltip title="Problem Writing">
-            <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if Member.pw == true}
-                <i class="fa-solid fa-calculator icon problem-writing" />
-              {/if}
-            </BoopAction>
-          </Tooltip>
-
-          <Tooltip title="Technology">
-            <BoopAction boopParams={{ y: 5, timing: 200 }}>
-              {#if Member.t == true}
-                <i class="fa-solid fa-computer icon technology" />
-              {/if}
-            </BoopAction>
-          </Tooltip>
-          </div>
           <p class="bio" style="font-size: {textsize}em;">
             {Member.bio}
           </p>
@@ -195,7 +166,7 @@
   
     .icon {
       font-size: 1.2em;
-      margin: 3px;
+      margin: 5px;
     }
   
     .problem-writing {
