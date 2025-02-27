@@ -29,38 +29,35 @@
     <Newsletter {show} />
   </main>
   <br /><br />
-  <!-- hide footer because we don't have socials? TODO: add socials -->
-  {#if $page.url.pathname !== '/'}
-    <footer>
-      <div class="socials">
-        <button
-          class="sign-up"
-          on:click={() => {
-            show = !show
-          }}
-        >
-          <Fa icon={faNewspaper} />
-          Signup
-        </button>
-        <div class="divider" />
-        <SocialsLink
-          url="mailto:stanford.math.tournament@gmail.com"
-          type="solid"
-          icon={faEnvelope}
-        />
-        <SocialsLink
-          url="https://www.facebook.com/StanfordMathTournament"
-          type="brands"
-          icon={faFacebook}
-        />
-        <SocialsLink
-          url="https://www.instagram.com/StanfordMathTournament/"
-          type="brands"
-          icon={faInstagram}
-        />
-      </div>
-    </footer>
-  {/if}
+  <footer>
+    <div class="socials">
+      <button
+        class="sign-up"
+        on:click={() => {
+          show = !show
+        }}
+      >
+        <Fa icon={faNewspaper} />
+        Signup
+      </button>
+      <div class="divider" />
+      <SocialsLink
+        url="mailto:stanford.math.tournament@gmail.com"
+        type="solid"
+        icon={faEnvelope}
+      />
+      <SocialsLink
+        url="https://www.facebook.com/StanfordMathTournament"
+        type="brands"
+        icon={faFacebook}
+      />
+      <SocialsLink
+        url="https://www.instagram.com/StanfordMathTournament/"
+        type="brands"
+        icon={faInstagram}
+      />
+    </div>
+  </footer>
 </div>
 
 <style>
