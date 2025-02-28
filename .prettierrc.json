@@ -1,15 +1,14 @@
 {
-	"useTabs": true,
-    "trailingComma": "es5",
-	"tabWidth": 4,
-	"semi": false,
-	"singleQuote": true,
-    "overrides": [
-        {
-          "files": "*.svelte",
-          "options": {
-            "parser": "svelte"
-          }
-        }
-      ]
+  "useTabs": false,
+  "trailingComma": "es5",
+  "semi": false,
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": "*.svelte",
+      "options": {
+        "parser": "svelte"
+      }
+    }
+  ]
 }
