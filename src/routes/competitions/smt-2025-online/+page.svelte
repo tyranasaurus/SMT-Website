@@ -255,11 +255,14 @@
         <strong>DATE:</strong> April 13, 2025 <br />
         <strong>LOCATION:</strong> Online <br />
         <strong>WHO:</strong> Students in high school and below, from anywhere
-        in the world <br />
+        in the world.* <br />
         <strong>TEAM SIZE:</strong> 6-8 <br />
-        <strong>COST:</strong> $15-$25 per student* (see timeline below)
-        <br /> <br />
-        *Eventbrite charges around $2.00 per student in service fees.
+        <strong>COST:</strong> $15-$25 per student** (see timeline below) <br />
+        <br />
+        *The team formation rules for our in-person tournament do not apply here.
+        Any students in high school or below can register with any team, or as an
+        individual! <br />
+        **Eventbrite charges around $2.00 per student in service fees.
       </p>
       <HeaderButton
         text="Register on COMP.MT"
