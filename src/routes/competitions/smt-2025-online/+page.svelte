@@ -316,10 +316,12 @@
              text="Link to registration form"
              /> -->
   </TimelineElement>
+  <!--
   <TimelineElement>
     <strong>March 7, 2025 at 11:59 PM PT:</strong> Early Bird ($15/student) registration
     deadline.
   </TimelineElement>
+  -->
   <TimelineElement>
     <strong>March 31, 2025 at 11:59 PM PT:</strong> Regular ($20/student) registration
     deadline.
