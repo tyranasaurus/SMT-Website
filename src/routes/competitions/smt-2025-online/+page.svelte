@@ -353,9 +353,9 @@
       <FormattedTable data={scheduleData} colStyles={scheduleStyles} />
       <p style="margin-top: 2px; margin-bottom: 0px;">
         <i>
-          *Schedule and activities subject to change. Note that there is
-          built-in buffer time to explain instructions and assist with technical
-          difficulties.
+          *All times are in PDT. Schedule and activities subject to change. Note
+          that there is built-in buffer time to explain instructions and assist
+          with technical difficulties.
         </i>
       </p>
     </PanelBox>
