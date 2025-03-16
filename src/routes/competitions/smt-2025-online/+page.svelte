@@ -420,6 +420,11 @@
         below.
       </li>
       <li>
+        <strong>Scratch Work Submissions:</strong> Students will be required to 
+        submit their scratch work after the completion of each test. This scratch
+         work should make the student's thought process for each problem reasonably clear.
+      </li>
+      <li>
         <strong>Post-tournament review:</strong> After the tournament, students and
         teams flagged as suspicious will be reviewed for potential cheating.
       </li>
