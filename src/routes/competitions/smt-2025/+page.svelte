@@ -188,7 +188,7 @@
       'Subject Test #1',
       'Subject Test #1',
       'General Test',
-      'Solve an SMT General Round!',
+      'Unstructured Time',
     ],
     [
       "<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>",
@@ -196,7 +196,7 @@
       'Subject Test #2',
       'Subject Test #2',
       'General Test',
-      'Solve an SMT General Round!',
+      'Unstructured Time',
     ],
     [
       "<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>",
