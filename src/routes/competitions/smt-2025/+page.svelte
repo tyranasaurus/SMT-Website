@@ -148,27 +148,12 @@
       'Power Round',
       'Power Round',
       'Power Round',
-      'Unstructured Time',
-    ],
-    [
-      "<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>",
-      '9:00 AM',
-      'Power Round',
-      'Power Round',
-      'Power Round',
       'Student Panel',
     ],
+  
     [
       "<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>",
-      '10:15 AM',
-      'Team Round',
-      'Team Round',
-      'Team Round',
-      'Student Panel',
-    ],
-    [
-      "<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>",
-      '10:30 AM',
+      '10:00 AM',
       'Team Round',
       'Team Round',
       'Team Round',
@@ -176,7 +161,7 @@
     ],
     [
       "<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>",
-      '11:15 AM',
+      '11:00 AM',
       'Lunch Break',
       'Lunch Break',
       'Lunch Break',
@@ -184,7 +169,7 @@
     ],
     [
       "<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>",
-      '12:15 PM',
+      '12:00 PM',
       'Subject Test #1',
       'Subject Test #1',
       'General Test',
@@ -192,7 +177,7 @@
     ],
     [
       "<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>",
-      '1:15 PM',
+      '1:00 PM',
       'Subject Test #2',
       'Subject Test #2',
       'General Test',
@@ -200,7 +185,7 @@
     ],
     [
       "<font style='font-size: 150%'>Saturday Tournament</font><br>4/12<br><i style='font-size: 80%'>Tournament Day</i>",
-      '2:30 PM',
+      '2:00 PM',
       'Guts Round',
       'Guts Round',
       'Guts Round',
