@@ -254,7 +254,7 @@
       'Guts',
       'Guts',
       "<i style='font-size:80%'>Team</i><br>Live-scored",
-      "27<br><i style='font-size:80%'>8 sets of 4</i>",
+      "32<br><i style='font-size:80%'>8 sets of 4</i>",
       "80'",
       '20%',
     ],
