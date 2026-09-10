@@ -95,7 +95,7 @@
 </script>
 
 <svelte:head>
-  <title>SM3 2025</title>
+  <title>SM3 2026</title>
 </svelte:head>
 
 <svelte:window bind:innerWidth={windowWidth} />
