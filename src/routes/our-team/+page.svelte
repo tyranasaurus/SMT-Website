@@ -22,8 +22,7 @@
     },
     { label: 'Problem Writing', role: 'pw', value: 5, hex: '#c08f8f' },
     { label: 'Technology', role: 't', value: 6, hex: '#d5b4b4' },
-
-    //{ label: "Video Production", role: "vp", value: 8, hex: "#efcbcc" },
+    { label: "Leadership Emeritus", role: "le", value: 8, hex: "#efcbcc" },
   ]
 
   let roles = {
@@ -31,6 +30,7 @@
     t: 'Tech',
     //d: "Design",
     td: 'Tournament Development',
+    le: 'Leadership Emeritus'
     //cd: "Curriculum Development",
     //ce: "Community Engagement",
     //vp: "Video Production",

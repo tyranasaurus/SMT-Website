@@ -61,7 +61,7 @@
         "pic2path": "about-us-images/silly/Sophia_Barnes.jpg",
         "leadstatus": "past-lead",
         "positions": {
-            "org": "LEADERSHIP_EMERITUS"
+            "le": "LEADERSHIP_EMERITUS"
         }
     },
     {
@@ -138,7 +138,7 @@
         "pic2path": "about-us-images/silly/Francis_Chua.jpg",
         "leadstatus": "past-lead",
         "positions": {
-            "org": "LEADERSHIP_EMERITUS"
+            "le": "LEADERSHIP_EMERITUS"
         }
     },
     {
@@ -163,7 +163,7 @@
         "pic2path": "about-us-images/silly/Katarina_Costa.jpg",
         "leadstatus": "past-lead",
         "positions": {
-            "org": "LEADERSHIP_EMERITUS"
+            "le": "LEADERSHIP_EMERITUS"
         }
     },
     {
@@ -227,7 +227,7 @@
         "pic2path": "about-us-images/silly/Eric_Gao.jpg",
         "leadstatus": "past-lead",
         "positions": {
-            "org": "LEADERSHIP_EMERITUS"
+            "le": "LEADERSHIP_EMERITUS"
         }
     },
     {
@@ -265,7 +265,7 @@
         "pic2path": "about-us-images/silly/Paul_Gontard.jpg",
         "leadstatus": "past-lead",
         "positions": {
-            "org": "LEADERSHIP_EMERITUS"
+            "le": "LEADERSHIP_EMERITUS"
         }
     },
     {
@@ -290,7 +290,7 @@
         "pic2path": "about-us-images/silly/Ellie_Greyson.png",
         "leadstatus": "past-lead",
         "positions": {
-            "org": "LEADERSHIP_EMERITUS"
+            "le": "LEADERSHIP_EMERITUS"
         }
     },
     {
@@ -315,7 +315,7 @@
         "pic2path": "about-us-images/silly/Viktor_Imrisek.jpg",
         "leadstatus": "past-lead",
         "positions": {
-            "org": "LEADERSHIP_EMERITUS"
+            "le": "LEADERSHIP_EMERITUS"
         }
     },
     {
@@ -354,7 +354,7 @@
         "pic2path": "about-us-images/silly/Victor_Kolev.jpg",
         "leadstatus": "past-lead",
         "positions": {
-            "org": "LEADERSHIP_EMERITUS"
+            "le": "LEADERSHIP_EMERITUS"
         }
     },
     {
@@ -537,9 +537,7 @@
         "pic2path": "about-us-images/silly/Arpit_Ranasaria.jpg",
         "leadstatus": "past-lead",
         "positions": {
-            "td": "MEMBERS",
-            "t": "MEMBERS",
-            "org": "LEADERSHIP_EMERITUS"
+            "le": "LEADERSHIP_EMERITUS"
         }
     },
     {
@@ -551,7 +549,7 @@
         "pic2path": "about-us-images/silly/Neil_Rathi.jpg",
         "leadstatus": "past-lead",
         "positions": {
-            "org": "LEADERSHIP_EMERITUS"
+            "le": "LEADERSHIP_EMERITUS"
         }
     },
     {
@@ -772,7 +770,7 @@
         "pic2path": "SMT_red.png",
         "leadstatus": "past-lead",
         "positions": {
-            "org": "LEADERSHIP_EMERITUS"
+            "le": "LEADERSHIP_EMERITUS"
         }
     },
     {
@@ -784,8 +782,7 @@
         "pic2path": "about-us-images/silly/Ethan_Zhang.jpg",
         "leadstatus": "past-lead",
         "positions": {
-            "pw": "MEMBERS",
-            "org": "LEADERSHIP_EMERITUS"
+            "le": "LEADERSHIP_EMERITUS"
         }
     },
     {
